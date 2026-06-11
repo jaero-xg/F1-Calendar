@@ -1,0 +1,50 @@
+# OS files
+.DS_Store
+Thumbs.db
+
+# Node.js / npm
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Environment variables
+.env
+.env.local
+.env.development
+.env.test
+.env.production
+
+# Build outputs
+dist/
+build/
+out/
+coverage/
+
+# Logs
+logs/
+*.log
+
+# IDE / Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Python (if applicable)
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.venv/
+venv/
+
+# Mac/Linux system files
+*.DS_Store
+.fseventsd/
+.Trashes/
+
+# Misc
+*.tmp
+*.bak
