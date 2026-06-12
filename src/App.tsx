@@ -10,8 +10,9 @@ import DriverDetails from "./pages/DriverDetails";
 import TrackDetails from "./pages/TrackDetails";
 import Drivers from "./pages/Drivers";
 import Tracks from "./pages/Tracks";
+import Teams from "./pages/Teams";
+import TeamDetails from "./pages/TeamDetails";
 
-// Scroll to top on every route change
 function ScrollToTop() {
   const { pathname } = useLocation();
   useEffect(() => {
@@ -34,10 +35,12 @@ function AnimatedRoutes() {
       <motion.div key={location.pathname} {...pageTransition}>
         <Routes location={location}>
           <Route path="/" element={<Home />} />
+          <Route path="/teams" element={<Teams />} />
           <Route path="/drivers" element={<Drivers />} />
           <Route path="/tracks" element={<Tracks />} />
           <Route path="/calendar" element={<RaceCalendar />} />
           <Route path="/race/:id" element={<RaceDetails />} />
+          <Route path="/team/:id" element={<TeamDetails />} />
           <Route path="/driver/:id" element={<DriverDetails />} />
           <Route path="/track/:id" element={<TrackDetails />} />
         </Routes>

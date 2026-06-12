@@ -23,63 +23,79 @@ export default function DriverCard({ driver, index }: DriverCardProps) {
       transition={{ duration: 0.5, delay: index * 0.05 }}
     >
       <Link to={`/driver/${driver.id}`}>
-        <article className="bg-f1-card overflow-hidden card-hover group h-full flex relative">
-          {/* Left: Full-height image placeholder — 1/3 width */}
-          <div
-            className="w-1/3 min-w-[80px] flex items-center justify-center"
-            style={{ backgroundColor: driver.teamColor + "12" }}
-          >
-            <User size={40} style={{ color: driver.teamColor + "40" }} />
-          </div>
+        <article className="group bg-f1-card hover:bg-f1-surface/30 transition-colors flex flex-col h-full border border-f1-border overflow-hidden">
+          {/* Top accent bar */}
+          <div className="h-0.5 bg-f1-border group-hover:bg-f1-accent transition-colors" />
 
-          {/* Right: Content — 2/3 width */}
-          <div className="flex-1 min-w-0 p-4 flex flex-col">
-            {/* Number + Team + Points */}
-            <header className="flex items-center gap-2 mb-2">
+          {/* Header */}
+          <header className="px-4 py-3 border-b border-f1-border flex items-center justify-between">
+            <span
+              className="font-mono text-[10px] uppercase tracking-widest"
+              style={{ color: driver.teamColor }}
+            >
+              #{driver.number}
+            </span>
+            <span
+              className="font-mono text-[10px] uppercase tracking-widest"
+              style={{ color: driver.teamColor + "99" }}
+            >
+              {driver.team}
+            </span>
+          </header>
+
+          {/* Body */}
+          <div className="p-4 flex flex-col flex-1">
+            {/* Driver name */}
+            <div className="mb-3">
+              <p className="font-mono text-[10px] uppercase tracking-widest text-f1-muted mb-1">
+                {driver.country}
+              </p>
+              <h3 className="font-display text-xl font-extrabold uppercase leading-tight group-hover:text-f1-accent transition-colors">
+                <span className="text-f1-muted font-normal">
+                  {driver.firstName}{" "}
+                </span>
+                <span className="text-white">{driver.lastName}</span>
+              </h3>
+            </div>
+
+            {/* Driver image — fills remaining space */}
+            <div
+              className="flex-1 min-h-0 flex items-center justify-center mb-3 border border-f1-border/40 relative overflow-hidden"
+              style={{ backgroundColor: driver.teamColor + "10" }}
+            >
+              <User size={64} style={{ color: driver.teamColor + "30" }} />
+              {/* Watermark number */}
               <span
-                className="text-sm font-black"
+                className="absolute bottom-2 right-3 text-5xl font-black opacity-10 pointer-events-none select-none font-display"
                 style={{ color: driver.teamColor }}
               >
-                #{driver.number}
+                {driver.number}
               </span>
-              <span
-                className="text-xs font-medium"
-                style={{ color: driver.teamColor }}
-              >
-                {driver.team}
-              </span>
-              <span className="ml-auto text-lg font-bold tabular-nums">
-                {driver.points}
-              </span>
-            </header>
+            </div>
 
-            <h3 className="text-base font-semibold group-hover:text-f1-accent transition-colors truncate">
-              <span className="text-f1-muted font-normal">
-                {driver.firstName}
-              </span>{" "}
-              {driver.lastName}
-            </h3>
-
-            <p className="text-xs text-f1-muted mt-0.5 mb-3">
-              {driver.country}
-            </p>
-
-            <div className="mt-auto flex items-center gap-3">
+            {/* Stats + points */}
+            <div className="flex flex-col divide-y divide-f1-border/50">
+              <div className="flex items-center justify-between py-2">
+                <span className="text-[11px] text-f1-muted">Points</span>
+                <span className="font-mono text-[12px] text-white tabular-nums">
+                  {driver.points}
+                </span>
+              </div>
               {stats.map((stat) => (
-                <div key={stat.label} className="flex items-center gap-1">
-                  <stat.icon size={12} className="text-f1-muted" />
-                  <span className="text-xs font-medium">{stat.value}</span>
+                <div
+                  key={stat.label}
+                  className="flex items-center justify-between py-2"
+                >
+                  <span className="flex items-center gap-1.5 text-[11px] text-f1-muted">
+                    <stat.icon size={11} className="shrink-0" />
+                    {stat.label}
+                  </span>
+                  <span className="font-mono text-[12px] text-white tabular-nums">
+                    {stat.value}
+                  </span>
                 </div>
               ))}
             </div>
-          </div>
-
-          {/* Decorative watermark — bottom right */}
-          <div
-            className="absolute bottom-3 right-4 text-4xl font-black opacity-10 pointer-events-none"
-            style={{ color: driver.teamColor }}
-          >
-            {driver.number}
           </div>
         </article>
       </Link>

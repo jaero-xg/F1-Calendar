@@ -7,6 +7,7 @@ const navLinks = [
   { label: "Home", path: "/" },
   { label: "Calendar", path: "/calendar" },
   { label: "Drivers", path: "/drivers" },
+  { label: "Teams", path: "/teams" },
   { label: "Tracks", path: "/tracks" },
 ];
 
@@ -27,6 +28,9 @@ export default function Navbar() {
             width="50"
             height="50"
           />
+          <span className="font-display font-black uppercase text-white">
+            Calendar
+          </span>
         </Link>
 
         {/* Desktop links */}

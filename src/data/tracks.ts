@@ -13,7 +13,7 @@ export const tracks: Track[] = [
       { sector: 3, bestTime: '23.932', driver: 'Oscar Piastri' },
     ],
     elevation: 'Flat', type: 'street',
-    circuitSvg: "/circuits/Albert.svg"
+    circuitSvg: "/circuits/Australia.svg"
   },
   {
     id: 'shanghai', name: 'Shanghai International Circuit', circuit: 'Shanghai',
@@ -27,7 +27,7 @@ export const tracks: Track[] = [
       { sector: 3, bestTime: '31.670', driver: 'Oscar Piastri' },
     ],
     elevation: 'Flat', type: 'permanent',
-    circuitSvg: "/circuits/Shanghai.svg"
+    circuitSvg: "/circuits/China.svg"
   },
   {
     id: 'suzuka', name: 'Suzuka International Circuit', circuit: 'Suzuka',
@@ -41,7 +41,7 @@ export const tracks: Track[] = [
       { sector: 3, bestTime: '29.858', driver: 'Max Verstappen' },
     ],
     elevation: 'Varied', type: 'permanent',
-    circuitSvg: "/circuits/monza.svg"
+    circuitSvg: "/circuits/Suzuka.svg"
   },
   {
     id: 'miami', name: 'Miami International Autodrome', circuit: 'Miami',
@@ -55,7 +55,7 @@ export const tracks: Track[] = [
       { sector: 3, bestTime: '30.573', driver: 'Oscar Piastri' },
     ],
     elevation: 'Flat', type: 'street',
-    circuitSvg: "/circuits/monza.svg"
+    circuitSvg: "/circuits/Miami.svg"
   },
   {
     id: 'montreal', name: 'Circuit Gilles Villeneuve', circuit: 'Montreal',
@@ -69,7 +69,7 @@ export const tracks: Track[] = [
       { sector: 3, bestTime: '26.499', driver: 'Lando Norris' },
     ],
     elevation: 'Flat', type: 'street',
-    circuitSvg: "/circuits/monza.svg"
+    circuitSvg: "/circuits/Canada.svg"
   },
   {
     id: 'monaco', name: 'Circuit de Monaco', circuit: 'Monaco',
@@ -83,7 +83,7 @@ export const tracks: Track[] = [
       { sector: 3, bestTime: '30.108', driver: 'Max Verstappen' },
     ],
     elevation: 'Varied', type: 'street',
-    circuitSvg: "/circuits/monza.svg"
+    circuitSvg: "/circuits/Monaco.svg"
   },
   {
     id: 'barcelona', name: 'Circuit de Barcelona-Catalunya', circuit: 'Barcelona-Catalunya',
@@ -97,7 +97,7 @@ export const tracks: Track[] = [
       { sector: 3, bestTime: '23.307', driver: 'Oscar Piastri' },
     ],
     elevation: 'Varied', type: 'permanent',
-    circuitSvg: "/circuits/monza.svg"
+    circuitSvg: "/circuits/Barcelona.svg"
   },
   {
     id: 'red-bull-ring', name: 'Red Bull Ring', circuit: 'Red Bull Ring',
@@ -111,7 +111,7 @@ export const tracks: Track[] = [
       { sector: 3, bestTime: '20.929', driver: 'Oscar Piastri' },
     ],
     elevation: 'Varied', type: 'permanent',
-    circuitSvg: "/circuits/monza.svg"
+    circuitSvg: "/circuits/Austria.svg"
   },
   {
     id: 'silverstone', name: 'Silverstone Circuit', circuit: 'Silverstone',
@@ -125,7 +125,7 @@ export const tracks: Track[] = [
       { sector: 3, bestTime: '24.518', driver: 'Oscar Piastri' },
     ],
     elevation: 'Flat', type: 'permanent',
-    circuitSvg: "/circuits/monza.svg"
+    circuitSvg: "/circuits/Britian.svg"
   },
   {
     id: 'spa', name: 'Circuit de Spa-Francorchamps', circuit: 'Spa-Francorchamps',
@@ -139,7 +139,7 @@ export const tracks: Track[] = [
       { sector: 3, bestTime: '31.707', driver: 'Oscar Piastri' },
     ],
     elevation: 'Varied', type: 'permanent',
-    circuitSvg: "/circuits/monza.svg"
+    circuitSvg: "/circuits/Belgium.svg"
   },
   {
     id: 'hungaroring', name: 'Hungaroring', circuit: 'Hungaroring',
@@ -153,7 +153,7 @@ export const tracks: Track[] = [
       { sector: 3, bestTime: '25.271', driver: 'Oscar Piastri' },
     ],
     elevation: 'Varied', type: 'permanent',
-    circuitSvg: "/circuits/monza.svg"
+    circuitSvg: "/circuits/Hungary.svg"
   },
   {
     id: 'zandvoort', name: 'Circuit Zandvoort', circuit: 'Zandvoort',
@@ -167,7 +167,7 @@ export const tracks: Track[] = [
       { sector: 3, bestTime: '21.963', driver: 'Oscar Piastri' },
     ],
     elevation: 'Varied', type: 'permanent',
-    circuitSvg: "/circuits/monza.svg"
+    circuitSvg: "/circuits/Zandvoort.svg"
   },
   {
     id: 'monza', name: 'Autodromo Nazionale Monza', circuit: 'Monza',
@@ -181,7 +181,7 @@ export const tracks: Track[] = [
       { sector: 3, bestTime: '25.467', driver: 'Oscar Piastri' },
     ],
     elevation: 'Flat', type: 'permanent',
-    circuitSvg: "/circuits/monza.svg"
+    circuitSvg: "/circuits/Monza.svg"
   },
   {
     id: 'madrid', name: 'Madring Circuit', circuit: 'Madring',
@@ -195,7 +195,7 @@ export const tracks: Track[] = [
       { sector: 3, bestTime: 'TBD', driver: 'TBD' },
     ],
     elevation: 'Varied', type: 'street',
-    circuitSvg: "/circuits/monza.svg"
+    circuitSvg: "/circuits/Madrid.svg"
   },
   {
     id: 'baku', name: 'Baku City Circuit', circuit: 'Baku',
@@ -209,7 +209,7 @@ export const tracks: Track[] = [
       { sector: 3, bestTime: '33.208', driver: 'Charles Leclerc' },
     ],
     elevation: 'Flat', type: 'street',
-    circuitSvg: "/circuits/monza.svg"
+    circuitSvg: "/circuits/Azerbaijan.svg"
   },
   {
     id: 'singapore', name: 'Marina Bay Street Circuit', circuit: 'Singapore',
@@ -223,7 +223,7 @@ export const tracks: Track[] = [
       { sector: 3, bestTime: '40.955', driver: 'Oscar Piastri' },
     ],
     elevation: 'Flat', type: 'street',
-    circuitSvg: "/circuits/monza.svg"
+    circuitSvg: "/circuits/Singapore.svg"
   },
   {
     id: 'cota', name: 'Circuit of the Americas', circuit: 'COTA',
@@ -237,7 +237,7 @@ export const tracks: Track[] = [
       { sector: 3, bestTime: '34.812', driver: 'Oscar Piastri' },
     ],
     elevation: 'Varied', type: 'permanent',
-    circuitSvg: "/circuits/monza.svg"
+    circuitSvg: "/circuits/COTA.svg"
   },
   {
     id: 'mexico-city', name: 'Autodromo Hermanos Rodriguez', circuit: 'Mexico City',
@@ -251,7 +251,7 @@ export const tracks: Track[] = [
       { sector: 3, bestTime: '30.751', driver: 'Oscar Piastri' },
     ],
     elevation: 'Flat', type: 'permanent',
-    circuitSvg: "/circuits/monza.svg"
+    circuitSvg: "/circuits/Mexico.svg"
   },
   {
     id: 'interlagos', name: 'Autodromo Jose Carlos Pace', circuit: 'Interlagos',
@@ -265,7 +265,7 @@ export const tracks: Track[] = [
       { sector: 3, bestTime: '23.850', driver: 'Oscar Piastri' },
     ],
     elevation: 'Varied', type: 'permanent',
-    circuitSvg: "/circuits/monza.svg"
+    circuitSvg: "/circuits/Brazil.svg"
   },
   {
     id: 'las-vegas', name: 'Las Vegas Strip Circuit', circuit: 'Las Vegas',
@@ -279,7 +279,7 @@ export const tracks: Track[] = [
       { sector: 3, bestTime: '32.689', driver: 'Oscar Piastri' },
     ],
     elevation: 'Flat', type: 'street',
-    circuitSvg: "/circuits/monza.svg"
+    circuitSvg: "/circuits/Las-Vegas.svg"
   },
   {
     id: 'losail', name: 'Losail International Circuit', circuit: 'Losail',
@@ -293,7 +293,7 @@ export const tracks: Track[] = [
       { sector: 3, bestTime: '27.740', driver: 'Oscar Piastri' },
     ],
     elevation: 'Flat', type: 'permanent',
-    circuitSvg: "/circuits/monza.svg"
+    circuitSvg: "/circuits/Qatar.svg"
   },
   {
     id: 'yas-marina', name: 'Yas Marina Circuit', circuit: 'Yas Marina',
@@ -307,7 +307,7 @@ export const tracks: Track[] = [
       { sector: 3, bestTime: '29.858', driver: 'Oscar Piastri' },
     ],
     elevation: 'Flat', type: 'permanent',
-    circuitSvg: "/circuits/monza.svg"
+    circuitSvg: "/circuits/Abu-Dhabi.svg"
   },
 ];
 

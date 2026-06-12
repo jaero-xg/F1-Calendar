@@ -25,8 +25,7 @@ export default function Hero() {
               </span>
               <h1 className="font-display text-[56px] sm:text-[72px] font-black uppercase leading-[0.9] tracking-tight text-white mb-6">
                 Formula
-                <br />
-                <em className="text-f1-accent not-italic">One</em>
+                <span className="text-f1-accent not-italic"> 1</span>
                 <br />
                 Season
               </h1>
@@ -42,7 +41,7 @@ export default function Hero() {
                   Race Calendar
                 </Link>
                 <Link
-                  to="/"
+                  to="/drivers"
                   className="text-f1-text text-[12px] font-semibold uppercase tracking-[0.1em] px-6 py-2.5 border border-f1-border hover:border-f1-muted transition-colors"
                 >
                   Driver Standings
