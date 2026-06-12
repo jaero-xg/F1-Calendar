@@ -23,7 +23,7 @@ function SectionHeader({
   right?: React.ReactNode;
 }) {
   return (
-    <div className="flex items-end justify-between mb-6 pb-4 border-b border-f1-border">
+    <div className="flex flex-col sm:flex-row sm:items-end justify-between mb-4 sm:mb-6 pb-3 sm:pb-4 border-b border-f1-border gap-2 sm:gap-0">
       <div className="flex flex-col gap-1">
         <div className="eyebrow">
           <div
@@ -42,7 +42,9 @@ function SectionHeader({
             {eyebrow}
           </span>
         </div>
-        <h2 className="section-title">{title}</h2>
+        <h2 className="section-title text-xl sm:text-2xl md:text-3xl">
+          {title}
+        </h2>
       </div>
       {right}
     </div>
@@ -54,11 +56,11 @@ function Ticker() {
     "VERSTAPPEN LEADS NORRIS BY 26 PTS · MONACO GP RESULTS: 1. LECLERC 2. HAMILTON 3. VERSTAPPEN · ROUND 07 · BARCELONA · 12 JUNE · ";
 
   return (
-    <div className="bg-f1-accent h-8 flex items-center overflow-hidden">
-      <div className="font-display font-extrabold text-[13px] uppercase tracking-[0.1em] bg-[#c00000] text-white px-4 h-full flex items-center flex-shrink-0 mr-4">
+    <div className="bg-f1-accent h-7 sm:h-8 flex items-center overflow-hidden">
+      <div className="font-display font-extrabold text-[11px] sm:text-[13px] uppercase tracking-[0.1em] bg-[#c00000] text-white px-3 sm:px-4 h-full flex items-center flex-shrink-0 mr-3 sm:mr-4">
         Latest
       </div>
-      <div className="font-mono text-[11px] text-white tracking-[0.06em] whitespace-nowrap ticker-animate">
+      <div className="font-mono text-[10px] sm:text-[11px] text-white tracking-[0.06em] whitespace-nowrap ticker-animate">
         {text}
         {text}
       </div>
@@ -74,7 +76,9 @@ function Section({
   className?: string;
 }) {
   return (
-    <section className={`py-10 border-b border-f1-border ${className}`}>
+    <section
+      className={`py-6 sm:py-8 md:py-10 border-b border-f1-border ${className}`}
+    >
       <div className="wrap section-padding">{children}</div>
     </section>
   );
@@ -84,7 +88,7 @@ function ViewAllLink({ to, label }: { to: string; label: string }) {
   return (
     <Link
       to={to}
-      className="text-[11px] font-medium uppercase tracking-[0.08em] text-f1-muted hover:text-white transition-colors flex items-center gap-1.5"
+      className="text-[10px] sm:text-[11px] font-medium uppercase tracking-[0.08em] text-f1-muted hover:text-white transition-colors flex items-center gap-1.5"
     >
       {label} <span>→</span>
     </Link>
@@ -102,7 +106,7 @@ function PrimaryButtonLink({
     <motion.div className="mt-1 flex items-center gap-1">
       <Link
         to={to}
-        className="bg-f1-accent text-white text-[12px] font-semibold uppercase tracking-[0.1em] px-6 py-2.5 hover:bg-f1-accentHover transition-colors"
+        className="bg-f1-accent text-white text-[11px] sm:text-[12px] font-semibold uppercase tracking-[0.1em] px-4 sm:px-6 py-2 sm:py-2.5 hover:bg-f1-accentHover transition-colors"
       >
         {children}
       </Link>
@@ -127,6 +131,7 @@ export default function Home() {
           title="Recent Races"
           right={<ViewAllLink to="/calendar" label="View All" />}
         />
+        {/* ✅ 3 columns on mobile, 2 on md, 3 on xl */}
         <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-1">
           {completedRaces
             .slice(-3)
@@ -146,6 +151,7 @@ export default function Home() {
           barColor="tw-blue-400"
           right={<ViewAllLink to="/calendar" label="Full Calendar" />}
         />
+        {/* ✅ 3 columns on mobile, 2 on md, 3 on xl */}
         <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-1">
           {upcomingRaces.map((race, i) => (
             <RaceCard key={race.id} race={race} index={i} />
@@ -162,9 +168,10 @@ export default function Home() {
           barColor="tw-f1-gold"
           right={<ViewAllLink to="/drivers" label="View All Drivers" />}
         />
+        {/* ✅ 3 columns on mobile, 2 on md, 3 on xl */}
         <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-1">
           {topDrivers.map((driver, i) => (
-            <DriverCard key={driver.id} driver={driver} index={i} />
+            <DriverCard key={driver.id} driver={driver} index={i} mode="2026" />
           ))}
         </div>
       </Section>
@@ -178,7 +185,8 @@ export default function Home() {
           barColor="tw-green-400"
           right={<ViewAllLink to="/tracks" label="View All Tracks" />}
         />
-        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-1">
+        {/* ✅ 3 columns on mobile, 2 on md, 3 on lg, 4 on xl */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-1">
           {tracks.slice(0, 8).map((track, i) => (
             <TrackCard key={track.id} track={track} index={i} />
           ))}

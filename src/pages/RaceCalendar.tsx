@@ -11,11 +11,13 @@ function PageHeader() {
     <motion.div
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
-      className="mb-12"
+      className="mb-8 md:mb-12"
     >
       <span className="label text-f1-accent">2026 Season</span>
-      <h1 className="heading-lg mt-2 mb-4">Race Calendar</h1>
-      <p className="body-lg max-w-2xl">
+      <h1 className="heading-lg mt-2 mb-4 text-2xl md:text-3xl lg:text-4xl">
+        Race Calendar
+      </h1>
+      <p className="body-lg max-w-2xl text-sm md:text-base">
         22 races across 5 continents. Six Sprint weekends. One World Champion.
       </p>
     </motion.div>
@@ -34,7 +36,7 @@ function FilterButton({
   return (
     <button
       onClick={onClick}
-      className={`px-4 py-2 text-sm font-medium transition-all ${
+      className={`px-3 md:px-4 py-2 text-xs md:text-sm font-medium transition-all ${
         active
           ? "bg-f1-accent text-white"
           : "bg-f1-surface text-f1-muted hover:text-white"
@@ -57,7 +59,7 @@ function FiltersBar({
   const options: FilterType[] = ["all", "completed", "upcoming"];
 
   return (
-    <div className="flex items-center gap-2 mb-10">
+    <div className="flex flex-wrap items-center gap-2 mb-6 md:mb-10">
       <Filter size={16} className="text-f1-muted mr-2" />
 
       {options.map((f) => (
@@ -69,6 +71,10 @@ function FiltersBar({
           {f.charAt(0).toUpperCase() + f.slice(1)}
         </FilterButton>
       ))}
+
+      <span className="font-mono text-[10px] text-f1-muted ml-auto">
+        {count} races
+      </span>
     </div>
   );
 }
@@ -103,7 +109,7 @@ export default function RaceCalendar() {
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            className="mb-8 pb-6 border-b border-f1-border flex items-end justify-between"
+            className="mb-6 md:mb-8 pb-4 md:pb-6 border-b border-f1-border flex flex-col sm:flex-row sm:items-end justify-between gap-2 sm:gap-0"
           >
             <div>
               <div className="flex items-center gap-2 mb-2">
@@ -112,7 +118,7 @@ export default function RaceCalendar() {
                   2026 Season
                 </span>
               </div>
-              <h1 className="font-display text-4xl font-extrabold uppercase text-white">
+              <h1 className="font-display text-2xl md:text-4xl font-extrabold uppercase text-white">
                 Calendar
               </h1>
             </div>

@@ -5,10 +5,16 @@
 @layer base {
   html {
     scroll-behavior: smooth;
+    /* Extend background into iPhone safe area */
+    min-height: 100vh;
+    background-color: #0a0a0a; /* or your f1-black color */
   }
+  
   body {
     @apply bg-f1-black text-f1-text font-body antialiased;
     overflow-x: hidden;
+    /* Fill the safe area on iPhone */
+    min-height: 100vh;
   }
   ::selection {
     @apply bg-f1-accent/30 text-white;
@@ -51,7 +57,11 @@
   /* Card grid with 1px gaps */
   .card-grid {
     @apply grid gap-px bg-f1-border;
+    
+  }.safe-area-top {
+    padding-top: env(safe-area-inset-top);
   }
+
   /* Ticker animation */
   @keyframes ticker {
     0% {

@@ -10,7 +10,7 @@ export default function Teams() {
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          className="mb-8 pb-6 border-b border-f1-border flex items-end justify-between"
+          className="mb-6 md:mb-8 pb-4 md:pb-6 border-b border-f1-border flex flex-col sm:flex-row sm:items-end justify-between gap-2 sm:gap-0"
         >
           <div>
             <div className="flex items-center gap-2 mb-2">
@@ -19,7 +19,7 @@ export default function Teams() {
                 Constructors
               </span>
             </div>
-            <h1 className="font-display text-4xl font-extrabold uppercase text-white">
+            <h1 className="font-display text-2xl md:text-4xl font-extrabold uppercase text-white">
               All Teams
             </h1>
           </div>
@@ -29,6 +29,7 @@ export default function Teams() {
         </motion.div>
 
         {/* Team grid */}
+        {/* ✅ 3 columns on mobile, 2 on md, 3 on xl */}
         <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-1">
           {teams.map((team, i) => (
             <TeamCard key={team.id} team={team} index={i} />

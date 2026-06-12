@@ -21,10 +21,11 @@ export default function TeamCard({ team, index }: TeamCardProps) {
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, margin: "-50px" }}
       transition={{ duration: 0.5, delay: index * 0.05 }}
+      className="h-full"
     >
-      <Link to={`/team/${team.id}`}>
-        <article className="group bg-f1-card hover:bg-f1-surface/30 transition-colors flex flex-col h-full border border-f1-border overflow-hidden">
-          {/* Top accent bar — team color on hover */}
+      <Link to={`/team/${team.id}`} className="block h-full">
+        {/* ── DESKTOP: vertical card ── */}
+        <article className="hidden sm:flex group bg-f1-card hover:bg-f1-surface/30 active:bg-f1-surface/50 transition-colors flex-col h-full border border-f1-border overflow-hidden rounded-sm">
           <div
             className="h-0.5 bg-f1-border transition-colors"
             style={{ "--team-color": team.color } as React.CSSProperties}
@@ -37,7 +38,6 @@ export default function TeamCard({ team, index }: TeamCardProps) {
             }
           />
 
-          {/* Header */}
           <header className="px-4 py-3 border-b border-f1-border flex items-center justify-between">
             <span
               className="font-mono text-[10px] uppercase tracking-widest"
@@ -50,9 +50,7 @@ export default function TeamCard({ team, index }: TeamCardProps) {
             </span>
           </header>
 
-          {/* Body */}
           <div className="p-4 flex flex-col flex-1">
-            {/* Team name */}
             <div className="mb-3">
               <p className="font-mono text-[10px] uppercase tracking-widest text-f1-muted mb-1">
                 {team.base.split(",").pop()?.trim()}
@@ -65,26 +63,22 @@ export default function TeamCard({ team, index }: TeamCardProps) {
               </p>
             </div>
 
-            {/* Color swatch — fills remaining space */}
             <div
-              className="flex-1 min-h-0 flex items-center justify-center mb-3 border border-f1-border/40 relative overflow-hidden"
+              className="flex-1 min-h-[130px] flex items-center justify-center mb-3 border border-f1-border/40 overflow-hidden rounded-sm relative"
               style={{ backgroundColor: team.color + "10" }}
             >
-              {/* Abstract car number watermark */}
               <span
                 className="font-display text-[80px] font-black opacity-[0.07] pointer-events-none select-none leading-none"
                 style={{ color: team.color }}
               >
                 F1
               </span>
-              {/* Team color bar accent */}
               <div
                 className="absolute bottom-0 left-0 right-0 h-0.5"
                 style={{ backgroundColor: team.color + "60" }}
               />
             </div>
 
-            {/* Stats */}
             <div className="flex flex-col divide-y divide-f1-border/50">
               {stats.map((stat) => (
                 <div
@@ -95,11 +89,83 @@ export default function TeamCard({ team, index }: TeamCardProps) {
                     <stat.icon size={11} className="shrink-0" />
                     {stat.label}
                   </span>
-                  <span className="font-mono text-[12px] text-white tabular-nums">
+                  <span className="font-mono text-[12px] text-white tabular-nums font-semibold">
                     {stat.value}
                   </span>
                 </div>
               ))}
+            </div>
+          </div>
+        </article>
+
+        {/* ── MOBILE: horizontal card ── */}
+        <article className="sm:hidden group bg-f1-card active:bg-f1-surface/50 transition-colors border border-f1-border overflow-hidden rounded-sm relative">
+          <div
+            className="absolute left-0 top-0 bottom-0 w-[3px]"
+            style={{ backgroundColor: team.color + "99" }}
+          />
+
+          <div className="flex pl-[3px] h-[100px]">
+            {/* Color block — fixed width, flush */}
+            <div
+              className="w-[80px] shrink-0 h-full flex items-center justify-center overflow-hidden"
+              style={{ backgroundColor: team.color + "18" }}
+            >
+              <span
+                className="font-display text-[40px] font-black opacity-20 pointer-events-none select-none leading-none"
+                style={{ color: team.color }}
+              >
+                F1
+              </span>
+            </div>
+
+            {/* Right content */}
+            <div className="flex flex-col flex-1 min-w-0 px-3 py-2 justify-between">
+              {/* Top row: power unit + first entry */}
+              <div className="flex items-center justify-between">
+                <span
+                  className="font-mono text-[11px] uppercase tracking-widest font-bold"
+                  style={{ color: team.color }}
+                >
+                  {team.powerUnit}
+                </span>
+                <span className="font-mono text-[9px] uppercase tracking-wider truncate ml-2 max-w-[120px] text-f1-muted">
+                  Since {team.firstEntry}
+                </span>
+              </div>
+
+              {/* Name */}
+              <div className="leading-none">
+                <span className="font-mono text-[9px] uppercase tracking-widest text-f1-muted">
+                  {team.base.split(",").pop()?.trim()}
+                </span>
+                <h3 className="font-display text-[16px] font-extrabold uppercase leading-none group-hover:text-f1-accent transition-colors">
+                  {team.shortName}
+                </h3>
+              </div>
+
+              {/* Stats row — labels on top, values below, strictly aligned */}
+              <div className="flex items-end gap-3 pt-1.5 border-t border-f1-border/40">
+                {[
+                  { label: "Titles", value: String(team.championships) },
+                  { label: "Wins", value: String(team.wins) },
+                  { label: "Poles", value: String(team.poles) },
+                ].map((item, i, arr) => (
+                  <div key={item.label} className="flex items-end gap-3">
+                    <div className="flex flex-col gap-0.5">
+                      <span className="font-mono text-[8px] uppercase tracking-widest text-f1-muted leading-none whitespace-nowrap">
+                        {item.label}
+                      </span>
+                      <span className="font-mono text-[14px] font-bold tabular-nums leading-none">
+                        {item.value}
+                      </span>
+                    </div>
+                    {i < arr.length - 1 && (
+                      <div className="w-px h-5 bg-f1-border/50 mb-px" />
+                    )}
+                  </div>
+                ))}
+              </div>
             </div>
           </div>
         </article>

@@ -1,4 +1,4 @@
-import { Race } from '../types';
+import { Race } from "../types";
 
 // 2026 F1 season — 22 rounds (Bahrain R4 + Saudi Arabia R5 cancelled due to Iran war)
 // Sprint rounds: China (R2), Miami (R4), Canada (R5), Britain (R9), Netherlands (R12), Singapore (R16)

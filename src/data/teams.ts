@@ -15,7 +15,7 @@ export const teams: Team[] = [
     wins: 120,
     podiums: 260,
     poles: 105,
-    drivers: ["max-verstappen", "sergio-perez"],
+    drivers: ["verstappen", "hadjar", "tsunoda"],  // ✅ All 3 Red Bull drivers from drivers.ts
     description:
       "The dominant force of the turbo-hybrid era, Red Bull Racing have redefined what is possible in modern Formula 1.",
   },
@@ -33,7 +33,7 @@ export const teams: Team[] = [
     wins: 243,
     podiums: 812,
     poles: 244,
-    drivers: ["charles-leclerc", "lewis-hamilton"],
+    drivers: ["leclerc", "hamilton"],  // ✅ Fixed IDs
     description:
       "The most storied team in Formula 1 history. La Scuderia has competed in every World Championship season since 1950.",
   },
@@ -51,7 +51,7 @@ export const teams: Team[] = [
     wins: 125,
     podiums: 290,
     poles: 130,
-    drivers: ["george-russell", "kimi-antonelli"],
+    drivers: ["russell", "antonelli"],  // ✅ Fixed IDs
     description:
       "Eight consecutive constructors' championships between 2014 and 2021 cemented Mercedes as one of the greatest teams in F1 history.",
   },
@@ -69,7 +69,7 @@ export const teams: Team[] = [
     wins: 183,
     podiums: 507,
     poles: 156,
-    drivers: ["lando-norris", "oscar-piastri"],
+    drivers: ["norris", "piastri"],  // ✅ Fixed IDs
     description:
       "A sleeping giant reawakened. McLaren's resurgence under Andrea Stella has them firmly back in the championship fight.",
   },
@@ -87,7 +87,7 @@ export const teams: Team[] = [
     wins: 0,
     podiums: 8,
     poles: 1,
-    drivers: ["fernando-alonso", "lance-stroll"],
+    drivers: ["alonso", "stroll"],  // ✅ Fixed IDs
     description:
       "Backed by Lawrence Stroll's ambitious vision, Aston Martin continue to build toward their first championship.",
   },
@@ -105,7 +105,7 @@ export const teams: Team[] = [
     wins: 1,
     podiums: 3,
     poles: 0,
-    drivers: ["pierre-gasly", "jack-doohan"],
+    drivers: ["gasly", "colapinto"],  // ✅ Fixed: colapinto (not doohan)
     description:
       "The French constructor carries the legacy of Renault's F1 programme, racing under the iconic blue and pink livery.",
   },
@@ -123,7 +123,7 @@ export const teams: Team[] = [
     wins: 0,
     podiums: 1,
     poles: 0,
-    drivers: ["esteban-ocon", "oliver-bearman"],
+    drivers: ["ocon", "bearman"],  // ✅ Fixed IDs
     description:
       "America's only current F1 team, Haas operate a lean and efficient model from their North Carolina base.",
   },
@@ -141,7 +141,7 @@ export const teams: Team[] = [
     wins: 2,
     podiums: 9,
     poles: 1,
-    drivers: ["yuki-tsunoda", "isack-hadjar"],
+    drivers: ["lawson", "lindblad"],  // ✅ Fixed: lawson & lindblad (Racing Bulls drivers)
     description:
       "Red Bull's junior team and development programme, Racing Bulls have produced some of the grid's finest talents.",
   },
@@ -159,27 +159,45 @@ export const teams: Team[] = [
     wins: 114,
     podiums: 312,
     poles: 128,
-    drivers: ["alexander-albon", "carlos-sainz"],
+    drivers: ["albon", "sainz"],  // ✅ Fixed IDs
     description:
       "Nine constructors' championships and 114 wins make Williams one of F1's most celebrated teams, now rebuilding under James Vowles.",
   },
   {
-    id: "sauber",
-    name: "Stake F1 Team Kick Sauber",
-    shortName: "Sauber",
+    id: "cadillac",
+    name: "Cadillac F1 Team",
+    shortName: "Cadillac",
+    base: "Indianapolis, USA",
+    principal: "Graeme Lowdon",
+    chassis: "C26",
+    powerUnit: "Ferrari",
+    color: "#FFFFFF",
+    firstEntry: 2026,
+    championships: 0,
+    wins: 0,
+    podiums: 0,
+    poles: 0,
+    drivers: ["perez", "bottas"],  // ✅ Fixed IDs
+    description:
+      "Cadillac joins Formula 1 as the sport's newest team, bringing American ambition and veteran experience to the grid.",
+  },
+  {
+    id: "audi",
+    name: "Audi F1 Team",
+    shortName: "Audi",
     base: "Hinwil, Switzerland",
     principal: "Mattia Binotto",
-    chassis: "C45",
-    powerUnit: "Ferrari",
+    chassis: "R26",
+    powerUnit: "Audi",
     color: "#52E252",
-    firstEntry: 1993,
+    firstEntry: 2026,
     championships: 0,
-    wins: 1,
-    podiums: 23,
-    poles: 1,
-    drivers: ["nico-hulkenberg", "gabriel-bortoleto"],
+    wins: 0,
+    podiums: 0,
+    poles: 0,
+    drivers: ["hulkenberg", "bortoleto"],  // ✅ Fixed IDs
     description:
-      "Transitioning to become the Audi works team from 2026, Sauber are building the foundations for a new era.",
+      "Audi enters Formula 1 by transforming the Sauber operation into a full works team.",
   },
 ];
 

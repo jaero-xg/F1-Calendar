@@ -309,6 +309,34 @@ export const tracks: Track[] = [
     elevation: 'Flat', type: 'permanent',
     circuitSvg: "/circuits/Abu-Dhabi.svg"
   },
+  {
+    id: 'jeddah', name: 'Jeddah Corniche Circuit', circuit: 'Saudi-arabia',
+    location: 'Jeddah', country: 'Saudi Arabia', length: ' km', laps: 0,
+    lapRecord: '', lapRecordHolder: '', firstGrandPrix: 0,
+    turns: 0, drsZones: 0,
+    description: '',
+    sectorTimes: [
+      { sector: 1, bestTime: '', driver: '' },
+      { sector: 2, bestTime: '', driver: '' },
+      { sector: 3, bestTime: '', driver: '' },
+    ],
+    elevation: 'Flat', type: 'permanent',
+    circuitSvg: "/circuits/Saudi-Arabia.svg"
+  },
+  {
+    id: 'bahrain', name: 'Bahrain International Circuit', circuit: 'Bahrain',
+    location: 'Sakhir', country: 'Bahrain', length: ' km', laps: 0,
+    lapRecord: '', lapRecordHolder: '', firstGrandPrix: 0,
+    turns: 0, drsZones: 0,
+    description: '',
+    sectorTimes: [
+      { sector: 1, bestTime: '', driver: '' },
+      { sector: 2, bestTime: '', driver: '' },
+      { sector: 3, bestTime: '', driver: '' },
+    ],
+    elevation: 'Flat', type: 'permanent',
+    circuitSvg: "/circuits/Bahrain.svg"
+  },
 ];
 
 export const getTrackById = (id: string): Track | undefined => tracks.find(t => t.id === id);
