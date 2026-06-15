@@ -3,9 +3,8 @@ name: Update F1 Data
 
 on:
   schedule:
-    # Every Monday at 6:00 UTC (after race weekends)
     - cron: "0 6 * * 1"
-  workflow_dispatch: # Allows manual trigger from GitHub UI
+  workflow_dispatch:
 
 jobs:
   update:
@@ -16,7 +15,7 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: "22"
+          node-version: "24" # ← updated from '22'
 
       - name: Install dependencies
         run: npm ci
