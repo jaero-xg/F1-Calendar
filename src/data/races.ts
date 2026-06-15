@@ -131,7 +131,7 @@ export const races: Race[] = [
   {
     id: 'barcelona', round: 7, name: 'Barcelona-Catalunya Grand Prix',
     circuit: 'Circuit de Barcelona-Catalunya', location: 'Barcelona', country: 'Spain',
-    date: '2026-06-12', endDate: '2026-06-14', status: 'upcoming', isSprint: false, isSaturday: false,
+    date: '2026-06-12', endDate: '2026-06-14', status: 'completed', isSprint: false, isSaturday: false,
     trackId: 'barcelona',
     sessions: [
       { id: 'bar-fp1',  type: 'FP1',        day: 'Fri', time: '13:30', duration: '60 min',  status: 'upcoming' },
