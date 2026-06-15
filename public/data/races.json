@@ -1,0 +1,1308 @@
+[
+  {
+    "id": "bahrain",
+    "round": 0,
+    "name": "Bahrain Grand Prix",
+    "circuit": "Bahrain International Circuit",
+    "location": "Sakhir",
+    "country": "Bahrain",
+    "date": "2026-04-10",
+    "endDate": "2026-04-12",
+    "status": "cancelled",
+    "isSprint": false,
+    "isSaturday": false,
+    "trackId": "bahrain",
+    "cancellationReason": "Cancelled due to the 2026 Iran–Middle East conflict",
+    "sessions": [],
+    "circuitSvg": "/circuits/Bahrain.svg"
+  },
+  {
+    "id": "saudi-arabia",
+    "round": 0,
+    "name": "Saudi Arabian Grand Prix",
+    "circuit": "Jeddah Corniche Circuit",
+    "location": "Jeddah",
+    "country": "Saudi Arabia",
+    "date": "2026-04-17",
+    "endDate": "2026-04-19",
+    "status": "cancelled",
+    "isSprint": false,
+    "isSaturday": false,
+    "trackId": "jeddah",
+    "cancellationReason": "Cancelled due to the 2026 Iran–Middle East conflict",
+    "sessions": [],
+    "circuitSvg": "/circuits/Saudi-Arabia.svg"
+  },
+  {
+    "id": "australia",
+    "round": 1,
+    "name": "Australian Grand Prix",
+    "circuit": "Albert Park Circuit",
+    "location": "Melbourne",
+    "country": "Australia",
+    "date": "2026-03-06",
+    "endDate": "2026-03-08",
+    "status": "completed",
+    "isSprint": false,
+    "isSaturday": false,
+    "trackId": "albert-park",
+    "winner": "George Russell",
+    "fastestLap": "Max Verstappen",
+    "polePosition": "George Russell",
+    "sessions": [
+      {
+        "id": "aus-fp1",
+        "type": "FP1",
+        "day": "Fri",
+        "time": "12:30",
+        "duration": "60 min",
+        "status": "completed"
+      },
+      {
+        "id": "aus-fp2",
+        "type": "FP2",
+        "day": "Fri",
+        "time": "16:00",
+        "duration": "60 min",
+        "status": "completed"
+      },
+      {
+        "id": "aus-fp3",
+        "type": "FP3",
+        "day": "Sat",
+        "time": "12:30",
+        "duration": "60 min",
+        "status": "completed"
+      },
+      {
+        "id": "aus-qu",
+        "type": "Qualifying",
+        "day": "Sat",
+        "time": "16:00",
+        "duration": "60 min",
+        "status": "completed"
+      },
+      {
+        "id": "aus-race",
+        "type": "Race",
+        "day": "Sun",
+        "time": "15:00",
+        "duration": "58 laps",
+        "status": "completed"
+      }
+    ],
+    "circuitSvg": "/circuits/Australia.svg"
+  },
+  {
+    "id": "china",
+    "round": 2,
+    "name": "Chinese Grand Prix",
+    "circuit": "Shanghai International Circuit",
+    "location": "Shanghai",
+    "country": "China",
+    "date": "2026-03-13",
+    "endDate": "2026-03-15",
+    "status": "completed",
+    "isSprint": true,
+    "isSaturday": false,
+    "trackId": "shanghai",
+    "winner": "Kimi Antonelli",
+    "fastestLap": "Kimi Antonelli",
+    "polePosition": "Kimi Antonelli",
+    "sessions": [
+      {
+        "id": "chn-fp1",
+        "type": "FP1",
+        "day": "Fri",
+        "time": "11:30",
+        "duration": "60 min",
+        "status": "completed"
+      },
+      {
+        "id": "chn-sq",
+        "type": "Sprint Qualifying",
+        "day": "Fri",
+        "time": "15:30",
+        "duration": "45 min",
+        "status": "completed"
+      },
+      {
+        "id": "chn-sprint",
+        "type": "Sprint",
+        "day": "Sat",
+        "time": "11:00",
+        "duration": "19 laps",
+        "status": "completed"
+      },
+      {
+        "id": "chn-qu",
+        "type": "Qualifying",
+        "day": "Sat",
+        "time": "15:00",
+        "duration": "60 min",
+        "status": "completed"
+      },
+      {
+        "id": "chn-race",
+        "type": "Race",
+        "day": "Sun",
+        "time": "15:00",
+        "duration": "56 laps",
+        "status": "completed"
+      }
+    ],
+    "circuitSvg": "/circuits/China.svg"
+  },
+  {
+    "id": "japan",
+    "round": 3,
+    "name": "Japanese Grand Prix",
+    "circuit": "Suzuka International Racing Course",
+    "location": "Suzuka",
+    "country": "Japan",
+    "date": "2026-03-27",
+    "endDate": "2026-03-29",
+    "status": "completed",
+    "isSprint": false,
+    "isSaturday": false,
+    "trackId": "suzuka",
+    "winner": "Kimi Antonelli",
+    "fastestLap": "Kimi Antonelli",
+    "polePosition": "Kimi Antonelli",
+    "sessions": [
+      {
+        "id": "jpn-fp1",
+        "type": "FP1",
+        "day": "Fri",
+        "time": "11:30",
+        "duration": "60 min",
+        "status": "completed"
+      },
+      {
+        "id": "jpn-fp2",
+        "type": "FP2",
+        "day": "Fri",
+        "time": "15:00",
+        "duration": "60 min",
+        "status": "completed"
+      },
+      {
+        "id": "jpn-fp3",
+        "type": "FP3",
+        "day": "Sat",
+        "time": "11:30",
+        "duration": "60 min",
+        "status": "completed"
+      },
+      {
+        "id": "jpn-qu",
+        "type": "Qualifying",
+        "day": "Sat",
+        "time": "15:00",
+        "duration": "60 min",
+        "status": "completed"
+      },
+      {
+        "id": "jpn-race",
+        "type": "Race",
+        "day": "Sun",
+        "time": "14:00",
+        "duration": "53 laps",
+        "status": "completed"
+      }
+    ],
+    "circuitSvg": "/circuits/Suzuka.svg"
+  },
+  {
+    "id": "miami",
+    "round": 4,
+    "name": "Miami Grand Prix",
+    "circuit": "Miami International Autodrome",
+    "location": "Miami Gardens",
+    "country": "USA",
+    "date": "2026-05-01",
+    "endDate": "2026-05-03",
+    "status": "completed",
+    "isSprint": true,
+    "isSaturday": false,
+    "trackId": "miami",
+    "winner": "Kimi Antonelli",
+    "fastestLap": "Lando Norris",
+    "polePosition": "Kimi Antonelli",
+    "sessions": [
+      {
+        "id": "mia-fp1",
+        "type": "FP1",
+        "day": "Fri",
+        "time": "12:00",
+        "duration": "60 min",
+        "status": "completed"
+      },
+      {
+        "id": "mia-sq",
+        "type": "Sprint Qualifying",
+        "day": "Fri",
+        "time": "16:30",
+        "duration": "45 min",
+        "status": "completed"
+      },
+      {
+        "id": "mia-sprint",
+        "type": "Sprint",
+        "day": "Sat",
+        "time": "12:00",
+        "duration": "19 laps",
+        "status": "completed"
+      },
+      {
+        "id": "mia-qu",
+        "type": "Qualifying",
+        "day": "Sat",
+        "time": "16:00",
+        "duration": "60 min",
+        "status": "completed"
+      },
+      {
+        "id": "mia-race",
+        "type": "Race",
+        "day": "Sun",
+        "time": "13:00",
+        "duration": "57 laps",
+        "status": "completed"
+      }
+    ],
+    "circuitSvg": "/circuits/Miami.svg"
+  },
+  {
+    "id": "canada",
+    "round": 5,
+    "name": "Canadian Grand Prix",
+    "circuit": "Circuit Gilles Villeneuve",
+    "location": "Montréal",
+    "country": "Canada",
+    "date": "2026-05-22",
+    "endDate": "2026-05-24",
+    "status": "completed",
+    "isSprint": true,
+    "isSaturday": false,
+    "trackId": "montreal",
+    "winner": "Kimi Antonelli",
+    "fastestLap": "Kimi Antonelli",
+    "polePosition": "George Russell",
+    "sessions": [
+      {
+        "id": "can-fp1",
+        "type": "FP1",
+        "day": "Fri",
+        "time": "12:30",
+        "duration": "60 min",
+        "status": "completed"
+      },
+      {
+        "id": "can-sq",
+        "type": "Sprint Qualifying",
+        "day": "Fri",
+        "time": "16:30",
+        "duration": "45 min",
+        "status": "completed"
+      },
+      {
+        "id": "can-sprint",
+        "type": "Sprint",
+        "day": "Sat",
+        "time": "12:00",
+        "duration": "19 laps",
+        "status": "completed"
+      },
+      {
+        "id": "can-qu",
+        "type": "Qualifying",
+        "day": "Sat",
+        "time": "16:00",
+        "duration": "60 min",
+        "status": "completed"
+      },
+      {
+        "id": "can-race",
+        "type": "Race",
+        "day": "Sun",
+        "time": "16:00",
+        "duration": "68 laps",
+        "status": "completed"
+      }
+    ],
+    "circuitSvg": "/circuits/Canada.svg"
+  },
+  {
+    "id": "monaco",
+    "round": 6,
+    "name": "Monaco Grand Prix",
+    "circuit": "Circuit de Monaco",
+    "location": "Monte Carlo",
+    "country": "Monaco",
+    "date": "2026-06-05",
+    "endDate": "2026-06-07",
+    "status": "completed",
+    "isSprint": false,
+    "isSaturday": false,
+    "trackId": "monaco",
+    "winner": "Kimi Antonelli",
+    "fastestLap": "Kimi Antonelli",
+    "polePosition": "Kimi Antonelli",
+    "sessions": [
+      {
+        "id": "mon-fp1",
+        "type": "FP1",
+        "day": "Fri",
+        "time": "13:30",
+        "duration": "60 min",
+        "status": "completed"
+      },
+      {
+        "id": "mon-fp2",
+        "type": "FP2",
+        "day": "Fri",
+        "time": "17:00",
+        "duration": "60 min",
+        "status": "completed"
+      },
+      {
+        "id": "mon-fp3",
+        "type": "FP3",
+        "day": "Sat",
+        "time": "12:30",
+        "duration": "60 min",
+        "status": "completed"
+      },
+      {
+        "id": "mon-qu",
+        "type": "Qualifying",
+        "day": "Sat",
+        "time": "16:00",
+        "duration": "60 min",
+        "status": "completed"
+      },
+      {
+        "id": "mon-race",
+        "type": "Race",
+        "day": "Sun",
+        "time": "15:00",
+        "duration": "78 laps",
+        "status": "completed"
+      }
+    ],
+    "circuitSvg": "/circuits/Monaco.svg"
+  },
+  {
+    "id": "barcelona",
+    "round": 7,
+    "name": "Barcelona-Catalunya Grand Prix",
+    "circuit": "Circuit de Barcelona-Catalunya",
+    "location": "Barcelona",
+    "country": "Spain",
+    "date": "2026-06-12",
+    "endDate": "2026-06-14",
+    "status": "upcoming",
+    "isSprint": false,
+    "isSaturday": false,
+    "trackId": "barcelona",
+    "sessions": [
+      {
+        "id": "bar-fp1",
+        "type": "FP1",
+        "day": "Fri",
+        "time": "13:30",
+        "duration": "60 min",
+        "status": "upcoming"
+      },
+      {
+        "id": "bar-fp2",
+        "type": "FP2",
+        "day": "Fri",
+        "time": "17:00",
+        "duration": "60 min",
+        "status": "upcoming"
+      },
+      {
+        "id": "bar-fp3",
+        "type": "FP3",
+        "day": "Sat",
+        "time": "12:30",
+        "duration": "60 min",
+        "status": "upcoming"
+      },
+      {
+        "id": "bar-qu",
+        "type": "Qualifying",
+        "day": "Sat",
+        "time": "16:00",
+        "duration": "60 min",
+        "status": "upcoming"
+      },
+      {
+        "id": "bar-race",
+        "type": "Race",
+        "day": "Sun",
+        "time": "15:00",
+        "duration": "66 laps",
+        "status": "upcoming"
+      }
+    ],
+    "circuitSvg": "/circuits/Barcelona.svg"
+  },
+  {
+    "id": "austria",
+    "round": 8,
+    "name": "Austrian Grand Prix",
+    "circuit": "Red Bull Ring",
+    "location": "Spielberg",
+    "country": "Austria",
+    "date": "2026-06-26",
+    "endDate": "2026-06-28",
+    "status": "upcoming",
+    "isSprint": false,
+    "isSaturday": false,
+    "trackId": "red-bull-ring",
+    "sessions": [
+      {
+        "id": "aut-fp1",
+        "type": "FP1",
+        "day": "Fri",
+        "time": "13:30",
+        "duration": "60 min",
+        "status": "upcoming"
+      },
+      {
+        "id": "aut-fp2",
+        "type": "FP2",
+        "day": "Fri",
+        "time": "17:00",
+        "duration": "60 min",
+        "status": "upcoming"
+      },
+      {
+        "id": "aut-fp3",
+        "type": "FP3",
+        "day": "Sat",
+        "time": "12:30",
+        "duration": "60 min",
+        "status": "upcoming"
+      },
+      {
+        "id": "aut-qu",
+        "type": "Qualifying",
+        "day": "Sat",
+        "time": "16:00",
+        "duration": "60 min",
+        "status": "upcoming"
+      },
+      {
+        "id": "aut-race",
+        "type": "Race",
+        "day": "Sun",
+        "time": "15:00",
+        "duration": "71 laps",
+        "status": "upcoming"
+      }
+    ],
+    "circuitSvg": "/circuits/Austria.svg"
+  },
+  {
+    "id": "britain",
+    "round": 9,
+    "name": "British Grand Prix",
+    "circuit": "Silverstone Circuit",
+    "location": "Silverstone",
+    "country": "United Kingdom",
+    "date": "2026-07-03",
+    "endDate": "2026-07-05",
+    "status": "upcoming",
+    "isSprint": true,
+    "isSaturday": false,
+    "trackId": "silverstone",
+    "sessions": [
+      {
+        "id": "gbr-fp1",
+        "type": "FP1",
+        "day": "Fri",
+        "time": "12:30",
+        "duration": "60 min",
+        "status": "upcoming"
+      },
+      {
+        "id": "gbr-sq",
+        "type": "Sprint Qualifying",
+        "day": "Fri",
+        "time": "16:30",
+        "duration": "45 min",
+        "status": "upcoming"
+      },
+      {
+        "id": "gbr-sprint",
+        "type": "Sprint",
+        "day": "Sat",
+        "time": "12:00",
+        "duration": "19 laps",
+        "status": "upcoming"
+      },
+      {
+        "id": "gbr-qu",
+        "type": "Qualifying",
+        "day": "Sat",
+        "time": "16:00",
+        "duration": "60 min",
+        "status": "upcoming"
+      },
+      {
+        "id": "gbr-race",
+        "type": "Race",
+        "day": "Sun",
+        "time": "15:00",
+        "duration": "52 laps",
+        "status": "upcoming"
+      }
+    ],
+    "circuitSvg": "/circuits/Britian.svg"
+  },
+  {
+    "id": "belgium",
+    "round": 10,
+    "name": "Belgian Grand Prix",
+    "circuit": "Circuit de Spa-Francorchamps",
+    "location": "Spa",
+    "country": "Belgium",
+    "date": "2026-07-17",
+    "endDate": "2026-07-19",
+    "status": "upcoming",
+    "isSprint": false,
+    "isSaturday": false,
+    "trackId": "spa",
+    "sessions": [
+      {
+        "id": "bel-fp1",
+        "type": "FP1",
+        "day": "Fri",
+        "time": "13:30",
+        "duration": "60 min",
+        "status": "upcoming"
+      },
+      {
+        "id": "bel-fp2",
+        "type": "FP2",
+        "day": "Fri",
+        "time": "17:00",
+        "duration": "60 min",
+        "status": "upcoming"
+      },
+      {
+        "id": "bel-fp3",
+        "type": "FP3",
+        "day": "Sat",
+        "time": "12:30",
+        "duration": "60 min",
+        "status": "upcoming"
+      },
+      {
+        "id": "bel-qu",
+        "type": "Qualifying",
+        "day": "Sat",
+        "time": "16:00",
+        "duration": "60 min",
+        "status": "upcoming"
+      },
+      {
+        "id": "bel-race",
+        "type": "Race",
+        "day": "Sun",
+        "time": "15:00",
+        "duration": "44 laps",
+        "status": "upcoming"
+      }
+    ],
+    "circuitSvg": "/circuits/Belgium.svg"
+  },
+  {
+    "id": "hungary",
+    "round": 11,
+    "name": "Hungarian Grand Prix",
+    "circuit": "Hungaroring",
+    "location": "Budapest",
+    "country": "Hungary",
+    "date": "2026-07-24",
+    "endDate": "2026-07-26",
+    "status": "upcoming",
+    "isSprint": false,
+    "isSaturday": false,
+    "trackId": "hungaroring",
+    "sessions": [
+      {
+        "id": "hun-fp1",
+        "type": "FP1",
+        "day": "Fri",
+        "time": "13:30",
+        "duration": "60 min",
+        "status": "upcoming"
+      },
+      {
+        "id": "hun-fp2",
+        "type": "FP2",
+        "day": "Fri",
+        "time": "17:00",
+        "duration": "60 min",
+        "status": "upcoming"
+      },
+      {
+        "id": "hun-fp3",
+        "type": "FP3",
+        "day": "Sat",
+        "time": "12:30",
+        "duration": "60 min",
+        "status": "upcoming"
+      },
+      {
+        "id": "hun-qu",
+        "type": "Qualifying",
+        "day": "Sat",
+        "time": "16:00",
+        "duration": "60 min",
+        "status": "upcoming"
+      },
+      {
+        "id": "hun-race",
+        "type": "Race",
+        "day": "Sun",
+        "time": "15:00",
+        "duration": "70 laps",
+        "status": "upcoming"
+      }
+    ],
+    "circuitSvg": "/circuits/Hungary.svg"
+  },
+  {
+    "id": "netherlands",
+    "round": 12,
+    "name": "Dutch Grand Prix",
+    "circuit": "Circuit Zandvoort",
+    "location": "Zandvoort",
+    "country": "Netherlands",
+    "date": "2026-08-21",
+    "endDate": "2026-08-23",
+    "status": "upcoming",
+    "isSprint": true,
+    "isSaturday": false,
+    "trackId": "zandvoort",
+    "sessions": [
+      {
+        "id": "ned-fp1",
+        "type": "FP1",
+        "day": "Fri",
+        "time": "12:30",
+        "duration": "60 min",
+        "status": "upcoming"
+      },
+      {
+        "id": "ned-sq",
+        "type": "Sprint Qualifying",
+        "day": "Fri",
+        "time": "16:30",
+        "duration": "45 min",
+        "status": "upcoming"
+      },
+      {
+        "id": "ned-sprint",
+        "type": "Sprint",
+        "day": "Sat",
+        "time": "12:00",
+        "duration": "19 laps",
+        "status": "upcoming"
+      },
+      {
+        "id": "ned-qu",
+        "type": "Qualifying",
+        "day": "Sat",
+        "time": "16:00",
+        "duration": "60 min",
+        "status": "upcoming"
+      },
+      {
+        "id": "ned-race",
+        "type": "Race",
+        "day": "Sun",
+        "time": "15:00",
+        "duration": "72 laps",
+        "status": "upcoming"
+      }
+    ],
+    "circuitSvg": "/circuits/Zandvoort.svg"
+  },
+  {
+    "id": "italy",
+    "round": 13,
+    "name": "Italian Grand Prix",
+    "circuit": "Autodromo Nazionale Monza",
+    "location": "Monza",
+    "country": "Italy",
+    "date": "2026-09-04",
+    "endDate": "2026-09-06",
+    "status": "upcoming",
+    "isSprint": false,
+    "isSaturday": false,
+    "trackId": "monza",
+    "sessions": [
+      {
+        "id": "ita-fp1",
+        "type": "FP1",
+        "day": "Fri",
+        "time": "13:30",
+        "duration": "60 min",
+        "status": "upcoming"
+      },
+      {
+        "id": "ita-fp2",
+        "type": "FP2",
+        "day": "Fri",
+        "time": "17:00",
+        "duration": "60 min",
+        "status": "upcoming"
+      },
+      {
+        "id": "ita-fp3",
+        "type": "FP3",
+        "day": "Sat",
+        "time": "12:30",
+        "duration": "60 min",
+        "status": "upcoming"
+      },
+      {
+        "id": "ita-qu",
+        "type": "Qualifying",
+        "day": "Sat",
+        "time": "16:00",
+        "duration": "60 min",
+        "status": "upcoming"
+      },
+      {
+        "id": "ita-race",
+        "type": "Race",
+        "day": "Sun",
+        "time": "15:00",
+        "duration": "53 laps",
+        "status": "upcoming"
+      }
+    ],
+    "circuitSvg": "/circuits/Monza.svg"
+  },
+  {
+    "id": "spain",
+    "round": 14,
+    "name": "Spanish Grand Prix",
+    "circuit": "Madring Circuit",
+    "location": "Madrid",
+    "country": "Spain",
+    "date": "2026-09-11",
+    "endDate": "2026-09-13",
+    "status": "upcoming",
+    "isSprint": false,
+    "isSaturday": false,
+    "trackId": "madrid",
+    "sessions": [
+      {
+        "id": "esp-fp1",
+        "type": "FP1",
+        "day": "Fri",
+        "time": "13:30",
+        "duration": "60 min",
+        "status": "upcoming"
+      },
+      {
+        "id": "esp-fp2",
+        "type": "FP2",
+        "day": "Fri",
+        "time": "17:00",
+        "duration": "60 min",
+        "status": "upcoming"
+      },
+      {
+        "id": "esp-fp3",
+        "type": "FP3",
+        "day": "Sat",
+        "time": "12:30",
+        "duration": "60 min",
+        "status": "upcoming"
+      },
+      {
+        "id": "esp-qu",
+        "type": "Qualifying",
+        "day": "Sat",
+        "time": "16:00",
+        "duration": "60 min",
+        "status": "upcoming"
+      },
+      {
+        "id": "esp-race",
+        "type": "Race",
+        "day": "Sun",
+        "time": "15:00",
+        "duration": "62 laps",
+        "status": "upcoming"
+      }
+    ],
+    "circuitSvg": "/circuits/Madrid.svg"
+  },
+  {
+    "id": "azerbaijan",
+    "round": 15,
+    "name": "Azerbaijan Grand Prix",
+    "circuit": "Baku City Circuit",
+    "location": "Baku",
+    "country": "Azerbaijan",
+    "date": "2026-09-24",
+    "endDate": "2026-09-26",
+    "status": "upcoming",
+    "isSprint": false,
+    "isSaturday": true,
+    "trackId": "baku",
+    "sessions": [
+      {
+        "id": "aze-fp1",
+        "type": "FP1",
+        "day": "Thu",
+        "time": "12:30",
+        "duration": "60 min",
+        "status": "upcoming"
+      },
+      {
+        "id": "aze-fp2",
+        "type": "FP2",
+        "day": "Fri",
+        "time": "12:30",
+        "duration": "60 min",
+        "status": "upcoming"
+      },
+      {
+        "id": "aze-fp3",
+        "type": "FP3",
+        "day": "Fri",
+        "time": "16:00",
+        "duration": "60 min",
+        "status": "upcoming"
+      },
+      {
+        "id": "aze-qu",
+        "type": "Qualifying",
+        "day": "Fri",
+        "time": "19:00",
+        "duration": "60 min",
+        "status": "upcoming"
+      },
+      {
+        "id": "aze-race",
+        "type": "Race",
+        "day": "Sat",
+        "time": "13:00",
+        "duration": "51 laps",
+        "status": "upcoming"
+      }
+    ],
+    "circuitSvg": "/circuits/Azerbaijan.svg"
+  },
+  {
+    "id": "singapore",
+    "round": 16,
+    "name": "Singapore Grand Prix",
+    "circuit": "Marina Bay Street Circuit",
+    "location": "Singapore",
+    "country": "Singapore",
+    "date": "2026-10-09",
+    "endDate": "2026-10-11",
+    "status": "upcoming",
+    "isSprint": true,
+    "isSaturday": false,
+    "trackId": "singapore",
+    "sessions": [
+      {
+        "id": "sin-fp1",
+        "type": "FP1",
+        "day": "Fri",
+        "time": "17:30",
+        "duration": "60 min",
+        "status": "upcoming"
+      },
+      {
+        "id": "sin-sq",
+        "type": "Sprint Qualifying",
+        "day": "Fri",
+        "time": "21:30",
+        "duration": "45 min",
+        "status": "upcoming"
+      },
+      {
+        "id": "sin-sprint",
+        "type": "Sprint",
+        "day": "Sat",
+        "time": "17:00",
+        "duration": "19 laps",
+        "status": "upcoming"
+      },
+      {
+        "id": "sin-qu",
+        "type": "Qualifying",
+        "day": "Sat",
+        "time": "21:00",
+        "duration": "60 min",
+        "status": "upcoming"
+      },
+      {
+        "id": "sin-race",
+        "type": "Race",
+        "day": "Sun",
+        "time": "20:00",
+        "duration": "61 laps",
+        "status": "upcoming"
+      }
+    ],
+    "circuitSvg": "/circuits/Singapore.svg"
+  },
+  {
+    "id": "united-states",
+    "round": 17,
+    "name": "United States Grand Prix",
+    "circuit": "Circuit of the Americas",
+    "location": "Austin",
+    "country": "USA",
+    "date": "2026-10-23",
+    "endDate": "2026-10-25",
+    "status": "upcoming",
+    "isSprint": false,
+    "isSaturday": false,
+    "trackId": "cota",
+    "sessions": [
+      {
+        "id": "usa-fp1",
+        "type": "FP1",
+        "day": "Fri",
+        "time": "12:30",
+        "duration": "60 min",
+        "status": "upcoming"
+      },
+      {
+        "id": "usa-fp2",
+        "type": "FP2",
+        "day": "Fri",
+        "time": "16:00",
+        "duration": "60 min",
+        "status": "upcoming"
+      },
+      {
+        "id": "usa-fp3",
+        "type": "FP3",
+        "day": "Sat",
+        "time": "12:30",
+        "duration": "60 min",
+        "status": "upcoming"
+      },
+      {
+        "id": "usa-qu",
+        "type": "Qualifying",
+        "day": "Sat",
+        "time": "16:00",
+        "duration": "60 min",
+        "status": "upcoming"
+      },
+      {
+        "id": "usa-race",
+        "type": "Race",
+        "day": "Sun",
+        "time": "15:00",
+        "duration": "56 laps",
+        "status": "upcoming"
+      }
+    ],
+    "circuitSvg": "/circuits/COTA.svg"
+  },
+  {
+    "id": "mexico",
+    "round": 18,
+    "name": "Mexico City Grand Prix",
+    "circuit": "Autodromo Hermanos Rodriguez",
+    "location": "Mexico City",
+    "country": "Mexico",
+    "date": "2026-10-30",
+    "endDate": "2026-11-01",
+    "status": "upcoming",
+    "isSprint": false,
+    "isSaturday": false,
+    "trackId": "mexico-city",
+    "sessions": [
+      {
+        "id": "mex-fp1",
+        "type": "FP1",
+        "day": "Fri",
+        "time": "12:30",
+        "duration": "60 min",
+        "status": "upcoming"
+      },
+      {
+        "id": "mex-fp2",
+        "type": "FP2",
+        "day": "Fri",
+        "time": "16:00",
+        "duration": "60 min",
+        "status": "upcoming"
+      },
+      {
+        "id": "mex-fp3",
+        "type": "FP3",
+        "day": "Sat",
+        "time": "12:30",
+        "duration": "60 min",
+        "status": "upcoming"
+      },
+      {
+        "id": "mex-qu",
+        "type": "Qualifying",
+        "day": "Sat",
+        "time": "16:00",
+        "duration": "60 min",
+        "status": "upcoming"
+      },
+      {
+        "id": "mex-race",
+        "type": "Race",
+        "day": "Sun",
+        "time": "15:00",
+        "duration": "71 laps",
+        "status": "upcoming"
+      }
+    ],
+    "circuitSvg": "/circuits/Mexico.svg"
+  },
+  {
+    "id": "brazil",
+    "round": 19,
+    "name": "Brazilian Grand Prix",
+    "circuit": "Autodromo Jose Carlos Pace",
+    "location": "São Paulo",
+    "country": "Brazil",
+    "date": "2026-11-06",
+    "endDate": "2026-11-08",
+    "status": "upcoming",
+    "isSprint": false,
+    "isSaturday": false,
+    "trackId": "interlagos",
+    "sessions": [
+      {
+        "id": "bra-fp1",
+        "type": "FP1",
+        "day": "Fri",
+        "time": "12:30",
+        "duration": "60 min",
+        "status": "upcoming"
+      },
+      {
+        "id": "bra-fp2",
+        "type": "FP2",
+        "day": "Fri",
+        "time": "16:00",
+        "duration": "60 min",
+        "status": "upcoming"
+      },
+      {
+        "id": "bra-fp3",
+        "type": "FP3",
+        "day": "Sat",
+        "time": "12:30",
+        "duration": "60 min",
+        "status": "upcoming"
+      },
+      {
+        "id": "bra-qu",
+        "type": "Qualifying",
+        "day": "Sat",
+        "time": "16:00",
+        "duration": "60 min",
+        "status": "upcoming"
+      },
+      {
+        "id": "bra-race",
+        "type": "Race",
+        "day": "Sun",
+        "time": "15:00",
+        "duration": "71 laps",
+        "status": "upcoming"
+      }
+    ],
+    "circuitSvg": "/circuits/Brazil.svg"
+  },
+  {
+    "id": "las-vegas",
+    "round": 20,
+    "name": "Las Vegas Grand Prix",
+    "circuit": "Las Vegas Strip Circuit",
+    "location": "Las Vegas",
+    "country": "USA",
+    "date": "2026-11-19",
+    "endDate": "2026-11-21",
+    "status": "upcoming",
+    "isSprint": false,
+    "isSaturday": true,
+    "trackId": "las-vegas",
+    "sessions": [
+      {
+        "id": "lv-fp1",
+        "type": "FP1",
+        "day": "Wed",
+        "time": "18:30",
+        "duration": "60 min",
+        "status": "upcoming"
+      },
+      {
+        "id": "lv-fp2",
+        "type": "FP2",
+        "day": "Thu",
+        "time": "18:30",
+        "duration": "60 min",
+        "status": "upcoming"
+      },
+      {
+        "id": "lv-fp3",
+        "type": "FP3",
+        "day": "Fri",
+        "time": "18:30",
+        "duration": "60 min",
+        "status": "upcoming"
+      },
+      {
+        "id": "lv-qu",
+        "type": "Qualifying",
+        "day": "Fri",
+        "time": "22:00",
+        "duration": "60 min",
+        "status": "upcoming"
+      },
+      {
+        "id": "lv-race",
+        "type": "Race",
+        "day": "Sat",
+        "time": "22:00",
+        "duration": "50 laps",
+        "status": "upcoming"
+      }
+    ],
+    "circuitSvg": "/circuits/Las-Vegas.svg"
+  },
+  {
+    "id": "qatar",
+    "round": 21,
+    "name": "Qatar Grand Prix",
+    "circuit": "Lusail International Circuit",
+    "location": "Lusail",
+    "country": "Qatar",
+    "date": "2026-11-27",
+    "endDate": "2026-11-29",
+    "status": "upcoming",
+    "isSprint": false,
+    "isSaturday": false,
+    "trackId": "losail",
+    "sessions": [
+      {
+        "id": "qat-fp1",
+        "type": "FP1",
+        "day": "Fri",
+        "time": "16:30",
+        "duration": "60 min",
+        "status": "upcoming"
+      },
+      {
+        "id": "qat-fp2",
+        "type": "FP2",
+        "day": "Fri",
+        "time": "20:00",
+        "duration": "60 min",
+        "status": "upcoming"
+      },
+      {
+        "id": "qat-fp3",
+        "type": "FP3",
+        "day": "Sat",
+        "time": "16:30",
+        "duration": "60 min",
+        "status": "upcoming"
+      },
+      {
+        "id": "qat-qu",
+        "type": "Qualifying",
+        "day": "Sat",
+        "time": "20:00",
+        "duration": "60 min",
+        "status": "upcoming"
+      },
+      {
+        "id": "qat-race",
+        "type": "Race",
+        "day": "Sun",
+        "time": "19:00",
+        "duration": "57 laps",
+        "status": "upcoming"
+      }
+    ],
+    "circuitSvg": "/circuits/Qatar.svg"
+  },
+  {
+    "id": "abu-dhabi",
+    "round": 22,
+    "name": "Abu Dhabi Grand Prix",
+    "circuit": "Yas Marina Circuit",
+    "location": "Abu Dhabi",
+    "country": "UAE",
+    "date": "2026-12-04",
+    "endDate": "2026-12-06",
+    "status": "upcoming",
+    "isSprint": false,
+    "isSaturday": false,
+    "trackId": "yas-marina",
+    "sessions": [
+      {
+        "id": "uae-fp1",
+        "type": "FP1",
+        "day": "Fri",
+        "time": "13:30",
+        "duration": "60 min",
+        "status": "upcoming"
+      },
+      {
+        "id": "uae-fp2",
+        "type": "FP2",
+        "day": "Fri",
+        "time": "17:00",
+        "duration": "60 min",
+        "status": "upcoming"
+      },
+      {
+        "id": "uae-fp3",
+        "type": "FP3",
+        "day": "Sat",
+        "time": "12:30",
+        "duration": "60 min",
+        "status": "upcoming"
+      },
+      {
+        "id": "uae-qu",
+        "type": "Qualifying",
+        "day": "Sat",
+        "time": "16:00",
+        "duration": "60 min",
+        "status": "upcoming"
+      },
+      {
+        "id": "uae-race",
+        "type": "Race",
+        "day": "Sun",
+        "time": "17:00",
+        "duration": "58 laps",
+        "status": "upcoming"
+      }
+    ],
+    "circuitSvg": "/circuits/Abu-Dhabi.svg"
+  }
+]

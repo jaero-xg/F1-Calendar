@@ -22,16 +22,14 @@ export interface SeasonSummary {
   podiums: number;
   poles: number;
   fastestLaps: number;
-  championships: number;
   starts: number;
 }
 
 export interface DriverAllTime {
-  points: number;
   wins: number;
   podiums: number;
   poles: number;
-  fastestLaps: number;
+  fastestLaps: number;  // ← KEEP THIS
   championships: number;
   starts: number;
 }
@@ -78,6 +76,7 @@ export interface Team {
   wins: number;
   podiums: number;
   poles: number;
+  fastestLaps: number;
   drivers: string[];
   description: string;
 }
@@ -141,6 +140,7 @@ export interface Race {
   isSprint: boolean;
   isSaturday: boolean;
   trackId: string;
+  circuitSvg?: string;  // <-- ADDED: optional SVG path from tracks data
   sessions: Session[];
   winner?: string;
   fastestLap?: string;

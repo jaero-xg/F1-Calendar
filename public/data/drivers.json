@@ -1,0 +1,4280 @@
+[
+  {
+    "id": "antonelli",
+    "number": 12,
+    "firstName": "Kimi",
+    "lastName": "Antonelli",
+    "team": "Mercedes",
+    "teamId": "mercedes",
+    "teamColor": "#27F4D2",
+    "country": "Italy",
+    "countryCode": "IT",
+    "image": "/drivers/Kimi_Antonelli.png",
+    "bio": "...",
+    "season": {
+      "year": 2026,
+      "points": 143,
+      "wins": 5,
+      "podiums": 6,
+      "poles": 4,
+      "fastestLaps": 4,
+      "starts": 6
+    },
+    "allTime": {
+      "wins": 10,
+      "podiums": 15,
+      "poles": 8,
+      "fastestLaps": 11,
+      "championships": 0,
+      "starts": 37
+    },
+    "seasonStats": [
+      {
+        "race": "Australia",
+        "position": 2,
+        "points": 18,
+        "pole": false,
+        "fastestLap": false
+      },
+      {
+        "race": "China",
+        "position": 1,
+        "points": 25,
+        "pole": true,
+        "fastestLap": true
+      },
+      {
+        "race": "Japan",
+        "position": 1,
+        "points": 25,
+        "pole": true,
+        "fastestLap": true
+      },
+      {
+        "race": "Miami",
+        "position": 1,
+        "points": 25,
+        "pole": true,
+        "fastestLap": false
+      },
+      {
+        "race": "Canada",
+        "position": 1,
+        "points": 25,
+        "pole": false,
+        "fastestLap": true
+      },
+      {
+        "race": "Monaco",
+        "position": 1,
+        "points": 25,
+        "pole": true,
+        "fastestLap": true
+      },
+      {
+        "race": "Barcelona",
+        "position": 99,
+        "points": 0,
+        "pole": false,
+        "fastestLap": false
+      },
+      {
+        "race": "Austrian",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      },
+      {
+        "race": "British",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      },
+      {
+        "race": "Belgian",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      },
+      {
+        "race": "Hungarian",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      },
+      {
+        "race": "Dutch",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      },
+      {
+        "race": "Italian",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      },
+      {
+        "race": "Spanish",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      },
+      {
+        "race": "Azerbaijan",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      },
+      {
+        "race": "Singapore",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      },
+      {
+        "race": "United States",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      },
+      {
+        "race": "Mexico City",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      },
+      {
+        "race": "Brazilian",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      },
+      {
+        "race": "Las Vegas",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      },
+      {
+        "race": "Qatar",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      },
+      {
+        "race": "Abu Dhabi",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      }
+    ]
+  },
+  {
+    "id": "hamilton",
+    "number": 44,
+    "firstName": "Lewis",
+    "lastName": "Hamilton",
+    "team": "Ferrari",
+    "teamId": "ferrari",
+    "teamColor": "#E8002D",
+    "country": "United Kingdom",
+    "countryCode": "GB",
+    "image": "/drivers/Lewis-Hamilton.png",
+    "bio": "The seven-time World Champion continues to show strong form in his first Ferrari season, with consistent podium finishes keeping him firmly in the championship fight. Back-to-back podiums in Canada and Monaco have strengthened his push for an eighth title.",
+    "season": {
+      "year": 2026,
+      "points": 104,
+      "wins": 1,
+      "podiums": 4,
+      "poles": 0,
+      "fastestLaps": 1,
+      "starts": 7
+    },
+    "allTime": {
+      "wins": 19,
+      "podiums": 50,
+      "poles": 21,
+      "fastestLaps": 12,
+      "championships": 7,
+      "starts": 107
+    },
+    "seasonStats": [
+      {
+        "race": "Australia",
+        "position": 4,
+        "points": 12,
+        "pole": false,
+        "fastestLap": false
+      },
+      {
+        "race": "China",
+        "position": 3,
+        "points": 15,
+        "pole": false,
+        "fastestLap": false
+      },
+      {
+        "race": "Japan",
+        "position": 6,
+        "points": 8,
+        "pole": false,
+        "fastestLap": false
+      },
+      {
+        "race": "Miami",
+        "position": 6,
+        "points": 8,
+        "pole": false,
+        "fastestLap": false
+      },
+      {
+        "race": "Canada",
+        "position": 2,
+        "points": 18,
+        "pole": false,
+        "fastestLap": false
+      },
+      {
+        "race": "Monaco",
+        "position": 2,
+        "points": 18,
+        "pole": false,
+        "fastestLap": false
+      },
+      {
+        "race": "Barcelona",
+        "position": 1,
+        "points": 25,
+        "pole": false,
+        "fastestLap": true
+      },
+      {
+        "race": "Austrian",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      },
+      {
+        "race": "British",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      },
+      {
+        "race": "Belgian",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      },
+      {
+        "race": "Hungarian",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      },
+      {
+        "race": "Dutch",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      },
+      {
+        "race": "Italian",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      },
+      {
+        "race": "Spanish",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      },
+      {
+        "race": "Azerbaijan",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      },
+      {
+        "race": "Singapore",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      },
+      {
+        "race": "United States",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      },
+      {
+        "race": "Mexico City",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      },
+      {
+        "race": "Brazilian",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      },
+      {
+        "race": "Las Vegas",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      },
+      {
+        "race": "Qatar",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      },
+      {
+        "race": "Abu Dhabi",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      }
+    ]
+  },
+  {
+    "id": "russell",
+    "number": 63,
+    "firstName": "George",
+    "lastName": "Russell",
+    "team": "Mercedes",
+    "teamId": "mercedes",
+    "teamColor": "#27F4D2",
+    "country": "United Kingdom",
+    "countryCode": "GB",
+    "image": "/drivers/george-russell.png",
+    "bio": "George Russell opened the 2026 season in perfect fashion, winning Australia from pole. Two difficult weekends in Canada and Monaco — where a power unit failure and a drive-through penalty cost him dearly — have allowed Hamilton to leapfrog him into second.",
+    "season": {
+      "year": 2026,
+      "points": 85,
+      "wins": 1,
+      "podiums": 3,
+      "poles": 3,
+      "fastestLaps": 0,
+      "starts": 6
+    },
+    "allTime": {
+      "wins": 2,
+      "podiums": 13,
+      "poles": 4,
+      "fastestLaps": 6,
+      "championships": 0,
+      "starts": 106
+    },
+    "seasonStats": [
+      {
+        "race": "Australia",
+        "position": 1,
+        "points": 25,
+        "pole": true,
+        "fastestLap": false
+      },
+      {
+        "race": "China",
+        "position": 2,
+        "points": 18,
+        "pole": false,
+        "fastestLap": false
+      },
+      {
+        "race": "Japan",
+        "position": 4,
+        "points": 12,
+        "pole": false,
+        "fastestLap": false
+      },
+      {
+        "race": "Miami",
+        "position": 4,
+        "points": 12,
+        "pole": false,
+        "fastestLap": false
+      },
+      {
+        "race": "Canada",
+        "position": 99,
+        "points": 0,
+        "pole": true,
+        "fastestLap": false
+      },
+      {
+        "race": "Monaco",
+        "position": 12,
+        "points": 0,
+        "pole": false,
+        "fastestLap": false
+      },
+      {
+        "race": "Barcelona",
+        "position": 2,
+        "points": 18,
+        "pole": true,
+        "fastestLap": false
+      },
+      {
+        "race": "Austrian",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      },
+      {
+        "race": "British",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      },
+      {
+        "race": "Belgian",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      },
+      {
+        "race": "Hungarian",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      },
+      {
+        "race": "Dutch",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      },
+      {
+        "race": "Italian",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      },
+      {
+        "race": "Spanish",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      },
+      {
+        "race": "Azerbaijan",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      },
+      {
+        "race": "Singapore",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      },
+      {
+        "race": "United States",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      },
+      {
+        "race": "Mexico City",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      },
+      {
+        "race": "Brazilian",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      },
+      {
+        "race": "Las Vegas",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      },
+      {
+        "race": "Qatar",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      },
+      {
+        "race": "Abu Dhabi",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      }
+    ]
+  },
+  {
+    "id": "leclerc",
+    "number": 16,
+    "firstName": "Charles",
+    "lastName": "Leclerc",
+    "team": "Ferrari",
+    "teamId": "ferrari",
+    "teamColor": "#E8002D",
+    "country": "Monaco",
+    "countryCode": "MC",
+    "image": "/drivers/Charles-Leclerc.png",
+    "bio": "Charles Leclerc started 2026 strongly, claiming two podiums in the opening three races. A late crash at his home Monaco Grand Prix was a painful blow to his championship hopes, leaving him 81 points adrift of Antonelli.",
+    "season": {
+      "year": 2026,
+      "points": 70,
+      "wins": 0,
+      "podiums": 2,
+      "poles": 0,
+      "fastestLaps": 0,
+      "starts": 6
+    },
+    "allTime": {
+      "wins": 5,
+      "podiums": 25,
+      "poles": 17,
+      "fastestLaps": 7,
+      "championships": 0,
+      "starts": 106
+    },
+    "seasonStats": [
+      {
+        "race": "Australia",
+        "position": 3,
+        "points": 15,
+        "pole": false,
+        "fastestLap": false
+      },
+      {
+        "race": "China",
+        "position": 4,
+        "points": 12,
+        "pole": false,
+        "fastestLap": false
+      },
+      {
+        "race": "Japan",
+        "position": 3,
+        "points": 15,
+        "pole": false,
+        "fastestLap": false
+      },
+      {
+        "race": "Miami",
+        "position": 8,
+        "points": 4,
+        "pole": false,
+        "fastestLap": false
+      },
+      {
+        "race": "Canada",
+        "position": 4,
+        "points": 12,
+        "pole": false,
+        "fastestLap": false
+      },
+      {
+        "race": "Monaco",
+        "position": 99,
+        "points": 0,
+        "pole": false,
+        "fastestLap": false
+      },
+      {
+        "race": "Barcelona",
+        "position": 4,
+        "points": 12,
+        "pole": false,
+        "fastestLap": false
+      },
+      {
+        "race": "Austrian",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      },
+      {
+        "race": "British",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      },
+      {
+        "race": "Belgian",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      },
+      {
+        "race": "Hungarian",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      },
+      {
+        "race": "Dutch",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      },
+      {
+        "race": "Italian",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      },
+      {
+        "race": "Spanish",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      },
+      {
+        "race": "Azerbaijan",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      },
+      {
+        "race": "Singapore",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      },
+      {
+        "race": "United States",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      },
+      {
+        "race": "Mexico City",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      },
+      {
+        "race": "Brazilian",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      },
+      {
+        "race": "Las Vegas",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      },
+      {
+        "race": "Qatar",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      },
+      {
+        "race": "Abu Dhabi",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      }
+    ]
+  },
+  {
+    "id": "piastri",
+    "number": 81,
+    "firstName": "Oscar",
+    "lastName": "Piastri",
+    "team": "McLaren",
+    "teamId": "mclaren",
+    "teamColor": "#FF8000",
+    "country": "Australia",
+    "countryCode": "AU",
+    "image": "/drivers/oscar-piastri.png",
+    "bio": "Oscar Piastri has been McLaren's most consistent scorer in 2026, picking up two podiums including a second place in Japan. As Lando Norris has struggled with mechanical issues, Piastri has emerged as the team's championship hope.",
+    "season": {
+      "year": 2026,
+      "points": 53,
+      "wins": 0,
+      "podiums": 2,
+      "poles": 0,
+      "fastestLaps": 0,
+      "starts": 4
+    },
+    "allTime": {
+      "wins": 9,
+      "podiums": 30,
+      "poles": 6,
+      "fastestLaps": 9,
+      "championships": 0,
+      "starts": 81
+    },
+    "seasonStats": [
+      {
+        "race": "Australia",
+        "position": 99,
+        "points": 0,
+        "pole": false,
+        "fastestLap": false
+      },
+      {
+        "race": "China",
+        "position": 99,
+        "points": 0,
+        "pole": false,
+        "fastestLap": false
+      },
+      {
+        "race": "Japan",
+        "position": 2,
+        "points": 18,
+        "pole": false,
+        "fastestLap": false
+      },
+      {
+        "race": "Miami",
+        "position": 3,
+        "points": 15,
+        "pole": false,
+        "fastestLap": false
+      },
+      {
+        "race": "Canada",
+        "position": 99,
+        "points": 0,
+        "pole": false,
+        "fastestLap": false
+      },
+      {
+        "race": "Monaco",
+        "position": 5,
+        "points": 10,
+        "pole": false,
+        "fastestLap": false
+      },
+      {
+        "race": "Barcelona",
+        "position": 5,
+        "points": 10,
+        "pole": false,
+        "fastestLap": false
+      },
+      {
+        "race": "Austrian",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      },
+      {
+        "race": "British",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      },
+      {
+        "race": "Belgian",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      },
+      {
+        "race": "Hungarian",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      },
+      {
+        "race": "Dutch",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      },
+      {
+        "race": "Italian",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      },
+      {
+        "race": "Spanish",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      },
+      {
+        "race": "Azerbaijan",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      },
+      {
+        "race": "Singapore",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      },
+      {
+        "race": "United States",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      },
+      {
+        "race": "Mexico City",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      },
+      {
+        "race": "Brazilian",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      },
+      {
+        "race": "Las Vegas",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      },
+      {
+        "race": "Qatar",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      },
+      {
+        "race": "Abu Dhabi",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      }
+    ]
+  },
+  {
+    "id": "norris",
+    "number": 4,
+    "firstName": "Lando",
+    "lastName": "Norris",
+    "team": "McLaren",
+    "teamId": "mclaren",
+    "teamColor": "#FF8000",
+    "country": "United Kingdom",
+    "countryCode": "GB",
+    "image": "/drivers/Lando-Norris.png",
+    "bio": "The reigning World Champion has endured a difficult title defence in 2026. A strong second place in Miami offered hope, but back-to-back mechanical retirements in Canada and Monaco have left Norris 98 points off the lead.",
+    "season": {
+      "year": 2026,
+      "points": 53,
+      "wins": 0,
+      "podiums": 2,
+      "poles": 0,
+      "fastestLaps": 1,
+      "starts": 4
+    },
+    "allTime": {
+      "wins": 0,
+      "podiums": 14,
+      "poles": 1,
+      "fastestLaps": 6,
+      "championships": 1,
+      "starts": 104
+    },
+    "seasonStats": [
+      {
+        "race": "Australia",
+        "position": 5,
+        "points": 10,
+        "pole": false,
+        "fastestLap": false
+      },
+      {
+        "race": "China",
+        "position": 99,
+        "points": 0,
+        "pole": false,
+        "fastestLap": false
+      },
+      {
+        "race": "Japan",
+        "position": 5,
+        "points": 10,
+        "pole": false,
+        "fastestLap": false
+      },
+      {
+        "race": "Miami",
+        "position": 2,
+        "points": 18,
+        "pole": false,
+        "fastestLap": true
+      },
+      {
+        "race": "Canada",
+        "position": 99,
+        "points": 0,
+        "pole": false,
+        "fastestLap": false
+      },
+      {
+        "race": "Monaco",
+        "position": 99,
+        "points": 0,
+        "pole": false,
+        "fastestLap": false
+      },
+      {
+        "race": "Barcelona",
+        "position": 3,
+        "points": 15,
+        "pole": false,
+        "fastestLap": false
+      },
+      {
+        "race": "Austrian",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      },
+      {
+        "race": "British",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      },
+      {
+        "race": "Belgian",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      },
+      {
+        "race": "Hungarian",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      },
+      {
+        "race": "Dutch",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      },
+      {
+        "race": "Italian",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      },
+      {
+        "race": "Spanish",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      },
+      {
+        "race": "Azerbaijan",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      },
+      {
+        "race": "Singapore",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      },
+      {
+        "race": "United States",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      },
+      {
+        "race": "Mexico City",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      },
+      {
+        "race": "Brazilian",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      },
+      {
+        "race": "Las Vegas",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      },
+      {
+        "race": "Qatar",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      },
+      {
+        "race": "Abu Dhabi",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      }
+    ]
+  },
+  {
+    "id": "verstappen",
+    "number": 3,
+    "firstName": "Max",
+    "lastName": "Verstappen",
+    "team": "Red Bull Racing",
+    "teamId": "red-bull",
+    "teamColor": "#3671C6",
+    "country": "Netherlands",
+    "countryCode": "NL",
+    "image": "/drivers/Max-Verstappen.png",
+    "bio": "The four-time World Champion has had a torrid start to 2026. A failure to score in Australia and a first-lap retirement in Monaco have left Verstappen 113 points off the lead, with Red Bull still searching for answers about their car's performance.",
+    "season": {
+      "year": 2026,
+      "points": 0,
+      "wins": 0,
+      "podiums": 0,
+      "poles": 0,
+      "fastestLaps": 0,
+      "starts": 0
+    },
+    "allTime": {
+      "wins": 0,
+      "podiums": 2,
+      "poles": 0,
+      "fastestLaps": 0,
+      "championships": 4,
+      "starts": 100
+    },
+    "seasonStats": [
+      {
+        "race": "Australia",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      },
+      {
+        "race": "China",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      },
+      {
+        "race": "Japan",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      },
+      {
+        "race": "Miami",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      },
+      {
+        "race": "Canada",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      },
+      {
+        "race": "Monaco",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      },
+      {
+        "race": "Barcelona",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      },
+      {
+        "race": "Austrian",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      },
+      {
+        "race": "British",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      },
+      {
+        "race": "Belgian",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      },
+      {
+        "race": "Hungarian",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      },
+      {
+        "race": "Dutch",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      },
+      {
+        "race": "Italian",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      },
+      {
+        "race": "Spanish",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      },
+      {
+        "race": "Azerbaijan",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      },
+      {
+        "race": "Singapore",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      },
+      {
+        "race": "United States",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      },
+      {
+        "race": "Mexico City",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      },
+      {
+        "race": "Brazilian",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      },
+      {
+        "race": "Las Vegas",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      },
+      {
+        "race": "Qatar",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      },
+      {
+        "race": "Abu Dhabi",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      }
+    ]
+  },
+  {
+    "id": "hadjar",
+    "number": 6,
+    "firstName": "Isack",
+    "lastName": "Hadjar",
+    "team": "Red Bull Racing",
+    "teamId": "red-bull",
+    "teamColor": "#3671C6",
+    "country": "France",
+    "countryCode": "FR",
+    "image": "/drivers/Isack-Hadjar.png",
+    "bio": "Isack Hadjar has been quietly building his points tally at Red Bull Racing. The French rookie claimed his first F1 podium at Monaco — one of the most prestigious circuits in the world — demonstrating the composure of a seasoned veteran.",
+    "season": {
+      "year": 2026,
+      "points": 17,
+      "wins": 0,
+      "podiums": 0,
+      "poles": 0,
+      "fastestLaps": 0,
+      "starts": 4
+    },
+    "allTime": {
+      "wins": 0,
+      "podiums": 1,
+      "poles": 0,
+      "fastestLaps": 0,
+      "championships": 0,
+      "starts": 35
+    },
+    "seasonStats": [
+      {
+        "race": "Australia",
+        "position": 99,
+        "points": 0,
+        "pole": false,
+        "fastestLap": false
+      },
+      {
+        "race": "China",
+        "position": 8,
+        "points": 4,
+        "pole": false,
+        "fastestLap": false
+      },
+      {
+        "race": "Japan",
+        "position": 12,
+        "points": 0,
+        "pole": false,
+        "fastestLap": false
+      },
+      {
+        "race": "Miami",
+        "position": 99,
+        "points": 0,
+        "pole": false,
+        "fastestLap": false
+      },
+      {
+        "race": "Canada",
+        "position": 99,
+        "points": 10,
+        "pole": false,
+        "fastestLap": false
+      },
+      {
+        "race": "Monaco",
+        "position": 4,
+        "points": 12,
+        "pole": false,
+        "fastestLap": false
+      },
+      {
+        "race": "Barcelona",
+        "position": 10,
+        "points": 1,
+        "pole": false,
+        "fastestLap": false
+      },
+      {
+        "race": "Austrian",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      },
+      {
+        "race": "British",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      },
+      {
+        "race": "Belgian",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      },
+      {
+        "race": "Hungarian",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      },
+      {
+        "race": "Dutch",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      },
+      {
+        "race": "Italian",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      },
+      {
+        "race": "Spanish",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      },
+      {
+        "race": "Azerbaijan",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      },
+      {
+        "race": "Singapore",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      },
+      {
+        "race": "United States",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      },
+      {
+        "race": "Mexico City",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      },
+      {
+        "race": "Brazilian",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      },
+      {
+        "race": "Las Vegas",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      },
+      {
+        "race": "Qatar",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      },
+      {
+        "race": "Abu Dhabi",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      }
+    ]
+  },
+  {
+    "id": "lawson",
+    "number": 30,
+    "firstName": "Liam",
+    "lastName": "Lawson",
+    "team": "Racing Bulls",
+    "teamId": "rb",
+    "teamColor": "#6692FF",
+    "country": "New Zealand",
+    "countryCode": "NZ",
+    "image": "/drivers/Liam-Lawson.png",
+    "bio": "Liam Lawson has been one of the quiet achievers of the 2026 season. The New Zealander equalled the best result of his career with fifth in Monaco, and his consistency has Racing Bulls eyeing a strong mid-table constructors' position.",
+    "season": {
+      "year": 2026,
+      "points": 16,
+      "wins": 0,
+      "podiums": 0,
+      "poles": 0,
+      "fastestLaps": 0,
+      "starts": 4
+    },
+    "allTime": {
+      "wins": 0,
+      "podiums": 0,
+      "poles": 0,
+      "fastestLaps": 0,
+      "championships": 0,
+      "starts": 46
+    },
+    "seasonStats": [
+      {
+        "race": "Australia",
+        "position": 99,
+        "points": 0,
+        "pole": false,
+        "fastestLap": false
+      },
+      {
+        "race": "China",
+        "position": 7,
+        "points": 6,
+        "pole": false,
+        "fastestLap": false
+      },
+      {
+        "race": "Japan",
+        "position": 9,
+        "points": 2,
+        "pole": false,
+        "fastestLap": false
+      },
+      {
+        "race": "Miami",
+        "position": 99,
+        "points": 0,
+        "pole": false,
+        "fastestLap": false
+      },
+      {
+        "race": "Canada",
+        "position": 99,
+        "points": 6,
+        "pole": false,
+        "fastestLap": false
+      },
+      {
+        "race": "Monaco",
+        "position": 6,
+        "points": 8,
+        "pole": false,
+        "fastestLap": false
+      },
+      {
+        "race": "Barcelona",
+        "position": 16,
+        "points": 0,
+        "pole": false,
+        "fastestLap": false
+      },
+      {
+        "race": "Austrian",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      },
+      {
+        "race": "British",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      },
+      {
+        "race": "Belgian",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      },
+      {
+        "race": "Hungarian",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      },
+      {
+        "race": "Dutch",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      },
+      {
+        "race": "Italian",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      },
+      {
+        "race": "Spanish",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      },
+      {
+        "race": "Azerbaijan",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      },
+      {
+        "race": "Singapore",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      },
+      {
+        "race": "United States",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      },
+      {
+        "race": "Mexico City",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      },
+      {
+        "race": "Brazilian",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      },
+      {
+        "race": "Las Vegas",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      },
+      {
+        "race": "Qatar",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      },
+      {
+        "race": "Abu Dhabi",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      }
+    ]
+  },
+  {
+    "id": "gasly",
+    "number": 10,
+    "firstName": "Pierre",
+    "lastName": "Gasly",
+    "team": "Alpine",
+    "teamId": "alpine",
+    "teamColor": "#FF87BC",
+    "country": "France",
+    "countryCode": "FR",
+    "image": "/drivers/Pierre-Gasly.png",
+    "bio": "Pierre Gasly leads Alpine's efforts and sits joint ninth in the standings after Monaco, where he was classified seventh after penalties. The Frenchman is a crucial figure in the team's rebuilding project.",
+    "season": {
+      "year": 2026,
+      "points": 35,
+      "wins": 0,
+      "podiums": 1,
+      "poles": 0,
+      "fastestLaps": 0,
+      "starts": 4
+    },
+    "allTime": {
+      "wins": 1,
+      "podiums": 4,
+      "poles": 0,
+      "fastestLaps": 3,
+      "championships": 0,
+      "starts": 104
+    },
+    "seasonStats": [
+      {
+        "race": "Australia",
+        "position": 99,
+        "points": 0,
+        "pole": false,
+        "fastestLap": false
+      },
+      {
+        "race": "China",
+        "position": 6,
+        "points": 8,
+        "pole": false,
+        "fastestLap": false
+      },
+      {
+        "race": "Japan",
+        "position": 7,
+        "points": 6,
+        "pole": false,
+        "fastestLap": false
+      },
+      {
+        "race": "Miami",
+        "position": 99,
+        "points": 0,
+        "pole": false,
+        "fastestLap": false
+      },
+      {
+        "race": "Canada",
+        "position": 99,
+        "points": 4,
+        "pole": false,
+        "fastestLap": false
+      },
+      {
+        "race": "Monaco",
+        "position": 3,
+        "points": 15,
+        "pole": false,
+        "fastestLap": false
+      },
+      {
+        "race": "Barcelona",
+        "position": 7,
+        "points": 6,
+        "pole": false,
+        "fastestLap": false
+      },
+      {
+        "race": "Austrian",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      },
+      {
+        "race": "British",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      },
+      {
+        "race": "Belgian",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      },
+      {
+        "race": "Hungarian",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      },
+      {
+        "race": "Dutch",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      },
+      {
+        "race": "Italian",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      },
+      {
+        "race": "Spanish",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      },
+      {
+        "race": "Azerbaijan",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      },
+      {
+        "race": "Singapore",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      },
+      {
+        "race": "United States",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      },
+      {
+        "race": "Mexico City",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      },
+      {
+        "race": "Brazilian",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      },
+      {
+        "race": "Las Vegas",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      },
+      {
+        "race": "Qatar",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      },
+      {
+        "race": "Abu Dhabi",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      }
+    ]
+  },
+  {
+    "id": "bearman",
+    "number": 87,
+    "firstName": "Oliver",
+    "lastName": "Bearman",
+    "team": "Haas F1 Team",
+    "teamId": "haas",
+    "teamColor": "#B6BABD",
+    "country": "United Kingdom",
+    "countryCode": "GB",
+    "image": "/drivers/Oliver-Bearman.png",
+    "bio": "Oliver Bearman has made a solid impression in his first full F1 season with Haas, impressing on his debut in Australia with seventh. The young Briton retired in Monaco but has shown consistent pace throughout the opening rounds.",
+    "season": {
+      "year": 2026,
+      "points": 0,
+      "wins": 0,
+      "podiums": 0,
+      "poles": 0,
+      "fastestLaps": 0,
+      "starts": 0
+    },
+    "allTime": {
+      "wins": 0,
+      "podiums": 0,
+      "poles": 0,
+      "fastestLaps": 0,
+      "championships": 0,
+      "starts": 34
+    },
+    "seasonStats": [
+      {
+        "race": "Australia",
+        "position": 99,
+        "points": 0,
+        "pole": false,
+        "fastestLap": false
+      },
+      {
+        "race": "China",
+        "position": 99,
+        "points": 0,
+        "pole": false,
+        "fastestLap": false
+      },
+      {
+        "race": "Japan",
+        "position": 99,
+        "points": 0,
+        "pole": false,
+        "fastestLap": false
+      },
+      {
+        "race": "Miami",
+        "position": 99,
+        "points": 0,
+        "pole": false,
+        "fastestLap": false
+      },
+      {
+        "race": "Canada",
+        "position": 99,
+        "points": 0,
+        "pole": false,
+        "fastestLap": false
+      },
+      {
+        "race": "Monaco",
+        "position": 99,
+        "points": 0,
+        "pole": false,
+        "fastestLap": false
+      },
+      {
+        "race": "Barcelona",
+        "position": 99,
+        "points": 0,
+        "pole": false,
+        "fastestLap": false
+      },
+      {
+        "race": "Austrian",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      },
+      {
+        "race": "British",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      },
+      {
+        "race": "Belgian",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      },
+      {
+        "race": "Hungarian",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      },
+      {
+        "race": "Dutch",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      },
+      {
+        "race": "Italian",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      },
+      {
+        "race": "Spanish",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      },
+      {
+        "race": "Azerbaijan",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      },
+      {
+        "race": "Singapore",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      },
+      {
+        "race": "United States",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      },
+      {
+        "race": "Mexico City",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      },
+      {
+        "race": "Brazilian",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      },
+      {
+        "race": "Las Vegas",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      },
+      {
+        "race": "Qatar",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      },
+      {
+        "race": "Abu Dhabi",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      }
+    ]
+  },
+  {
+    "id": "colapinto",
+    "number": 43,
+    "firstName": "Franco",
+    "lastName": "Colapinto",
+    "team": "Alpine",
+    "teamId": "alpine",
+    "teamColor": "#FF87BC",
+    "country": "Argentina",
+    "countryCode": "AR",
+    "image": "/drivers/Colapinto.png",
+    "bio": "Franco Colapinto joined Alpine for 2026 after impressing at Williams late in 2024. The Argentine continues to develop, scoring points in Monaco on a weekend where many frontrunners faltered.",
+    "season": {
+      "year": 2026,
+      "points": 6,
+      "wins": 0,
+      "podiums": 0,
+      "poles": 0,
+      "fastestLaps": 0,
+      "starts": 4
+    },
+    "allTime": {
+      "wins": 0,
+      "podiums": 0,
+      "poles": 0,
+      "fastestLaps": 0,
+      "championships": 0,
+      "starts": 38
+    },
+    "seasonStats": [
+      {
+        "race": "Australia",
+        "position": 99,
+        "points": 0,
+        "pole": false,
+        "fastestLap": false
+      },
+      {
+        "race": "China",
+        "position": 99,
+        "points": 1,
+        "pole": false,
+        "fastestLap": false
+      },
+      {
+        "race": "Japan",
+        "position": 16,
+        "points": 0,
+        "pole": false,
+        "fastestLap": false
+      },
+      {
+        "race": "Miami",
+        "position": 7,
+        "points": 6,
+        "pole": false,
+        "fastestLap": false
+      },
+      {
+        "race": "Canada",
+        "position": 99,
+        "points": 8,
+        "pole": false,
+        "fastestLap": false
+      },
+      {
+        "race": "Monaco",
+        "position": 14,
+        "points": 0,
+        "pole": false,
+        "fastestLap": false
+      },
+      {
+        "race": "Barcelona",
+        "position": 15,
+        "points": 0,
+        "pole": false,
+        "fastestLap": false
+      },
+      {
+        "race": "Austrian",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      },
+      {
+        "race": "British",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      },
+      {
+        "race": "Belgian",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      },
+      {
+        "race": "Hungarian",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      },
+      {
+        "race": "Dutch",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      },
+      {
+        "race": "Italian",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      },
+      {
+        "race": "Spanish",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      },
+      {
+        "race": "Azerbaijan",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      },
+      {
+        "race": "Singapore",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      },
+      {
+        "race": "United States",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      },
+      {
+        "race": "Mexico City",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      },
+      {
+        "race": "Brazilian",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      },
+      {
+        "race": "Las Vegas",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      },
+      {
+        "race": "Qatar",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      },
+      {
+        "race": "Abu Dhabi",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      }
+    ]
+  },
+  {
+    "id": "lindblad",
+    "number": 7,
+    "firstName": "Arvid",
+    "lastName": "Lindblad",
+    "team": "Racing Bulls",
+    "teamId": "rb",
+    "teamColor": "#6692FF",
+    "country": "United Kingdom",
+    "countryCode": "GB",
+    "image": "/drivers/Arvid-Lindblad.png",
+    "bio": "British rookie Arvid Lindblad has made an immediate impact since joining Racing Bulls, scoring on his debut in Australia. Sixth in Monaco, his best result to date, underlined the youngster's talent on a chaotic street circuit.",
+    "season": {
+      "year": 2026,
+      "points": 16,
+      "wins": 0,
+      "podiums": 0,
+      "poles": 0,
+      "fastestLaps": 0,
+      "starts": 2
+    },
+    "allTime": {
+      "wins": 0,
+      "podiums": 0,
+      "poles": 0,
+      "fastestLaps": 0,
+      "championships": 0,
+      "starts": 8
+    },
+    "seasonStats": [
+      {
+        "race": "Australia",
+        "position": 99,
+        "points": 0,
+        "pole": false,
+        "fastestLap": false
+      },
+      {
+        "race": "China",
+        "position": 99,
+        "points": 0,
+        "pole": false,
+        "fastestLap": false
+      },
+      {
+        "race": "Japan",
+        "position": 99,
+        "points": 0,
+        "pole": false,
+        "fastestLap": false
+      },
+      {
+        "race": "Miami",
+        "position": 99,
+        "points": 0,
+        "pole": false,
+        "fastestLap": false
+      },
+      {
+        "race": "Canada",
+        "position": 99,
+        "points": 0,
+        "pole": false,
+        "fastestLap": false
+      },
+      {
+        "race": "Monaco",
+        "position": 6,
+        "points": 8,
+        "pole": false,
+        "fastestLap": false
+      },
+      {
+        "race": "Barcelona",
+        "position": 6,
+        "points": 8,
+        "pole": false,
+        "fastestLap": false
+      },
+      {
+        "race": "Austrian",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      },
+      {
+        "race": "British",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      },
+      {
+        "race": "Belgian",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      },
+      {
+        "race": "Hungarian",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      },
+      {
+        "race": "Dutch",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      },
+      {
+        "race": "Italian",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      },
+      {
+        "race": "Spanish",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      },
+      {
+        "race": "Azerbaijan",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      },
+      {
+        "race": "Singapore",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      },
+      {
+        "race": "United States",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      },
+      {
+        "race": "Mexico City",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      },
+      {
+        "race": "Brazilian",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      },
+      {
+        "race": "Las Vegas",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      },
+      {
+        "race": "Qatar",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      },
+      {
+        "race": "Abu Dhabi",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      }
+    ]
+  },
+  {
+    "id": "sainz",
+    "number": 55,
+    "firstName": "Carlos",
+    "lastName": "Sainz",
+    "team": "Williams",
+    "teamId": "williams",
+    "teamColor": "#64C4FF",
+    "country": "Spain",
+    "countryCode": "ES",
+    "image": "/drivers/Carlos-Sainz.png",
+    "bio": "Carlos Sainz moved to Williams for 2026 and has been a consistent midfield presence. A retirement in Monaco was disappointing, but the Spaniard remains determined to extract the maximum from the Williams package.",
+    "season": {
+      "year": 2026,
+      "points": 2,
+      "wins": 0,
+      "podiums": 0,
+      "poles": 0,
+      "fastestLaps": 0,
+      "starts": 3
+    },
+    "allTime": {
+      "wins": 0,
+      "podiums": 0,
+      "poles": 0,
+      "fastestLaps": 0,
+      "championships": 0,
+      "starts": 103
+    },
+    "seasonStats": [
+      {
+        "race": "Australia",
+        "position": 99,
+        "points": 0,
+        "pole": false,
+        "fastestLap": false
+      },
+      {
+        "race": "China",
+        "position": 99,
+        "points": 2,
+        "pole": false,
+        "fastestLap": false
+      },
+      {
+        "race": "Japan",
+        "position": 15,
+        "points": 0,
+        "pole": false,
+        "fastestLap": false
+      },
+      {
+        "race": "Miami",
+        "position": 9,
+        "points": 2,
+        "pole": false,
+        "fastestLap": false
+      },
+      {
+        "race": "Canada",
+        "position": 99,
+        "points": 2,
+        "pole": false,
+        "fastestLap": false
+      },
+      {
+        "race": "Monaco",
+        "position": 99,
+        "points": 0,
+        "pole": false,
+        "fastestLap": false
+      },
+      {
+        "race": "Barcelona",
+        "position": 17,
+        "points": 0,
+        "pole": false,
+        "fastestLap": false
+      },
+      {
+        "race": "Austrian",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      },
+      {
+        "race": "British",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      },
+      {
+        "race": "Belgian",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      },
+      {
+        "race": "Hungarian",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      },
+      {
+        "race": "Dutch",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      },
+      {
+        "race": "Italian",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      },
+      {
+        "race": "Spanish",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      },
+      {
+        "race": "Azerbaijan",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      },
+      {
+        "race": "Singapore",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      },
+      {
+        "race": "United States",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      },
+      {
+        "race": "Mexico City",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      },
+      {
+        "race": "Brazilian",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      },
+      {
+        "race": "Las Vegas",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      },
+      {
+        "race": "Qatar",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      },
+      {
+        "race": "Abu Dhabi",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      }
+    ]
+  },
+  {
+    "id": "albon",
+    "number": 23,
+    "firstName": "Alexander",
+    "lastName": "Albon",
+    "team": "Williams",
+    "teamId": "williams",
+    "teamColor": "#64C4FF",
+    "country": "Thailand",
+    "countryCode": "TH",
+    "image": "/drivers/Alex-Albon.png",
+    "bio": "Alexander Albon continues to be a reliable performer for Williams. Eighth in Monaco is his best result of the year, and the Thai driver remains a key voice in developing the team's 2026 challenger.",
+    "season": {
+      "year": 2026,
+      "points": 9,
+      "wins": 0,
+      "podiums": 0,
+      "poles": 0,
+      "fastestLaps": 0,
+      "starts": 3
+    },
+    "allTime": {
+      "wins": 0,
+      "podiums": 2,
+      "poles": 0,
+      "fastestLaps": 0,
+      "championships": 0,
+      "starts": 103
+    },
+    "seasonStats": [
+      {
+        "race": "Australia",
+        "position": 99,
+        "points": 0,
+        "pole": false,
+        "fastestLap": false
+      },
+      {
+        "race": "China",
+        "position": 99,
+        "points": 0,
+        "pole": false,
+        "fastestLap": false
+      },
+      {
+        "race": "Japan",
+        "position": 99,
+        "points": 0,
+        "pole": false,
+        "fastestLap": false
+      },
+      {
+        "race": "Miami",
+        "position": 10,
+        "points": 1,
+        "pole": false,
+        "fastestLap": false
+      },
+      {
+        "race": "Canada",
+        "position": 99,
+        "points": 0,
+        "pole": false,
+        "fastestLap": false
+      },
+      {
+        "race": "Monaco",
+        "position": 8,
+        "points": 4,
+        "pole": false,
+        "fastestLap": false
+      },
+      {
+        "race": "Barcelona",
+        "position": 8,
+        "points": 4,
+        "pole": false,
+        "fastestLap": false
+      },
+      {
+        "race": "Austrian",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      },
+      {
+        "race": "British",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      },
+      {
+        "race": "Belgian",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      },
+      {
+        "race": "Hungarian",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      },
+      {
+        "race": "Dutch",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      },
+      {
+        "race": "Italian",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      },
+      {
+        "race": "Spanish",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      },
+      {
+        "race": "Azerbaijan",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      },
+      {
+        "race": "Singapore",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      },
+      {
+        "race": "United States",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      },
+      {
+        "race": "Mexico City",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      },
+      {
+        "race": "Brazilian",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      },
+      {
+        "race": "Las Vegas",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      },
+      {
+        "race": "Qatar",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      },
+      {
+        "race": "Abu Dhabi",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      }
+    ]
+  },
+  {
+    "id": "ocon",
+    "number": 31,
+    "firstName": "Esteban",
+    "lastName": "Ocon",
+    "team": "Haas F1 Team",
+    "teamId": "haas",
+    "teamColor": "#B6BABD",
+    "country": "France",
+    "countryCode": "FR",
+    "image": "/drivers/Ocon.png",
+    "bio": "Esteban Ocon joined Haas for 2026 and has been scoring occasionally in the midfield. Ninth in Monaco is his best result of the season so far.",
+    "season": {
+      "year": 2026,
+      "points": 5,
+      "wins": 0,
+      "podiums": 0,
+      "poles": 0,
+      "fastestLaps": 0,
+      "starts": 3
+    },
+    "allTime": {
+      "wins": 1,
+      "podiums": 2,
+      "poles": 0,
+      "fastestLaps": 0,
+      "championships": 0,
+      "starts": 103
+    },
+    "seasonStats": [
+      {
+        "race": "Australia",
+        "position": 99,
+        "points": 0,
+        "pole": false,
+        "fastestLap": false
+      },
+      {
+        "race": "China",
+        "position": 99,
+        "points": 0,
+        "pole": false,
+        "fastestLap": false
+      },
+      {
+        "race": "Japan",
+        "position": 10,
+        "points": 1,
+        "pole": false,
+        "fastestLap": false
+      },
+      {
+        "race": "Miami",
+        "position": 99,
+        "points": 0,
+        "pole": false,
+        "fastestLap": false
+      },
+      {
+        "race": "Canada",
+        "position": 99,
+        "points": 0,
+        "pole": false,
+        "fastestLap": false
+      },
+      {
+        "race": "Monaco",
+        "position": 9,
+        "points": 2,
+        "pole": false,
+        "fastestLap": false
+      },
+      {
+        "race": "Barcelona",
+        "position": 9,
+        "points": 2,
+        "pole": false,
+        "fastestLap": false
+      },
+      {
+        "race": "Austrian",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      },
+      {
+        "race": "British",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      },
+      {
+        "race": "Belgian",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      },
+      {
+        "race": "Hungarian",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      },
+      {
+        "race": "Dutch",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      },
+      {
+        "race": "Italian",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      },
+      {
+        "race": "Spanish",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      },
+      {
+        "race": "Azerbaijan",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      },
+      {
+        "race": "Singapore",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      },
+      {
+        "race": "United States",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      },
+      {
+        "race": "Mexico City",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      },
+      {
+        "race": "Brazilian",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      },
+      {
+        "race": "Las Vegas",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      },
+      {
+        "race": "Qatar",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      },
+      {
+        "race": "Abu Dhabi",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      }
+    ]
+  },
+  {
+    "id": "bortoleto",
+    "number": 5,
+    "firstName": "Gabriel",
+    "lastName": "Bortoleto",
+    "team": "Audi",
+    "teamId": "audi",
+    "teamColor": "#52E252",
+    "country": "Brazil",
+    "countryCode": "BR",
+    "image": "/drivers/Gabriel-Bortoleto.png",
+    "bio": "The reigning Formula 2 champion Gabriel Bortoleto has made an encouraging start to his F1 career with Audi (formerly Sauber). Eleventh in Monaco — scored after a pit lane start following a pre-race mechanical issue — is a testament to his fighting spirit.",
+    "season": {
+      "year": 2026,
+      "points": 0,
+      "wins": 0,
+      "podiums": 0,
+      "poles": 0,
+      "fastestLaps": 0,
+      "starts": 3
+    },
+    "allTime": {
+      "wins": 0,
+      "podiums": 0,
+      "poles": 0,
+      "fastestLaps": 0,
+      "championships": 0,
+      "starts": 34
+    },
+    "seasonStats": [
+      {
+        "race": "Australia",
+        "position": 99,
+        "points": 2,
+        "pole": false,
+        "fastestLap": false
+      },
+      {
+        "race": "China",
+        "position": 99,
+        "points": 0,
+        "pole": false,
+        "fastestLap": false
+      },
+      {
+        "race": "Japan",
+        "position": 13,
+        "points": 0,
+        "pole": false,
+        "fastestLap": false
+      },
+      {
+        "race": "Miami",
+        "position": 99,
+        "points": 0,
+        "pole": false,
+        "fastestLap": false
+      },
+      {
+        "race": "Canada",
+        "position": 99,
+        "points": 0,
+        "pole": false,
+        "fastestLap": false
+      },
+      {
+        "race": "Monaco",
+        "position": 11,
+        "points": 0,
+        "pole": false,
+        "fastestLap": false
+      },
+      {
+        "race": "Barcelona",
+        "position": 11,
+        "points": 0,
+        "pole": false,
+        "fastestLap": false
+      },
+      {
+        "race": "Austrian",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      },
+      {
+        "race": "British",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      },
+      {
+        "race": "Belgian",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      },
+      {
+        "race": "Hungarian",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      },
+      {
+        "race": "Dutch",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      },
+      {
+        "race": "Italian",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      },
+      {
+        "race": "Spanish",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      },
+      {
+        "race": "Azerbaijan",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      },
+      {
+        "race": "Singapore",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      },
+      {
+        "race": "United States",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      },
+      {
+        "race": "Mexico City",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      },
+      {
+        "race": "Brazilian",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      },
+      {
+        "race": "Las Vegas",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      },
+      {
+        "race": "Qatar",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      },
+      {
+        "race": "Abu Dhabi",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      }
+    ]
+  },
+  {
+    "id": "alonso",
+    "number": 14,
+    "firstName": "Fernando",
+    "lastName": "Alonso",
+    "team": "Aston Martin",
+    "teamId": "aston-martin",
+    "teamColor": "#229971",
+    "country": "Spain",
+    "countryCode": "ES",
+    "image": "/drivers/fernando-alonso.png",
+    "bio": "Fernando Alonso finally opened his 2026 season points tally thanks to Sergio Pérez's post-race penalty at Monaco. The two-time world champion has endured a frustrating start to the year with Aston Martin, and will be hoping the team makes significant development steps.",
+    "season": {
+      "year": 2026,
+      "points": 1,
+      "wins": 0,
+      "podiums": 0,
+      "poles": 0,
+      "fastestLaps": 0,
+      "starts": 2
+    },
+    "allTime": {
+      "wins": 18,
+      "podiums": 45,
+      "poles": 18,
+      "fastestLaps": 9,
+      "championships": 2,
+      "starts": 102
+    },
+    "seasonStats": [
+      {
+        "race": "Australia",
+        "position": 99,
+        "points": 0,
+        "pole": false,
+        "fastestLap": false
+      },
+      {
+        "race": "China",
+        "position": 99,
+        "points": 0,
+        "pole": false,
+        "fastestLap": false
+      },
+      {
+        "race": "Japan",
+        "position": 99,
+        "points": 0,
+        "pole": false,
+        "fastestLap": false
+      },
+      {
+        "race": "Miami",
+        "position": 99,
+        "points": 0,
+        "pole": false,
+        "fastestLap": false
+      },
+      {
+        "race": "Canada",
+        "position": 99,
+        "points": 0,
+        "pole": false,
+        "fastestLap": false
+      },
+      {
+        "race": "Monaco",
+        "position": 10,
+        "points": 1,
+        "pole": false,
+        "fastestLap": false
+      },
+      {
+        "race": "Barcelona",
+        "position": 13,
+        "points": 0,
+        "pole": false,
+        "fastestLap": false
+      },
+      {
+        "race": "Austrian",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      },
+      {
+        "race": "British",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      },
+      {
+        "race": "Belgian",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      },
+      {
+        "race": "Hungarian",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      },
+      {
+        "race": "Dutch",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      },
+      {
+        "race": "Italian",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      },
+      {
+        "race": "Spanish",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      },
+      {
+        "race": "Azerbaijan",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      },
+      {
+        "race": "Singapore",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      },
+      {
+        "race": "United States",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      },
+      {
+        "race": "Mexico City",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      },
+      {
+        "race": "Brazilian",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      },
+      {
+        "race": "Las Vegas",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      },
+      {
+        "race": "Qatar",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      },
+      {
+        "race": "Abu Dhabi",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      }
+    ]
+  },
+  {
+    "id": "stroll",
+    "number": 18,
+    "firstName": "Lance",
+    "lastName": "Stroll",
+    "team": "Aston Martin",
+    "teamId": "aston-martin",
+    "teamColor": "#229971",
+    "country": "Canada",
+    "countryCode": "CA",
+    "image": "/drivers/Lance-Stroll.png",
+    "bio": "Lance Stroll continues with Aston Martin in 2026, working alongside Fernando Alonso as the team develops its new generation car.",
+    "season": {
+      "year": 2026,
+      "points": 0,
+      "wins": 0,
+      "podiums": 0,
+      "poles": 0,
+      "fastestLaps": 0,
+      "starts": 0
+    },
+    "allTime": {
+      "wins": 0,
+      "podiums": 3,
+      "poles": 1,
+      "fastestLaps": 0,
+      "championships": 0,
+      "starts": 100
+    },
+    "seasonStats": [
+      {
+        "race": "Australia",
+        "position": 99,
+        "points": 0,
+        "pole": false,
+        "fastestLap": false
+      },
+      {
+        "race": "China",
+        "position": 99,
+        "points": 0,
+        "pole": false,
+        "fastestLap": false
+      },
+      {
+        "race": "Japan",
+        "position": 99,
+        "points": 0,
+        "pole": false,
+        "fastestLap": false
+      },
+      {
+        "race": "Miami",
+        "position": 99,
+        "points": 0,
+        "pole": false,
+        "fastestLap": false
+      },
+      {
+        "race": "Canada",
+        "position": 99,
+        "points": 0,
+        "pole": false,
+        "fastestLap": false
+      },
+      {
+        "race": "Monaco",
+        "position": 99,
+        "points": 0,
+        "pole": false,
+        "fastestLap": false
+      },
+      {
+        "race": "Barcelona",
+        "position": 99,
+        "points": 0,
+        "pole": false,
+        "fastestLap": false
+      },
+      {
+        "race": "Austrian",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      },
+      {
+        "race": "British",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      },
+      {
+        "race": "Belgian",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      },
+      {
+        "race": "Hungarian",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      },
+      {
+        "race": "Dutch",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      },
+      {
+        "race": "Italian",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      },
+      {
+        "race": "Spanish",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      },
+      {
+        "race": "Azerbaijan",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      },
+      {
+        "race": "Singapore",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      },
+      {
+        "race": "United States",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      },
+      {
+        "race": "Mexico City",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      },
+      {
+        "race": "Brazilian",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      },
+      {
+        "race": "Las Vegas",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      },
+      {
+        "race": "Qatar",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      },
+      {
+        "race": "Abu Dhabi",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      }
+    ]
+  },
+  {
+    "id": "hulkenberg",
+    "number": 27,
+    "firstName": "Nico",
+    "lastName": "Hulkenberg",
+    "team": "Audi",
+    "teamId": "audi",
+    "teamColor": "#52E252",
+    "country": "Germany",
+    "countryCode": "DE",
+    "image": "/drivers/Nico-Hulkenberg.png",
+    "bio": "Nico Hulkenberg leads Audi's first Formula 1 campaign with his experience and consistency.",
+    "season": {
+      "year": 2026,
+      "points": 0,
+      "wins": 0,
+      "podiums": 0,
+      "poles": 0,
+      "fastestLaps": 0,
+      "starts": 3
+    },
+    "allTime": {
+      "wins": 0,
+      "podiums": 0,
+      "poles": 1,
+      "fastestLaps": 2,
+      "championships": 0,
+      "starts": 103
+    },
+    "seasonStats": [
+      {
+        "race": "Australia",
+        "position": 99,
+        "points": 0,
+        "pole": false,
+        "fastestLap": false
+      },
+      {
+        "race": "China",
+        "position": 99,
+        "points": 0,
+        "pole": false,
+        "fastestLap": false
+      },
+      {
+        "race": "Japan",
+        "position": 11,
+        "points": 0,
+        "pole": false,
+        "fastestLap": false
+      },
+      {
+        "race": "Miami",
+        "position": 99,
+        "points": 0,
+        "pole": false,
+        "fastestLap": false
+      },
+      {
+        "race": "Canada",
+        "position": 99,
+        "points": 0,
+        "pole": false,
+        "fastestLap": false
+      },
+      {
+        "race": "Monaco",
+        "position": 13,
+        "points": 0,
+        "pole": false,
+        "fastestLap": false
+      },
+      {
+        "race": "Barcelona",
+        "position": 12,
+        "points": 0,
+        "pole": false,
+        "fastestLap": false
+      },
+      {
+        "race": "Austrian",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      },
+      {
+        "race": "British",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      },
+      {
+        "race": "Belgian",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      },
+      {
+        "race": "Hungarian",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      },
+      {
+        "race": "Dutch",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      },
+      {
+        "race": "Italian",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      },
+      {
+        "race": "Spanish",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      },
+      {
+        "race": "Azerbaijan",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      },
+      {
+        "race": "Singapore",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      },
+      {
+        "race": "United States",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      },
+      {
+        "race": "Mexico City",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      },
+      {
+        "race": "Brazilian",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      },
+      {
+        "race": "Las Vegas",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      },
+      {
+        "race": "Qatar",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      },
+      {
+        "race": "Abu Dhabi",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      }
+    ]
+  },
+  {
+    "id": "perez",
+    "number": 11,
+    "firstName": "Sergio",
+    "lastName": "Perez",
+    "team": "Cadillac",
+    "teamId": "cadillac",
+    "teamColor": "#FFFFFF",
+    "country": "Mexico",
+    "countryCode": "MX",
+    "image": "/drivers/Sergio-Perez.png",
+    "bio": "Sergio Perez returns to Formula 1 with Cadillac, bringing years of experience to the new team.",
+    "season": {
+      "year": 2026,
+      "points": 0,
+      "wins": 0,
+      "podiums": 0,
+      "poles": 0,
+      "fastestLaps": 0,
+      "starts": 3
+    },
+    "allTime": {
+      "wins": 0,
+      "podiums": 5,
+      "poles": 0,
+      "fastestLaps": 3,
+      "championships": 0,
+      "starts": 103
+    },
+    "seasonStats": [
+      {
+        "race": "Australia",
+        "position": 99,
+        "points": 0,
+        "pole": false,
+        "fastestLap": false
+      },
+      {
+        "race": "China",
+        "position": 99,
+        "points": 0,
+        "pole": false,
+        "fastestLap": false
+      },
+      {
+        "race": "Japan",
+        "position": 17,
+        "points": 0,
+        "pole": false,
+        "fastestLap": false
+      },
+      {
+        "race": "Miami",
+        "position": 99,
+        "points": 0,
+        "pole": false,
+        "fastestLap": false
+      },
+      {
+        "race": "Canada",
+        "position": 99,
+        "points": 0,
+        "pole": false,
+        "fastestLap": false
+      },
+      {
+        "race": "Monaco",
+        "position": 15,
+        "points": 0,
+        "pole": false,
+        "fastestLap": false
+      },
+      {
+        "race": "Barcelona",
+        "position": 14,
+        "points": 0,
+        "pole": false,
+        "fastestLap": false
+      },
+      {
+        "race": "Austrian",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      },
+      {
+        "race": "British",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      },
+      {
+        "race": "Belgian",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      },
+      {
+        "race": "Hungarian",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      },
+      {
+        "race": "Dutch",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      },
+      {
+        "race": "Italian",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      },
+      {
+        "race": "Spanish",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      },
+      {
+        "race": "Azerbaijan",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      },
+      {
+        "race": "Singapore",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      },
+      {
+        "race": "United States",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      },
+      {
+        "race": "Mexico City",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      },
+      {
+        "race": "Brazilian",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      },
+      {
+        "race": "Las Vegas",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      },
+      {
+        "race": "Qatar",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      },
+      {
+        "race": "Abu Dhabi",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      }
+    ]
+  },
+  {
+    "id": "bottas",
+    "number": 77,
+    "firstName": "Valtteri",
+    "lastName": "Bottas",
+    "team": "Cadillac",
+    "teamId": "cadillac",
+    "teamColor": "#FFFFFF",
+    "country": "Finland",
+    "countryCode": "FI",
+    "image": "/drivers/Valtteri-Bottas.png",
+    "bio": "Valtteri Bottas joins Cadillac with extensive Mercedes experience and race-winning pedigree.",
+    "season": {
+      "year": 2026,
+      "points": 0,
+      "wins": 0,
+      "podiums": 0,
+      "poles": 0,
+      "fastestLaps": 0,
+      "starts": 0
+    },
+    "allTime": {
+      "wins": 3,
+      "podiums": 23,
+      "poles": 4,
+      "fastestLaps": 4,
+      "championships": 0,
+      "starts": 100
+    },
+    "seasonStats": [
+      {
+        "race": "Australia",
+        "position": 99,
+        "points": 0,
+        "pole": false,
+        "fastestLap": false
+      },
+      {
+        "race": "China",
+        "position": 99,
+        "points": 0,
+        "pole": false,
+        "fastestLap": false
+      },
+      {
+        "race": "Japan",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      },
+      {
+        "race": "Miami",
+        "position": 99,
+        "points": 0,
+        "pole": false,
+        "fastestLap": false
+      },
+      {
+        "race": "Canada",
+        "position": 99,
+        "points": 0,
+        "pole": false,
+        "fastestLap": false
+      },
+      {
+        "race": "Monaco",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      },
+      {
+        "race": "Barcelona",
+        "position": 99,
+        "points": 0,
+        "pole": false,
+        "fastestLap": false
+      },
+      {
+        "race": "Austrian",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      },
+      {
+        "race": "British",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      },
+      {
+        "race": "Belgian",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      },
+      {
+        "race": "Hungarian",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      },
+      {
+        "race": "Dutch",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      },
+      {
+        "race": "Italian",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      },
+      {
+        "race": "Spanish",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      },
+      {
+        "race": "Azerbaijan",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      },
+      {
+        "race": "Singapore",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      },
+      {
+        "race": "United States",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      },
+      {
+        "race": "Mexico City",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      },
+      {
+        "race": "Brazilian",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      },
+      {
+        "race": "Las Vegas",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      },
+      {
+        "race": "Qatar",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      },
+      {
+        "race": "Abu Dhabi",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      }
+    ]
+  },
+  {
+    "id": "tsunoda",
+    "number": 22,
+    "firstName": "Yuki",
+    "lastName": "Tsunoda",
+    "team": "Red Bull Racing",
+    "teamId": "red-bull",
+    "teamColor": "#3671C6",
+    "country": "Japan",
+    "countryCode": "JP",
+    "image": "/drivers/Yuki-Tsunoda.png",
+    "bio": "Yuki Tsunoda continues his Formula 1 journey with Red Bull after years of development in the junior programme.",
+    "season": {
+      "year": 2026,
+      "points": 0,
+      "wins": 0,
+      "podiums": 0,
+      "poles": 0,
+      "fastestLaps": 0,
+      "starts": 0
+    },
+    "allTime": {
+      "wins": 0,
+      "podiums": 0,
+      "poles": 0,
+      "fastestLaps": 1,
+      "championships": 0,
+      "starts": 100
+    },
+    "seasonStats": [
+      {
+        "race": "Australia",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      },
+      {
+        "race": "China",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      },
+      {
+        "race": "Japan",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      },
+      {
+        "race": "Miami",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      },
+      {
+        "race": "Canada",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      },
+      {
+        "race": "Monaco",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      },
+      {
+        "race": "Barcelona",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      },
+      {
+        "race": "Austrian",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      },
+      {
+        "race": "British",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      },
+      {
+        "race": "Belgian",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      },
+      {
+        "race": "Hungarian",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      },
+      {
+        "race": "Dutch",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      },
+      {
+        "race": "Italian",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      },
+      {
+        "race": "Spanish",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      },
+      {
+        "race": "Azerbaijan",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      },
+      {
+        "race": "Singapore",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      },
+      {
+        "race": "United States",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      },
+      {
+        "race": "Mexico City",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      },
+      {
+        "race": "Brazilian",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      },
+      {
+        "race": "Las Vegas",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      },
+      {
+        "race": "Qatar",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      },
+      {
+        "race": "Abu Dhabi",
+        "position": null,
+        "points": null,
+        "pole": null,
+        "fastestLap": null
+      }
+    ]
+  }
+]

@@ -2,7 +2,6 @@ import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import { MapPin, Clock, Zap, Trophy, Flag, Timer } from "lucide-react";
 import { Race } from "../types";
-import { getTrackById } from "../data/tracks";
 
 interface RaceCardProps {
   race: Race;
@@ -12,8 +11,7 @@ interface RaceCardProps {
 export default function RaceCard({ race, index }: RaceCardProps) {
   const isCompleted = race.status === "completed";
   const isUpcoming = race.status === "upcoming";
-
-  const track = getTrackById(race.trackId);
+  const isCancelled = race.status === "cancelled";
 
   const statusStyles = {
     completed: "bg-f1-accent/10 text-f1-accent",
@@ -57,7 +55,13 @@ export default function RaceCard({ race, index }: RaceCardProps) {
             <span
               className={`font-mono text-[9px] uppercase tracking-widest px-2 py-0.5 ${statusStyles[race.status]}`}
             >
-              {isCompleted ? "Finished" : isUpcoming ? "Upcoming" : "Live"}
+              {isCompleted
+                ? "Finished"
+                : isUpcoming
+                  ? "Upcoming"
+                  : isCancelled
+                    ? "Cancelled"
+                    : "Live"}
             </span>
           </header>
 
@@ -72,9 +76,9 @@ export default function RaceCard({ race, index }: RaceCardProps) {
 
             {/* Circuit image — fills remaining space */}
             <div className="flex-1 min-h-[130px] flex items-center justify-center border border-f1-border/40 overflow-hidden rounded-sm p-3 bg-f1-surface/20">
-              {track?.circuitSvg ? (
+              {race.circuitSvg ? (
                 <img
-                  src={track.circuitSvg}
+                  src={race.circuitSvg}
                   alt={`${race.circuit} layout`}
                   className="w-full h-full object-contain brightness-0 invert opacity-70 group-hover:opacity-100 transition-opacity"
                 />
@@ -90,6 +94,13 @@ export default function RaceCard({ race, index }: RaceCardProps) {
               <div className="flex items-center gap-1.5 text-[11px] text-orange-400">
                 <Zap size={12} className="shrink-0" />
                 <span className="font-medium">Sprint Weekend</span>
+              </div>
+            )}
+
+            {/* Cancelled reason */}
+            {isCancelled && race.cancellationReason && (
+              <div className="text-[11px] text-red-400 leading-tight">
+                {race.cancellationReason}
               </div>
             )}
 
@@ -160,9 +171,9 @@ export default function RaceCard({ race, index }: RaceCardProps) {
               className="w-[80px] shrink-0 h-full flex items-center justify-center overflow-hidden"
               style={{ backgroundColor: "#ffffff10" }}
             >
-              {track?.circuitSvg ? (
+              {race.circuitSvg ? (
                 <img
-                  src={track.circuitSvg}
+                  src={race.circuitSvg}
                   alt={`${race.circuit} layout`}
                   className="w-full h-full object-contain p-1.5 brightness-0 invert opacity-70"
                 />
@@ -183,7 +194,13 @@ export default function RaceCard({ race, index }: RaceCardProps) {
                 <span
                   className={`font-mono text-[9px] uppercase tracking-wider px-1.5 py-0.5 ${statusStyles[race.status]}`}
                 >
-                  {isCompleted ? "Finished" : isUpcoming ? "Upcoming" : "Live"}
+                  {isCompleted
+                    ? "Finished"
+                    : isUpcoming
+                      ? "Upcoming"
+                      : isCancelled
+                        ? "Cancelled"
+                        : "Live"}
                 </span>
               </div>
 
@@ -222,6 +239,10 @@ export default function RaceCard({ race, index }: RaceCardProps) {
                       </span>
                     </div>
                   </>
+                ) : isCancelled ? (
+                  <span className="text-[10px] text-red-400 truncate">
+                    {race.cancellationReason}
+                  </span>
                 ) : (
                   <>
                     <div className="flex flex-col gap-0.5">

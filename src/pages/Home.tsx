@@ -6,7 +6,7 @@ import RaceCard from "../components/RaceCard";
 import DriverCard from "../components/DriverCard";
 import TrackCard from "../components/TrackCard";
 import { getCompletedRaces, getUpcomingRaces } from "../data/races";
-import { drivers, getTopDrivers } from "../data/drivers";
+import { useF1Data } from "../hooks/useF1Data";
 import { tracks } from "../data/tracks";
 
 function SectionHeader({
@@ -101,7 +101,7 @@ function PrimaryButtonLink({
 }: {
   to: string;
   children: React.ReactNode;
-}) {
+}): import("react").JSX.Element {
   return (
     <motion.div className="mt-1 flex items-center gap-1">
       <Link
@@ -115,9 +115,22 @@ function PrimaryButtonLink({
 }
 
 export default function Home() {
+  const { data, loading, error } = useF1Data();
+
+  if (loading) {
+    return <div>Loading drivers...</div>;
+  }
+
+  if (error || !data) {
+    return <div>Failed loading data</div>;
+  }
+
+  const topDrivers = [...data.drivers]
+    .sort((a, b) => b.season.points - a.season.points)
+    .slice(0, 6);
+
   const completedRaces = getCompletedRaces();
   const upcomingRaces = getUpcomingRaces().slice(0, 3);
-  const topDrivers = getTopDrivers(6);
 
   return (
     <div>

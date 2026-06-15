@@ -1,27 +1,29 @@
 import { useState } from "react";
-import DriverCard from "@/components/DriverCard";
-import { drivers, getTopDrivers } from "@/data";
 import { motion } from "framer-motion";
+import { useF1Data } from "../hooks/useF1Data";
+import DriverCard from "../components/DriverCard";
 import { StatMode } from "../types";
 
 export default function Drivers() {
   const [mode, setMode] = useState<StatMode>("2026");
+  const { data, loading } = useF1Data();
+  const allDrivers = data?.drivers ?? [];
 
-  const allDrivers = getTopDrivers(drivers.length);
+  if (loading) {
+    return (
+      <div className="pt-24 pb-20 text-center">
+        <p className="text-f1-muted">Loading...</p>
+      </div>
+    );
+  }
 
   return (
     <div className="pt-24 pb-20">
       <div className="wrap section-padding">
         {/* Header */}
         <motion.div
-          initial={{
-            opacity: 0,
-            y: 20,
-          }}
-          animate={{
-            opacity: 1,
-            y: 0,
-          }}
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
           className="mb-6 md:mb-8 pb-4 md:pb-6 border-b border-f1-border flex flex-col sm:flex-row sm:items-end justify-between gap-2 sm:gap-0"
         >
           <div>
@@ -39,7 +41,7 @@ export default function Drivers() {
           </div>
 
           <span className="font-mono text-[10px] text-f1-muted">
-            {drivers.length} Drivers
+            {allDrivers.length} Drivers
           </span>
         </motion.div>
 
@@ -69,7 +71,6 @@ export default function Drivers() {
         </div>
 
         {/* Driver grid */}
-        {/* ✅ 3 columns on mobile, 2 on md, 3 on xl */}
         <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-1">
           {allDrivers.map((driver, i) => (
             <DriverCard key={driver.id} driver={driver} index={i} mode={mode} />

@@ -57,7 +57,7 @@
   /* Card grid with 1px gaps */
   .card-grid {
     @apply grid gap-px bg-f1-border;
-    
+      
   }.safe-area-top {
     padding-top: env(safe-area-inset-top);
   }

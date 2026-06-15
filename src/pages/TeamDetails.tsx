@@ -9,14 +9,15 @@ import {
   ChevronRight,
   Users,
   Cpu,
-  CalendarDays,
 } from "lucide-react";
 import { getTeamById } from "../data/teams";
-import { getDriverById } from "../data/drivers";
+import { getDriverById } from "../data/drivers"; // <-- FIX: import the function, not the type
+import { useF1Data } from "../hooks/useF1Data"; // <-- alternative: use API data
 
 export default function TeamDetails() {
   const { id } = useParams<{ id: string }>();
   const team = getTeamById(id || "");
+  const { data } = useF1Data(); // <-- if you want API drivers
 
   if (!team) {
     return (
@@ -161,13 +162,20 @@ export default function TeamDetails() {
                 </span>
               </div>
               <h2 className="font-display text-xl sm:text-2xl font-extrabold uppercase tracking-wide text-white mb-4 sm:mb-6">
-                2025 Drivers
+                2026 Drivers
               </h2>
 
               <div className="flex flex-col gap-px bg-f1-border">
                 {team.drivers.map((driverId, index) => {
-                  const driver = getDriverById(driverId);
+                  // Option A: Use API data (recommended — matches your DriverDetails approach)
+                  const driver = data?.drivers.find((d) => d.id === driverId);
+
+                  // Option B: Use the local meta file
+                  // const meta = getDriverById(driverId);
+                  // const driver = meta?.base;
+
                   if (!driver) return null;
+
                   return (
                     <Link key={driverId} to={`/driver/${driver.id}`}>
                       <div className="bg-f1-card group hover:bg-f1-border/40 transition-colors p-3 sm:p-5 flex items-center justify-between">

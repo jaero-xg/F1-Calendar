@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import { Driver, StatMode } from "../types";
-import { getDriverStats } from "../utils/driverStats";
+import { Trophy, Flag, Star, Zap, Timer } from "lucide-react";
 
 interface DriverCardProps {
   driver: Driver;
@@ -10,13 +10,51 @@ interface DriverCardProps {
 }
 
 export default function DriverCard({ driver, index, mode }: DriverCardProps) {
-  const stats = getDriverStats(driver, mode);
-  const basePoints =
-    mode === "all-time" ? driver.allTime.points : driver.season.points;
   const fullName = `${driver.firstName} ${driver.lastName}`;
 
-  // Mobile: show only top 3 stats (points already shown separately)
-  const mobileStats = stats.slice(0, 3);
+  // Build stats based on mode
+  const stats2026 = [
+    { label: "Points", value: driver.season.points, icon: Trophy },
+    { label: "Wins", value: driver.season.wins, icon: Flag },
+    { label: "Podiums", value: driver.season.podiums, icon: Trophy },
+    { label: "Poles", value: driver.season.poles, icon: Star },
+    { label: "Races", value: driver.season.starts, icon: Timer },
+    { label: "Fastest Laps", value: driver.season.fastestLaps, icon: Zap },
+  ];
+
+  const statsAllTime = [
+    {
+      label: "Championships",
+      value: driver.allTime.championships,
+      icon: Trophy,
+    },
+    { label: "Wins", value: driver.allTime.wins, icon: Flag },
+    { label: "Podiums", value: driver.allTime.podiums, icon: Trophy },
+    { label: "Poles", value: driver.allTime.poles, icon: Star },
+    { label: "Races", value: driver.allTime.starts, icon: Timer },
+    { label: "Fastest Laps", value: driver.allTime.fastestLaps, icon: Zap },
+  ];
+
+  const stats = mode === "2026" ? stats2026 : statsAllTime;
+
+  // Mobile: clean stats without redundancy
+  const mobileStats =
+    mode === "2026"
+      ? [
+          { label: "Pts", value: driver.season.points },
+          { label: "Wins", value: driver.season.wins },
+          { label: "Podiums", value: driver.season.podiums },
+          { label: "Poles", value: driver.season.poles },
+        ]
+      : [
+          {
+            label: "WDC",
+            value: driver.allTime.championships,
+          },
+          { label: "Wins", value: driver.allTime.wins },
+          { label: "Podiums", value: driver.allTime.podiums },
+          { label: "Poles", value: driver.allTime.poles },
+        ];
 
   return (
     <motion.div
@@ -77,14 +115,6 @@ export default function DriverCard({ driver, index, mode }: DriverCardProps) {
             </div>
 
             <div className="flex flex-col divide-y divide-f1-border/50">
-              <div className="flex items-center justify-between py-2">
-                <span className="text-[11px] text-f1-muted">
-                  {mode === "all-time" ? "Career Points" : "Points"}
-                </span>
-                <span className="font-mono text-[12px] text-white tabular-nums font-semibold">
-                  {basePoints}
-                </span>
-              </div>
               {stats.map((stat) => (
                 <div
                   key={stat.label}
@@ -104,7 +134,6 @@ export default function DriverCard({ driver, index, mode }: DriverCardProps) {
         </article>
 
         {/* ── MOBILE: horizontal card ── */}
-        {/* ── MOBILE: horizontal card ── */}
         <article className="sm:hidden group bg-f1-card active:bg-f1-surface/50 transition-colors border border-f1-border overflow-hidden rounded-sm relative">
           <div
             className="absolute left-0 top-0 bottom-0 w-[3px]"
@@ -112,7 +141,7 @@ export default function DriverCard({ driver, index, mode }: DriverCardProps) {
           />
 
           <div className="flex pl-[3px] h-[100px]">
-            {/* Image — fixed height, flush */}
+            {/* Image */}
             <div
               className="w-[80px] shrink-0 h-full flex items-end justify-center overflow-hidden"
               style={{ backgroundColor: driver.teamColor + "18" }}
@@ -127,7 +156,6 @@ export default function DriverCard({ driver, index, mode }: DriverCardProps) {
 
             {/* Right content */}
             <div className="flex flex-col flex-1 min-w-0 px-3 py-2 justify-between">
-              {/* Top row: number + team */}
               <div className="flex items-center justify-between">
                 <span
                   className="font-mono text-[11px] uppercase tracking-widest font-bold"
@@ -143,7 +171,6 @@ export default function DriverCard({ driver, index, mode }: DriverCardProps) {
                 </span>
               </div>
 
-              {/* Name */}
               <div className="leading-none">
                 <div className="flex items-center gap-1 mb-0.5">
                   <span
@@ -158,18 +185,8 @@ export default function DriverCard({ driver, index, mode }: DriverCardProps) {
                 </h3>
               </div>
 
-              {/* Stats row — labels on top, values below, strictly aligned */}
               <div className="flex items-end gap-4 pt-1.5 border-t border-f1-border/40">
-                {[
-                  {
-                    label: mode === "all-time" ? "Career" : "Pts",
-                    value: String(basePoints),
-                  },
-                  ...mobileStats.map((s) => ({
-                    label: s.label,
-                    value: String(s.value),
-                  })),
-                ].map((item, i, arr) => (
+                {mobileStats.map((item, i) => (
                   <div key={item.label} className="flex items-end gap-4">
                     <div className="flex flex-col gap-0.5">
                       <span className="font-mono text-[8px] uppercase tracking-widest text-f1-muted leading-none whitespace-nowrap">
@@ -179,7 +196,7 @@ export default function DriverCard({ driver, index, mode }: DriverCardProps) {
                         {item.value}
                       </span>
                     </div>
-                    {i < arr.length - 1 && (
+                    {i < mobileStats.length - 1 && (
                       <div className="w-px h-6 bg-f1-border/50 mb-px" />
                     )}
                   </div>

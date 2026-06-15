@@ -1,4 +1,5 @@
 import { Team } from "../types";
+import { useF1Data } from "../hooks/useF1Data";
 
 export const teams: Team[] = [
   {
@@ -15,7 +16,8 @@ export const teams: Team[] = [
     wins: 120,
     podiums: 260,
     poles: 105,
-    drivers: ["verstappen", "hadjar", "tsunoda"],  // ✅ All 3 Red Bull drivers from drivers.ts
+    fastestLaps: 98,
+    drivers: ["verstappen", "hadjar", "tsunoda"],
     description:
       "The dominant force of the turbo-hybrid era, Red Bull Racing have redefined what is possible in modern Formula 1.",
   },
@@ -33,7 +35,8 @@ export const teams: Team[] = [
     wins: 243,
     podiums: 812,
     poles: 244,
-    drivers: ["leclerc", "hamilton"],  // ✅ Fixed IDs
+    fastestLaps: 260,
+    drivers: ["leclerc", "hamilton"],
     description:
       "The most storied team in Formula 1 history. La Scuderia has competed in every World Championship season since 1950.",
   },
@@ -51,7 +54,8 @@ export const teams: Team[] = [
     wins: 125,
     podiums: 290,
     poles: 130,
-    drivers: ["russell", "antonelli"],  // ✅ Fixed IDs
+    fastestLaps: 105,
+    drivers: ["russell", "antonelli"],
     description:
       "Eight consecutive constructors' championships between 2014 and 2021 cemented Mercedes as one of the greatest teams in F1 history.",
   },
@@ -69,7 +73,8 @@ export const teams: Team[] = [
     wins: 183,
     podiums: 507,
     poles: 156,
-    drivers: ["norris", "piastri"],  // ✅ Fixed IDs
+    fastestLaps: 165,
+    drivers: ["norris", "piastri"],
     description:
       "A sleeping giant reawakened. McLaren's resurgence under Andrea Stella has them firmly back in the championship fight.",
   },
@@ -87,7 +92,8 @@ export const teams: Team[] = [
     wins: 0,
     podiums: 8,
     poles: 1,
-    drivers: ["alonso", "stroll"],  // ✅ Fixed IDs
+    fastestLaps: 3,
+    drivers: ["alonso", "stroll"],
     description:
       "Backed by Lawrence Stroll's ambitious vision, Aston Martin continue to build toward their first championship.",
   },
@@ -105,7 +111,8 @@ export const teams: Team[] = [
     wins: 1,
     podiums: 3,
     poles: 0,
-    drivers: ["gasly", "colapinto"],  // ✅ Fixed: colapinto (not doohan)
+    fastestLaps: 2,
+    drivers: ["gasly", "colapinto"],
     description:
       "The French constructor carries the legacy of Renault's F1 programme, racing under the iconic blue and pink livery.",
   },
@@ -123,7 +130,8 @@ export const teams: Team[] = [
     wins: 0,
     podiums: 1,
     poles: 0,
-    drivers: ["ocon", "bearman"],  // ✅ Fixed IDs
+    fastestLaps: 2,
+    drivers: ["ocon", "bearman"],
     description:
       "America's only current F1 team, Haas operate a lean and efficient model from their North Carolina base.",
   },
@@ -141,7 +149,8 @@ export const teams: Team[] = [
     wins: 2,
     podiums: 9,
     poles: 1,
-    drivers: ["lawson", "lindblad"],  // ✅ Fixed: lawson & lindblad (Racing Bulls drivers)
+    fastestLaps: 4,
+    drivers: ["lawson", "lindblad"],
     description:
       "Red Bull's junior team and development programme, Racing Bulls have produced some of the grid's finest talents.",
   },
@@ -159,7 +168,8 @@ export const teams: Team[] = [
     wins: 114,
     podiums: 312,
     poles: 128,
-    drivers: ["albon", "sainz"],  // ✅ Fixed IDs
+    fastestLaps: 133,
+    drivers: ["albon", "sainz"],
     description:
       "Nine constructors' championships and 114 wins make Williams one of F1's most celebrated teams, now rebuilding under James Vowles.",
   },
@@ -177,7 +187,8 @@ export const teams: Team[] = [
     wins: 0,
     podiums: 0,
     poles: 0,
-    drivers: ["perez", "bottas"],  // ✅ Fixed IDs
+    fastestLaps: 0,
+    drivers: ["perez", "bottas"],
     description:
       "Cadillac joins Formula 1 as the sport's newest team, bringing American ambition and veteran experience to the grid.",
   },
@@ -195,7 +206,8 @@ export const teams: Team[] = [
     wins: 0,
     podiums: 0,
     poles: 0,
-    drivers: ["hulkenberg", "bortoleto"],  // ✅ Fixed IDs
+    fastestLaps: 0,
+    drivers: ["hulkenberg", "bortoleto"],
     description:
       "Audi enters Formula 1 by transforming the Sauber operation into a full works team.",
   },
@@ -203,3 +215,19 @@ export const teams: Team[] = [
 
 export const getTeamById = (id: string): Team | undefined =>
   teams.find((t) => t.id === id);
+
+// Helper: Get 2026 season stats for a team from API driver data
+export function useTeamSeasonStats(teamId: string) {
+  const { data } = useF1Data();
+  const teamDrivers = data?.drivers?.filter(d => d.teamId === teamId) || [];
+
+  return {
+    points: teamDrivers.reduce((sum, d) => sum + d.season.points, 0),
+    wins: teamDrivers.reduce((sum, d) => sum + d.season.wins, 0),
+    podiums: teamDrivers.reduce((sum, d) => sum + d.season.podiums, 0),
+    poles: teamDrivers.reduce((sum, d) => sum + d.season.poles, 0),
+    fastestLaps: teamDrivers.reduce((sum, d) => sum + d.season.fastestLaps, 0),
+    starts: teamDrivers.reduce((sum, d) => sum + d.season.starts, 0),
+    driverCount: teamDrivers.length,
+  };
+}

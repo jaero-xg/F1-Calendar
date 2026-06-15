@@ -1,12 +1,39 @@
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
-import { getNextRace, getCompletedRaces } from "../data/races";
-import { getTopDrivers } from "../data/drivers";
+import { useF1Data } from "../hooks/useF1Data";
 
 export default function Hero() {
-  const nextRace = getNextRace();
-  const completedRaces = getCompletedRaces();
-  const topDrivers = getTopDrivers(3);
+  const { data, loading } = useF1Data();
+
+  if (loading) {
+    return (
+      <section className="bg-f1-black border-b border-f1-border">
+        <div className="wrap section-padding">
+          <div className="min-h-[340px] flex items-center justify-center">
+            <p className="text-f1-muted font-mono text-xs uppercase">
+              Loading...
+            </p>
+          </div>
+        </div>
+      </section>
+    );
+  }
+
+  // Safe fallbacks if data is null
+  const drivers = data?.drivers ?? [];
+  const races = data?.races ?? [];
+
+  // Sort by season points to get championship leader
+  const topDrivers = [...drivers].sort(
+    (a, b) => b.season.points - a.season.points,
+  );
+  const leader = topDrivers[0];
+
+  // Find next upcoming race
+  const now = new Date();
+  const nextRace = races
+    .filter((r) => new Date(r.date) > now)
+    .sort((a, b) => new Date(a.date).getTime() - new Date(b.date).getTime())[0];
 
   return (
     <section className="bg-f1-black border-b border-f1-border">
@@ -23,7 +50,6 @@ export default function Hero() {
                 2026 FIA Formula One World Championship
               </span>
 
-              {/* ✅ Responsive logo */}
               <img
                 src="https://cdn.jsdelivr.net/gh/glincker/thesvg@main/public/icons/f1/default.svg"
                 alt="F1"
@@ -35,7 +61,6 @@ export default function Hero() {
                 every result, every battle for the title.
               </p>
 
-              {/* ✅ Responsive buttons - stack on mobile, row on sm+ */}
               <div className="flex flex-col sm:flex-row items-start sm:items-center gap-3">
                 <Link
                   to="/calendar"
@@ -55,6 +80,7 @@ export default function Hero() {
 
           {/* Right column */}
           <div className="py-6 md:py-8 pl-0 lg:pl-10 flex flex-col justify-between gap-4 md:gap-6">
+            {/* Championship Leader */}
             <motion.div
               initial={{ opacity: 0, x: 20 }}
               animate={{ opacity: 1, x: 0 }}
@@ -64,16 +90,17 @@ export default function Hero() {
               <span className="font-mono text-[10px] uppercase tracking-[0.12em] text-f1-muted mb-1.5 block">
                 Championship Leader
               </span>
-              {/* ✅ Responsive text size */}
               <p className="font-display text-[32px] md:text-[42px] font-extrabold leading-none tracking-tight text-white">
-                {topDrivers[0]?.lastName.slice(0, 3).toUpperCase() || "ANT"}
+                {leader?.lastName?.slice(0, 3).toUpperCase() || "—"}
               </p>
               <p className="text-[11px] text-f1-muted mt-1">
-                {topDrivers[0]?.firstName} {topDrivers[0]?.lastName} &bull;{" "}
-                {topDrivers[0]?.team} &bull; {topDrivers[0]?.season?.points} PTS
+                {leader
+                  ? `${leader.firstName} ${leader.lastName} • ${leader.team} • ${leader.season.points} PTS`
+                  : "No data"}
               </p>
             </motion.div>
 
+            {/* Constructors Lead - static for now, or calculate from team data */}
             <motion.div
               initial={{ opacity: 0, x: 20 }}
               animate={{ opacity: 1, x: 0 }}
@@ -84,13 +111,14 @@ export default function Hero() {
                 Constructors Lead
               </span>
               <p className="font-display text-[32px] md:text-[42px] font-extrabold leading-none tracking-tight text-white">
-                McLaren
+                Mercedes
               </p>
               <p className="text-[11px] text-f1-muted mt-1">
-                310 points &bull; +12 over Red Bull
+                Leading the standings
               </p>
             </motion.div>
 
+            {/* Next Event */}
             <motion.div
               initial={{ opacity: 0, x: 20 }}
               animate={{ opacity: 1, x: 0 }}
@@ -102,10 +130,10 @@ export default function Hero() {
               {nextRace ? (
                 <>
                   <p className="font-display text-[32px] md:text-[42px] font-extrabold leading-none tracking-tight text-white">
-                    {nextRace.location.slice(0, 3).toUpperCase()}
+                    {nextRace.location?.slice(0, 3).toUpperCase() || "—"}
                   </p>
                   <p className="text-[11px] text-f1-muted mt-1">
-                    {nextRace.circuit} &bull; Round {nextRace.round}
+                    {nextRace.circuit} • Round {nextRace.round}
                   </p>
                 </>
               ) : (

@@ -1,14 +1,23 @@
 import { useParams, Link } from "react-router-dom";
 import { useState } from "react";
-import { getDriverStats } from "../utils/driverStats";
-import type { StatMode } from "@/types";
 import { motion } from "framer-motion";
-import { ArrowLeft, Star, Clock } from "lucide-react";
-import { getDriverById } from "../data/drivers";
+import { ArrowLeft, Star, Clock, Trophy, Flag, Zap, Timer } from "lucide-react";
+import { useF1Data } from "../hooks/useF1Data";
 
 export default function DriverDetails() {
   const { id } = useParams<{ id: string }>();
-  const driver = getDriverById(id || "");
+  const { data, loading } = useF1Data();
+  const [mode, setMode] = useState<"2026" | "all-time">("2026");
+
+  if (loading) {
+    return (
+      <div className="pt-20 sm:pt-24 px-4 text-center">
+        <p className="text-f1-muted">Loading...</p>
+      </div>
+    );
+  }
+
+  const driver = data?.drivers.find((d) => d.id === id);
 
   if (!driver) {
     return (
@@ -28,8 +37,36 @@ export default function DriverDetails() {
     );
   }
 
-  const [mode, setMode] = useState<"2026" | "all-time">("2026");
-  const stats = getDriverStats(driver, mode);
+  // Build stats grid based on mode
+  const stats2026 = [
+    { label: "Points", value: driver.season.points, icon: Trophy },
+    { label: "Wins", value: driver.season.wins, icon: Flag },
+    { label: "Podiums", value: driver.season.podiums, icon: Trophy },
+    { label: "Poles", value: driver.season.poles, icon: Star },
+    { label: "Starts", value: driver.season.starts, icon: Timer },
+    { label: "Fastest Laps", value: driver.season.fastestLaps, icon: Zap },
+  ];
+
+  const statsAllTime = [
+    {
+      label: "Championships",
+      value: driver.allTime.championships,
+      icon: Trophy,
+    },
+
+    { label: "Wins", value: driver.allTime.wins, icon: Flag },
+    { label: "Podiums", value: driver.allTime.podiums, icon: Trophy },
+    { label: "Poles", value: driver.allTime.poles, icon: Star },
+    { label: "Starts", value: driver.allTime.starts, icon: Timer },
+    { label: "Fastest Laps", value: driver.allTime.fastestLaps, icon: Zap },
+  ];
+
+  const stats = mode === "2026" ? stats2026 : statsAllTime;
+
+  // Filter to only completed races for the table
+  const completedRaces = driver.seasonStats.filter(
+    (s) => s.position !== null && s.points !== null,
+  );
 
   return (
     <div className="pt-14 sm:pt-24 pb-12 sm:pb-20">
@@ -159,99 +196,105 @@ export default function DriverDetails() {
 
           {/* 2026 Mode: Race Table */}
           {mode === "2026" ? (
-            <div className="border border-f1-border overflow-x-auto">
-              <div className="min-w-[500px]">
-                <div className="grid grid-cols-[1fr_60px_60px_50px_50px] sm:grid-cols-[1fr_80px_80px_60px_60px] gap-0 border-b border-f1-border">
-                  <div className="px-3 sm:px-4 py-2.5 sm:py-3 font-mono text-[9px] sm:text-[10px] uppercase tracking-[0.12em] text-f1-muted">
-                    Race
+            completedRaces.length > 0 ? (
+              <div className="border border-f1-border overflow-x-auto">
+                <div className="min-w-[500px]">
+                  <div className="grid grid-cols-[1fr_60px_60px_50px_50px] sm:grid-cols-[1fr_80px_80px_60px_60px] gap-0 border-b border-f1-border">
+                    <div className="px-3 sm:px-4 py-2.5 sm:py-3 font-mono text-[9px] sm:text-[10px] uppercase tracking-[0.12em] text-f1-muted">
+                      Race
+                    </div>
+                    <div className="px-3 sm:px-4 py-2.5 sm:py-3 font-mono text-[9px] sm:text-[10px] uppercase tracking-[0.12em] text-f1-muted text-center">
+                      Pos
+                    </div>
+                    <div className="px-3 sm:px-4 py-2.5 sm:py-3 font-mono text-[9px] sm:text-[10px] uppercase tracking-[0.12em] text-f1-muted text-center">
+                      Pts
+                    </div>
+                    <div className="px-3 sm:px-4 py-2.5 sm:py-3 font-mono text-[9px] sm:text-[10px] uppercase tracking-[0.12em] text-f1-muted text-center">
+                      Pole
+                    </div>
+                    <div className="px-3 sm:px-4 py-2.5 sm:py-3 font-mono text-[9px] sm:text-[10px] uppercase tracking-[0.12em] text-f1-muted text-center">
+                      FL
+                    </div>
                   </div>
-                  <div className="px-3 sm:px-4 py-2.5 sm:py-3 font-mono text-[9px] sm:text-[10px] uppercase tracking-[0.12em] text-f1-muted text-center">
-                    Pos
-                  </div>
-                  <div className="px-3 sm:px-4 py-2.5 sm:py-3 font-mono text-[9px] sm:text-[10px] uppercase tracking-[0.12em] text-f1-muted text-center">
-                    Pts
-                  </div>
-                  <div className="px-3 sm:px-4 py-2.5 sm:py-3 font-mono text-[9px] sm:text-[10px] uppercase tracking-[0.12em] text-f1-muted text-center">
-                    Pole
-                  </div>
-                  <div className="px-3 sm:px-4 py-2.5 sm:py-3 font-mono text-[9px] sm:text-[10px] uppercase tracking-[0.12em] text-f1-muted text-center">
-                    FL
-                  </div>
-                </div>
 
-                {driver.seasonStats.map((stat, i) => (
-                  <motion.div
-                    key={stat.race}
-                    initial={{ opacity: 0, x: -10 }}
-                    animate={{ opacity: 1, x: 0 }}
-                    transition={{ delay: i * 0.04 }}
-                    className="grid grid-cols-[1fr_60px_60px_50px_50px] sm:grid-cols-[1fr_80px_80px_60px_60px] gap-0 border-b border-f1-border last:border-b-0 hover:bg-f1-surface/30 transition-colors"
-                  >
-                    <div className="px-3 sm:px-4 py-2.5 sm:py-3 text-xs sm:text-sm font-medium text-white">
-                      {stat.race}
-                    </div>
-                    <div className="px-3 sm:px-4 py-2.5 sm:py-3 text-center">
-                      {stat.position === null ? (
-                        <span className="text-f1-muted text-xs sm:text-sm">
-                          —
-                        </span>
-                      ) : (
-                        <span
-                          className={`text-xs sm:text-sm font-bold ${
-                            stat.position === 1
-                              ? "text-f1-gold"
-                              : stat.position === 2
-                                ? "text-f1-silver"
-                                : stat.position === 3
-                                  ? "text-f1-bronze"
-                                  : stat.position === 99
-                                    ? "text-red-400"
-                                    : "text-white"
-                          }`}
-                        >
-                          {stat.position === 99
-                            ? "DNF"
-                            : stat.position === 1
-                              ? "1st"
-                              : stat.position === 2
-                                ? "2nd"
-                                : stat.position === 3
-                                  ? "3rd"
-                                  : `${stat.position}th`}
-                        </span>
-                      )}
-                    </div>
-                    <div className="px-3 sm:px-4 py-2.5 sm:py-3 text-xs sm:text-sm text-white text-center">
-                      {stat.points ?? <span className="text-f1-muted">—</span>}
-                    </div>
-                    <div className="px-3 sm:px-4 py-2.5 sm:py-3 text-center">
-                      {stat.pole === null ? (
-                        <span className="text-f1-muted">—</span>
-                      ) : stat.pole ? (
-                        <Star
-                          size={12}
-                          className="mx-auto text-purple-400 sm:size-14"
-                        />
-                      ) : (
-                        <span className="text-f1-muted">—</span>
-                      )}
-                    </div>
-                    <div className="px-3 sm:px-4 py-2.5 sm:py-3 text-center">
-                      {stat.fastestLap === null ? (
-                        <span className="text-f1-muted">—</span>
-                      ) : stat.fastestLap ? (
-                        <Clock
-                          size={12}
-                          className="mx-auto text-f1-accent sm:size-14"
-                        />
-                      ) : (
-                        <span className="text-f1-muted">—</span>
-                      )}
-                    </div>
-                  </motion.div>
-                ))}
+                  {completedRaces.map((stat, i) => (
+                    <motion.div
+                      key={stat.race}
+                      initial={{ opacity: 0, x: -10 }}
+                      animate={{ opacity: 1, x: 0 }}
+                      transition={{ delay: i * 0.04 }}
+                      className="grid grid-cols-[1fr_60px_60px_50px_50px] sm:grid-cols-[1fr_80px_80px_60px_60px] gap-0 border-b border-f1-border last:border-b-0 hover:bg-f1-surface/30 transition-colors"
+                    >
+                      <div className="px-3 sm:px-4 py-2.5 sm:py-3 text-xs sm:text-sm font-medium text-white">
+                        {stat.race}
+                      </div>
+                      <div className="px-3 sm:px-4 py-2.5 sm:py-3 text-center">
+                        {stat.position === null ? (
+                          <span className="text-f1-muted text-xs sm:text-sm">
+                            —
+                          </span>
+                        ) : (
+                          <span
+                            className={`text-xs sm:text-sm font-bold ${
+                              stat.position === 1
+                                ? "text-f1-gold"
+                                : stat.position === 2
+                                  ? "text-f1-silver"
+                                  : stat.position === 3
+                                    ? "text-f1-bronze"
+                                    : stat.position === 99
+                                      ? "text-red-400"
+                                      : "text-white"
+                            }`}
+                          >
+                            {stat.position === 99
+                              ? "DNF"
+                              : stat.position === 1
+                                ? "1st"
+                                : stat.position === 2
+                                  ? "2nd"
+                                  : stat.position === 3
+                                    ? "3rd"
+                                    : `${stat.position}th`}
+                          </span>
+                        )}
+                      </div>
+                      <div className="px-3 sm:px-4 py-2.5 sm:py-3 text-xs sm:text-sm text-white text-center">
+                        {stat.points ?? (
+                          <span className="text-f1-muted">—</span>
+                        )}
+                      </div>
+                      <div className="px-3 sm:px-4 py-2.5 sm:py-3 text-center">
+                        {stat.pole ? (
+                          <Star
+                            size={12}
+                            className="mx-auto text-purple-400 sm:size-14"
+                          />
+                        ) : (
+                          <span className="text-f1-muted">—</span>
+                        )}
+                      </div>
+                      <div className="px-3 sm:px-4 py-2.5 sm:py-3 text-center">
+                        {stat.fastestLap ? (
+                          <Clock
+                            size={12}
+                            className="mx-auto text-f1-accent sm:size-14"
+                          />
+                        ) : (
+                          <span className="text-f1-muted">—</span>
+                        )}
+                      </div>
+                    </motion.div>
+                  ))}
+                </div>
               </div>
-            </div>
+            ) : (
+              <div className="border border-f1-border p-8 sm:p-12 text-center">
+                <p className="text-f1-muted text-sm sm:text-base">
+                  No completed races yet.
+                </p>
+              </div>
+            )
           ) : (
             /* All-Time Mode: Career Summary */
             <div className="grid grid-cols-2 sm:grid-cols-3 gap-3 sm:gap-4">
@@ -273,10 +316,34 @@ export default function DriverDetails() {
               </div>
               <div className="bg-f1-card p-4 sm:p-6 border border-f1-border">
                 <p className="font-mono text-[9px] sm:text-[10px] uppercase text-f1-muted mb-1.5 sm:mb-2">
-                  Career Points
+                  Wins
                 </p>
                 <p className="font-display text-xl sm:text-2xl font-extrabold text-white">
-                  {driver.allTime.points}
+                  {driver.allTime.wins}
+                </p>
+              </div>
+              <div className="bg-f1-card p-4 sm:p-6 border border-f1-border">
+                <p className="font-mono text-[9px] sm:text-[10px] uppercase text-f1-muted mb-1.5 sm:mb-2">
+                  Podiums
+                </p>
+                <p className="font-display text-xl sm:text-2xl font-extrabold text-white">
+                  {driver.allTime.podiums}
+                </p>
+              </div>
+              <div className="bg-f1-card p-4 sm:p-6 border border-f1-border">
+                <p className="font-mono text-[9px] sm:text-[10px] uppercase text-f1-muted mb-1.5 sm:mb-2">
+                  Poles
+                </p>
+                <p className="font-display text-xl sm:text-2xl font-extrabold text-white">
+                  {driver.allTime.poles}
+                </p>
+              </div>
+              <div className="bg-f1-card p-4 sm:p-6 border border-f1-border">
+                <p className="font-mono text-[9px] sm:text-[10px] uppercase text-f1-muted mb-1.5 sm:mb-2">
+                  Fastest Laps
+                </p>
+                <p className="font-display text-xl sm:text-2xl font-extrabold text-white">
+                  {driver.allTime.fastestLaps}
                 </p>
               </div>
             </div>

@@ -1,7 +1,8 @@
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
-import { Trophy, Award, Flag } from "lucide-react";
+import { Trophy, Award, Flag, Timer } from "lucide-react";
 import { Team } from "../types";
+import { useF1Data } from "../hooks/useF1Data";
 
 interface TeamCardProps {
   team: Team;
@@ -9,10 +10,27 @@ interface TeamCardProps {
 }
 
 export default function TeamCard({ team, index }: TeamCardProps) {
+  const { data } = useF1Data();
+
+  // Calculate team stats from API driver data if available
+  const teamDrivers = data?.drivers?.filter((d) => d.teamId === team.id) || [];
+  const seasonPoints = teamDrivers.reduce((sum, d) => sum + d.season.points, 0);
+  const seasonWins = teamDrivers.reduce((sum, d) => sum + d.season.wins, 0);
+  const seasonPodiums = teamDrivers.reduce(
+    (sum, d) => sum + d.season.podiums,
+    0,
+  );
+  const seasonPoles = teamDrivers.reduce((sum, d) => sum + d.season.poles, 0);
+  const seasonFL = teamDrivers.reduce(
+    (sum, d) => sum + d.season.fastestLaps,
+    0,
+  );
+
   const stats = [
     { label: "Championships", value: team.championships, icon: Trophy },
     { label: "Wins", value: team.wins, icon: Award },
     { label: "Poles", value: team.poles, icon: Flag },
+    { label: "Fastest Laps", value: team.fastestLaps || 0, icon: Timer },
   ];
 
   return (
@@ -78,6 +96,26 @@ export default function TeamCard({ team, index }: TeamCardProps) {
                 style={{ backgroundColor: team.color + "60" }}
               />
             </div>
+
+            {/* 2026 Season mini-stats */}
+            {teamDrivers.length > 0 && (
+              <div className="mb-2 px-2 py-1.5 bg-f1-surface/30 rounded-sm border border-f1-border/30">
+                <span className="font-mono text-[9px] uppercase tracking-widest text-f1-accent">
+                  2026 Season
+                </span>
+                <div className="flex gap-3 mt-1">
+                  <span className="font-mono text-[11px] text-white">
+                    <span className="text-f1-muted">Pts:</span> {seasonPoints}
+                  </span>
+                  <span className="font-mono text-[11px] text-white">
+                    <span className="text-f1-muted">W:</span> {seasonWins}
+                  </span>
+                  <span className="font-mono text-[11px] text-white">
+                    <span className="text-f1-muted">P:</span> {seasonPodiums}
+                  </span>
+                </div>
+              </div>
+            )}
 
             <div className="flex flex-col divide-y divide-f1-border/50">
               {stats.map((stat) => (
@@ -150,6 +188,7 @@ export default function TeamCard({ team, index }: TeamCardProps) {
                   { label: "Titles", value: String(team.championships) },
                   { label: "Wins", value: String(team.wins) },
                   { label: "Poles", value: String(team.poles) },
+                  { label: "FL", value: String(team.fastestLaps || 0) },
                 ].map((item, i, arr) => (
                   <div key={item.label} className="flex items-end gap-3">
                     <div className="flex flex-col gap-0.5">
