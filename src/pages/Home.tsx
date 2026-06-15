@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import { ArrowRight } from "lucide-react";
 import Hero from "../components/Hero";
 import RaceCard from "../components/RaceCard";
 import DriverCard from "../components/DriverCard";
@@ -9,6 +8,9 @@ import { getCompletedRaces, getUpcomingRaces } from "../data/races";
 import { useF1Data } from "../hooks/useF1Data";
 import { tracks } from "../data/tracks";
 
+/* ═══════════════════════════════════════════════════════════════
+   SECTION HEADER
+   ═══════════════════════════════════════════════════════════════ */
 function SectionHeader({
   eyebrow,
   title,
@@ -23,8 +25,8 @@ function SectionHeader({
   right?: React.ReactNode;
 }) {
   return (
-    <div className="flex flex-col sm:flex-row sm:items-end justify-between mb-4 sm:mb-6 pb-3 sm:pb-4 border-b border-f1-border gap-2 sm:gap-0">
-      <div className="flex flex-col gap-1">
+    <div className="flex flex-col sm:flex-row sm:items-end justify-between mb-3 sm:mb-4 md:mb-5 pb-2.5 sm:pb-3 md:pb-4 border-b border-f1-border gap-2 sm:gap-0">
+      <div className="flex flex-col gap-0.5 sm:gap-1">
         <div className="eyebrow">
           <div
             className="eyebrow-bar"
@@ -42,7 +44,7 @@ function SectionHeader({
             {eyebrow}
           </span>
         </div>
-        <h2 className="section-title text-xl sm:text-2xl md:text-3xl">
+        <h2 className="section-title text-lg sm:text-xl md:text-2xl lg:text-3xl">
           {title}
         </h2>
       </div>
@@ -51,9 +53,12 @@ function SectionHeader({
   );
 }
 
+/* ═══════════════════════════════════════════════════════════════
+   TICKER
+   ═══════════════════════════════════════════════════════════════ */
 function Ticker() {
   const text =
-    "VERSTAPPEN LEADS NORRIS BY 26 PTS · MONACO GP RESULTS: 1. LECLERC 2. HAMILTON 3. VERSTAPPEN · ROUND 07 · BARCELONA · 12 JUNE · ";
+    "ANTONELLI LEADS HAMILTON BY 41 PTS · BARCELONA GP RESULTS: 1. HAMILTON 2. RUSSELL 3. NORRIS · ROUND 08 · AUSTRIA · 27 JUNE · ";
 
   return (
     <div className="bg-f1-accent h-7 sm:h-8 flex items-center overflow-hidden">
@@ -68,6 +73,10 @@ function Ticker() {
   );
 }
 
+/* ═══════════════════════════════════════════════════════════════
+   SECTION WRAPPER
+   Reduced padding on mobile, scales up gracefully
+   ═══════════════════════════════════════════════════════════════ */
 function Section({
   children,
   className = "",
@@ -77,24 +86,32 @@ function Section({
 }) {
   return (
     <section
-      className={`py-6 sm:py-8 md:py-10 border-b border-f1-border ${className}`}
+      className={`py-4 sm:py-6 md:py-8 lg:py-10 border-b border-f1-border ${className}`}
     >
-      <div className="wrap section-padding">{children}</div>
+      <div className="wrap px-3 sm:px-4 md:px-6 lg:px-8 xl:px-12">
+        {children}
+      </div>
     </section>
   );
 }
 
+/* ═══════════════════════════════════════════════════════════════
+   VIEW ALL LINK
+   ═══════════════════════════════════════════════════════════════ */
 function ViewAllLink({ to, label }: { to: string; label: string }) {
   return (
     <Link
       to={to}
-      className="text-[10px] sm:text-[11px] font-medium uppercase tracking-[0.08em] text-f1-muted hover:text-white transition-colors flex items-center gap-1.5"
+      className="text-[10px] sm:text-[11px] font-medium uppercase tracking-[0.08em] text-f1-muted hover:text-white transition-colors flex items-center gap-1 shrink-0"
     >
-      {label} <span>→</span>
+      {label} <span className="text-f1-accent">→</span>
     </Link>
   );
 }
 
+/* ═══════════════════════════════════════════════════════════════
+   PRIMARY BUTTON
+   ═══════════════════════════════════════════════════════════════ */
 function PrimaryButtonLink({
   to,
   children,
@@ -114,15 +131,53 @@ function PrimaryButtonLink({
   );
 }
 
+/* ═══════════════════════════════════════════════════════════════
+   GRID CONFIGURATIONS
+   Consistent responsive grids with proper gaps
+   ═══════════════════════════════════════════════════════════════ */
+
+// For RaceCards & DriverCards: 1 col mobile, 2 col md, 3 col xl
+function CardGrid3({ children }: { children: React.ReactNode }) {
+  return (
+    <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-2 sm:gap-3 md:gap-4">
+      {children}
+    </div>
+  );
+}
+
+// For TrackCards: 1 col mobile, 2 col md, 3 col lg, 4 col xl
+function CardGrid4({ children }: { children: React.ReactNode }) {
+  return (
+    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-2 sm:gap-3 md:gap-4">
+      {children}
+    </div>
+  );
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   HOME PAGE
+   ═══════════════════════════════════════════════════════════════ */
 export default function Home() {
   const { data, loading, error } = useF1Data();
 
   if (loading) {
-    return <div>Loading drivers...</div>;
+    return (
+      <div className="min-h-screen flex items-center justify-center">
+        <div className="font-mono text-sm text-f1-muted animate-pulse">
+          Loading drivers...
+        </div>
+      </div>
+    );
   }
 
   if (error || !data) {
-    return <div>Failed loading data</div>;
+    return (
+      <div className="min-h-screen flex items-center justify-center">
+        <div className="font-mono text-sm text-red-400">
+          Failed loading data
+        </div>
+      </div>
+    );
   }
 
   const topDrivers = [...data.drivers]
@@ -137,25 +192,24 @@ export default function Home() {
       <Ticker />
       <Hero />
 
-      {/* Recent Races */}
+      {/* ── Recent Races ── */}
       <Section>
         <SectionHeader
           eyebrow="Results"
           title="Recent Races"
           right={<ViewAllLink to="/calendar" label="View All" />}
         />
-        {/* ✅ 3 columns on mobile, 2 on md, 3 on xl */}
-        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-1">
+        <CardGrid3>
           {completedRaces
             .slice(-3)
             .reverse()
             .map((race, i) => (
               <RaceCard key={race.id} race={race} index={i} />
             ))}
-        </div>
+        </CardGrid3>
       </Section>
 
-      {/* Coming Up */}
+      {/* ── Coming Up ── */}
       <Section className="bg-[#0d0d0d]">
         <SectionHeader
           eyebrow="Schedule"
@@ -164,15 +218,14 @@ export default function Home() {
           barColor="tw-blue-400"
           right={<ViewAllLink to="/calendar" label="Full Calendar" />}
         />
-        {/* ✅ 3 columns on mobile, 2 on md, 3 on xl */}
-        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-1">
+        <CardGrid3>
           {upcomingRaces.map((race, i) => (
             <RaceCard key={race.id} race={race} index={i} />
           ))}
-        </div>
+        </CardGrid3>
       </Section>
 
-      {/* Top Drivers */}
+      {/* ── Top Drivers ── */}
       <Section>
         <SectionHeader
           eyebrow="Standings"
@@ -181,15 +234,14 @@ export default function Home() {
           barColor="tw-f1-gold"
           right={<ViewAllLink to="/drivers" label="View All Drivers" />}
         />
-        {/* ✅ 3 columns on mobile, 2 on md, 3 on xl */}
-        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-1">
+        <CardGrid3>
           {topDrivers.map((driver, i) => (
             <DriverCard key={driver.id} driver={driver} index={i} mode="2026" />
           ))}
-        </div>
+        </CardGrid3>
       </Section>
 
-      {/* Track Guide */}
+      {/* ── Track Guide ── */}
       <Section className="bg-[#0d0d0d]">
         <SectionHeader
           eyebrow="Circuits"
@@ -198,12 +250,11 @@ export default function Home() {
           barColor="tw-green-400"
           right={<ViewAllLink to="/tracks" label="View All Tracks" />}
         />
-        {/* ✅ 3 columns on mobile, 2 on md, 3 on lg, 4 on xl */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-1">
+        <CardGrid4>
           {tracks.slice(0, 8).map((track, i) => (
             <TrackCard key={track.id} track={track} index={i} />
           ))}
-        </div>
+        </CardGrid4>
       </Section>
     </div>
   );

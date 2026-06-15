@@ -2,15 +2,50 @@ import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import { useF1Data } from "../hooks/useF1Data";
 
+/* ═══════════════════════════════════════════════════════════════
+   STAT BLOCK
+   ═══════════════════════════════════════════════════════════════ */
+function StatBlock({
+  label,
+  value,
+  subtext,
+  delay = 0,
+}: {
+  label: string;
+  value: string;
+  subtext: string;
+  delay?: number;
+}) {
+  return (
+    <motion.div
+      initial={{ opacity: 0, x: 20 }}
+      animate={{ opacity: 1, x: 0 }}
+      transition={{ duration: 0.6, delay }}
+      className="pb-4 md:pb-6 border-b border-f1-border last:border-b-0 last:pb-0"
+    >
+      <span className="font-mono text-[10px] uppercase tracking-[0.12em] text-f1-muted mb-1.5 block">
+        {label}
+      </span>
+      <p className="font-display text-[32px] md:text-[42px] font-extrabold leading-none tracking-tight text-white">
+        {value}
+      </p>
+      <p className="text-[11px] text-f1-muted mt-1 truncate">{subtext}</p>
+    </motion.div>
+  );
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   HERO
+   ═══════════════════════════════════════════════════════════════ */
 export default function Hero() {
   const { data, loading } = useF1Data();
 
   if (loading) {
     return (
       <section className="bg-f1-black border-b border-f1-border">
-        <div className="wrap section-padding">
+        <div className="px-3 sm:px-4 md:px-6 lg:px-8 xl:px-12">
           <div className="min-h-[340px] flex items-center justify-center">
-            <p className="text-f1-muted font-mono text-xs uppercase">
+            <p className="font-mono text-[11px] uppercase tracking-[0.1em] text-f1-muted animate-pulse">
               Loading...
             </p>
           </div>
@@ -37,7 +72,7 @@ export default function Hero() {
 
   return (
     <section className="bg-f1-black border-b border-f1-border">
-      <div className="wrap section-padding">
+      <div className="px-3 sm:px-4 md:px-6 lg:px-8 xl:px-12">
         <div className="grid grid-cols-1 lg:grid-cols-[1fr_380px] min-h-[340px]">
           {/* Left column */}
           <div className="py-6 md:py-12 pr-0 lg:pr-10 lg:border-r border-f1-border flex flex-col justify-end">
@@ -80,45 +115,24 @@ export default function Hero() {
 
           {/* Right column */}
           <div className="py-6 md:py-8 pl-0 lg:pl-10 flex flex-col justify-between gap-4 md:gap-6">
-            {/* Championship Leader */}
-            <motion.div
-              initial={{ opacity: 0, x: 20 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.6, delay: 0.2 }}
-              className="pb-4 md:pb-6 border-b border-f1-border"
-            >
-              <span className="font-mono text-[10px] uppercase tracking-[0.12em] text-f1-muted mb-1.5 block">
-                Championship Leader
-              </span>
-              <p className="font-display text-[32px] md:text-[42px] font-extrabold leading-none tracking-tight text-white">
-                {leader?.lastName?.slice(0, 3).toUpperCase() || "—"}
-              </p>
-              <p className="text-[11px] text-f1-muted mt-1">
-                {leader
+            <StatBlock
+              label="Championship Leader"
+              value={leader?.lastName?.slice(0, 3).toUpperCase() || "—"}
+              subtext={
+                leader
                   ? `${leader.firstName} ${leader.lastName} • ${leader.team} • ${leader.season.points} PTS`
-                  : "No data"}
-              </p>
-            </motion.div>
+                  : "No data"
+              }
+              delay={0.2}
+            />
 
-            {/* Constructors Lead - static for now, or calculate from team data */}
-            <motion.div
-              initial={{ opacity: 0, x: 20 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.6, delay: 0.3 }}
-              className="pb-4 md:pb-6 border-b border-f1-border"
-            >
-              <span className="font-mono text-[10px] uppercase tracking-[0.12em] text-f1-muted mb-1.5 block">
-                Constructors Lead
-              </span>
-              <p className="font-display text-[32px] md:text-[42px] font-extrabold leading-none tracking-tight text-white">
-                Mercedes
-              </p>
-              <p className="text-[11px] text-f1-muted mt-1">
-                Leading the standings
-              </p>
-            </motion.div>
+            <StatBlock
+              label="Constructors Lead"
+              value="Mercedes"
+              subtext="Leading the standings"
+              delay={0.3}
+            />
 
-            {/* Next Event */}
             <motion.div
               initial={{ opacity: 0, x: 20 }}
               animate={{ opacity: 1, x: 0 }}

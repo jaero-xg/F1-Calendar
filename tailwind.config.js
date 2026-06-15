@@ -20,7 +20,7 @@ export default {
         },
       },
       fontFamily: {
-        display: ['"Barlow Condensed"', "system-ui", "sans-serif"],
+        display: ['"Gibed"', "system-ui", "sans-serif"],
         body: ["Inter", "system-ui", "sans-serif"],
         mono: ['"JetBrains Mono"', "monospace"],
       },

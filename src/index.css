@@ -88,3 +88,9 @@
     animation: blink 1.2s ease-in-out infinite;
   }
 }
+@font-face {
+  font-family: "Gibed";
+  src: url("/fonts/Formula1-Bold_web_0.ttf") format("opentype");
+  font-weight: 400 900;
+  font-style: normal;
+}

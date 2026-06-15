@@ -102,14 +102,15 @@ export default function DriverCard({ driver, index, mode }: DriverCardProps) {
               </h3>
             </div>
 
+            {/* IMAGE CONTAINER - anchored to bottom */}
             <div
-              className="flex-1 min-h-[130px] flex items-center justify-center mb-3 border border-f1-border/40 overflow-hidden rounded-sm"
+              className="flex-1 min-h-[130px] flex items-end justify-center mb-3 border border-f1-border/40 overflow-hidden rounded-sm"
               style={{ backgroundColor: driver.teamColor + "10" }}
             >
               <img
                 src={driver.image}
                 alt={fullName}
-                className="w-full h-full object-contain p-3"
+                className="w-full h-full object-contain object-bottom"
                 loading="lazy"
               />
             </div>
@@ -141,7 +142,7 @@ export default function DriverCard({ driver, index, mode }: DriverCardProps) {
           />
 
           <div className="flex pl-[3px] h-[100px]">
-            {/* Image */}
+            {/* Image - anchored to bottom */}
             <div
               className="w-[80px] shrink-0 h-full flex items-end justify-center overflow-hidden"
               style={{ backgroundColor: driver.teamColor + "18" }}

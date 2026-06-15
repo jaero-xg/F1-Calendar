@@ -12,6 +12,7 @@ export const races: Race[] = [
     date: '2026-04-10', endDate: '2026-04-12', status: 'cancelled', isSprint: false, isSaturday: false,
     trackId: 'bahrain', cancellationReason: 'Cancelled due to the 2026 Iran–Middle East conflict',
     sessions: [],
+    circuitSvg: "/circuits/Bahrain.svg"
   },
   {
     id: 'saudi-arabia', round: 0, name: 'Saudi Arabian Grand Prix',
@@ -19,6 +20,7 @@ export const races: Race[] = [
     date: '2026-04-17', endDate: '2026-04-19', status: 'cancelled', isSprint: false, isSaturday: false,
     trackId: 'jeddah', cancellationReason: 'Cancelled due to the 2026 Iran–Middle East conflict',
     sessions: [],
+    circuitSvg: "/circuits/Saudi-Arabia.svg"
   },
 
   // ─── COMPLETED ───────────────────────────────────────────────────────────
@@ -38,6 +40,7 @@ export const races: Race[] = [
       { id: 'aus-qu',   type: 'Qualifying', day: 'Sat', time: '16:00', duration: '60 min',  status: 'completed' },
       { id: 'aus-race', type: 'Race',       day: 'Sun', time: '15:00', duration: '58 laps', status: 'completed' },
     ],
+    circuitSvg: "/circuits/Australia.svg"
   },
 
   // R2 — China (Sprint)
@@ -55,6 +58,7 @@ export const races: Race[] = [
       { id: 'chn-qu',     type: 'Qualifying',         day: 'Sat', time: '15:00', duration: '60 min',  status: 'completed' },
       { id: 'chn-race',   type: 'Race',               day: 'Sun', time: '15:00', duration: '56 laps', status: 'completed' },
     ],
+    circuitSvg: "/circuits/China.svg"
   },
 
   // R3 — Japan
@@ -72,6 +76,7 @@ export const races: Race[] = [
       { id: 'jpn-qu',   type: 'Qualifying', day: 'Sat', time: '15:00', duration: '60 min',  status: 'completed' },
       { id: 'jpn-race', type: 'Race',       day: 'Sun', time: '14:00', duration: '53 laps', status: 'completed' },
     ],
+    circuitSvg: "/circuits/Suzuka.svg"
   },
 
   // R4 — Miami (Sprint)
@@ -89,6 +94,7 @@ export const races: Race[] = [
       { id: 'mia-qu',     type: 'Qualifying',         day: 'Sat', time: '16:00', duration: '60 min',  status: 'completed' },
       { id: 'mia-race',   type: 'Race',               day: 'Sun', time: '13:00', duration: '57 laps', status: 'completed' },
     ],
+    circuitSvg: "/circuits/Miami.svg"
   },
 
   // R5 — Canada (Sprint)
@@ -106,6 +112,7 @@ export const races: Race[] = [
       { id: 'can-qu',     type: 'Qualifying',         day: 'Sat', time: '16:00', duration: '60 min',  status: 'completed' },
       { id: 'can-race',   type: 'Race',               day: 'Sun', time: '16:00', duration: '68 laps', status: 'completed' },
     ],
+    circuitSvg: "/circuits/Canada.svg"
   },
 
   // R6 — Monaco
@@ -123,6 +130,7 @@ export const races: Race[] = [
       { id: 'mon-qu',   type: 'Qualifying', day: 'Sat', time: '16:00', duration: '60 min',  status: 'completed' },
       { id: 'mon-race', type: 'Race',       day: 'Sun', time: '15:00', duration: '78 laps', status: 'completed' },
     ],
+    circuitSvg: "/circuits/Monaco.svg"
   },
 
   // ─── UPCOMING ────────────────────────────────────────────────────────────
@@ -140,6 +148,7 @@ export const races: Race[] = [
       { id: 'bar-qu',   type: 'Qualifying', day: 'Sat', time: '16:00', duration: '60 min',  status: 'completed' },
       { id: 'bar-race', type: 'Race',       day: 'Sun', time: '15:00', duration: '66 laps', status: 'completed' },
     ],
+    circuitSvg: "/circuits/Barcelona.svg"
   },
 
   // R8 — Austria
@@ -155,6 +164,7 @@ export const races: Race[] = [
       { id: 'aut-qu',   type: 'Qualifying', day: 'Sat', time: '16:00', duration: '60 min',  status: 'upcoming' },
       { id: 'aut-race', type: 'Race',       day: 'Sun', time: '15:00', duration: '71 laps', status: 'upcoming' },
     ],
+    circuitSvg: "/circuits/Austria.svg"
   },
 
   // R9 — Great Britain (Sprint)
@@ -170,6 +180,7 @@ export const races: Race[] = [
       { id: 'gbr-qu',     type: 'Qualifying',         day: 'Sat', time: '16:00', duration: '60 min',  status: 'upcoming' },
       { id: 'gbr-race',   type: 'Race',               day: 'Sun', time: '15:00', duration: '52 laps', status: 'upcoming' },
     ],
+    circuitSvg: "/circuits/Britian.svg"
   },
 
   // R10 — Belgium
@@ -185,6 +196,7 @@ export const races: Race[] = [
       { id: 'bel-qu',   type: 'Qualifying', day: 'Sat', time: '16:00', duration: '60 min',  status: 'upcoming' },
       { id: 'bel-race', type: 'Race',       day: 'Sun', time: '15:00', duration: '44 laps', status: 'upcoming' },
     ],
+    circuitSvg: "/circuits/Belgium.svg"
   },
 
   // R11 — Hungary
@@ -200,6 +212,7 @@ export const races: Race[] = [
       { id: 'hun-qu',   type: 'Qualifying', day: 'Sat', time: '16:00', duration: '60 min',  status: 'upcoming' },
       { id: 'hun-race', type: 'Race',       day: 'Sun', time: '15:00', duration: '70 laps', status: 'upcoming' },
     ],
+    circuitSvg: "/circuits/Hungary.svg"
   },
 
   // R12 — Netherlands (Sprint) — final Dutch GP ever on the calendar
@@ -215,6 +228,7 @@ export const races: Race[] = [
       { id: 'ned-qu',     type: 'Qualifying',         day: 'Sat', time: '16:00', duration: '60 min',  status: 'upcoming' },
       { id: 'ned-race',   type: 'Race',               day: 'Sun', time: '15:00', duration: '72 laps', status: 'upcoming' },
     ],
+    circuitSvg: "/circuits/Zandvoort.svg"
   },
 
   // R13 — Italy
@@ -230,6 +244,7 @@ export const races: Race[] = [
       { id: 'ita-qu',   type: 'Qualifying', day: 'Sat', time: '16:00', duration: '60 min',  status: 'upcoming' },
       { id: 'ita-race', type: 'Race',       day: 'Sun', time: '15:00', duration: '53 laps', status: 'upcoming' },
     ],
+    circuitSvg: "/circuits/Monza.svg"
   },
 
   // R14 — Spain (Madrid) — debut on the calendar
@@ -245,6 +260,7 @@ export const races: Race[] = [
       { id: 'esp-qu',   type: 'Qualifying', day: 'Sat', time: '16:00', duration: '60 min',  status: 'upcoming' },
       { id: 'esp-race', type: 'Race',       day: 'Sun', time: '15:00', duration: '62 laps', status: 'upcoming' },
     ],
+    circuitSvg: "/circuits/Madrid.svg"
   },
 
   // R15 — Azerbaijan (Saturday race day)
@@ -260,6 +276,7 @@ export const races: Race[] = [
       { id: 'aze-qu',   type: 'Qualifying', day: 'Fri', time: '19:00', duration: '60 min',  status: 'upcoming' },
       { id: 'aze-race', type: 'Race',       day: 'Sat', time: '13:00', duration: '51 laps', status: 'upcoming' },
     ],
+    circuitSvg: "/circuits/Azerbaijan.svg"
   },
 
   // R16 — Singapore (Sprint)
@@ -275,6 +292,7 @@ export const races: Race[] = [
       { id: 'sin-qu',     type: 'Qualifying',         day: 'Sat', time: '21:00', duration: '60 min',  status: 'upcoming' },
       { id: 'sin-race',   type: 'Race',               day: 'Sun', time: '20:00', duration: '61 laps', status: 'upcoming' },
     ],
+    circuitSvg: "/circuits/Singapore.svg"
   },
 
   // R17 — United States
@@ -290,6 +308,7 @@ export const races: Race[] = [
       { id: 'usa-qu',   type: 'Qualifying', day: 'Sat', time: '16:00', duration: '60 min',  status: 'upcoming' },
       { id: 'usa-race', type: 'Race',       day: 'Sun', time: '15:00', duration: '56 laps', status: 'upcoming' },
     ],
+    circuitSvg: "/circuits/COTA.svg"
   },
 
   // R18 — Mexico City
@@ -305,6 +324,7 @@ export const races: Race[] = [
       { id: 'mex-qu',   type: 'Qualifying', day: 'Sat', time: '16:00', duration: '60 min',  status: 'upcoming' },
       { id: 'mex-race', type: 'Race',       day: 'Sun', time: '15:00', duration: '71 laps', status: 'upcoming' },
     ],
+    circuitSvg: "/circuits/Mexico.svg"
   },
 
   // R19 — Brazil
@@ -320,6 +340,7 @@ export const races: Race[] = [
       { id: 'bra-qu',   type: 'Qualifying', day: 'Sat', time: '16:00', duration: '60 min',  status: 'upcoming' },
       { id: 'bra-race', type: 'Race',       day: 'Sun', time: '15:00', duration: '71 laps', status: 'upcoming' },
     ],
+    circuitSvg: "/circuits/Brazil.svg"
   },
 
   // R20 — Las Vegas (Saturday race day)
@@ -335,6 +356,7 @@ export const races: Race[] = [
       { id: 'lv-qu',   type: 'Qualifying', day: 'Fri', time: '22:00', duration: '60 min',  status: 'upcoming' },
       { id: 'lv-race', type: 'Race',       day: 'Sat', time: '22:00', duration: '50 laps', status: 'upcoming' },
     ],
+    circuitSvg: "/circuits/Las-Vegas.svg"
   },
 
   // R21 — Qatar
@@ -350,6 +372,7 @@ export const races: Race[] = [
       { id: 'qat-qu',   type: 'Qualifying', day: 'Sat', time: '20:00', duration: '60 min',  status: 'upcoming' },
       { id: 'qat-race', type: 'Race',       day: 'Sun', time: '19:00', duration: '57 laps', status: 'upcoming' },
     ],
+    circuitSvg: "/circuits/Qatar.svg"
   },
 
   // R22 — Abu Dhabi
@@ -365,6 +388,7 @@ export const races: Race[] = [
       { id: 'uae-qu',   type: 'Qualifying', day: 'Sat', time: '16:00', duration: '60 min',  status: 'upcoming' },
       { id: 'uae-race', type: 'Race',       day: 'Sun', time: '17:00', duration: '58 laps', status: 'upcoming' },
     ],
+    circuitSvg: "/circuits/Abu-Dhabi.svg"
   },
 ];
 

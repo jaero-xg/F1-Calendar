@@ -310,33 +310,54 @@ export const tracks: Track[] = [
     circuitSvg: "/circuits/Abu-Dhabi.svg"
   },
   {
-    id: 'jeddah', name: 'Jeddah Corniche Circuit', circuit: 'Saudi-arabia',
-    location: 'Jeddah', country: 'Saudi Arabia', length: ' km', laps: 0,
-    lapRecord: '', lapRecordHolder: '', firstGrandPrix: 0,
-    turns: 0, drsZones: 0,
-    description: '',
-    sectorTimes: [
-      { sector: 1, bestTime: '', driver: '' },
-      { sector: 2, bestTime: '', driver: '' },
-      { sector: 3, bestTime: '', driver: '' },
-    ],
-    elevation: 'Flat', type: 'permanent',
-    circuitSvg: "/circuits/Saudi-Arabia.svg"
-  },
-  {
-    id: 'bahrain', name: 'Bahrain International Circuit', circuit: 'Bahrain',
-    location: 'Sakhir', country: 'Bahrain', length: ' km', laps: 0,
-    lapRecord: '', lapRecordHolder: '', firstGrandPrix: 0,
-    turns: 0, drsZones: 0,
-    description: '',
-    sectorTimes: [
-      { sector: 1, bestTime: '', driver: '' },
-      { sector: 2, bestTime: '', driver: '' },
-      { sector: 3, bestTime: '', driver: '' },
-    ],
-    elevation: 'Flat', type: 'permanent',
-    circuitSvg: "/circuits/Bahrain.svg"
-  },
+  id: 'bahrain',
+  name: 'Bahrain International Circuit',
+  circuit: 'Bahrain',
+  location: 'Sakhir',
+  country: 'Bahrain',
+  length: '5.412 km',
+  laps: 57,
+  lapRecord: '1:31.447',
+  lapRecordHolder: 'Pedro de la Rosa',
+  firstGrandPrix: 2004,
+  turns: 15,
+  drsZones: 3,
+  description:
+    'A desert circuit known for heavy braking zones, traction demands, and night racing under floodlights.',
+  sectorTimes: [
+    { sector: 1, bestTime: '32.567', driver: 'Max Verstappen' },
+    { sector: 2, bestTime: '28.901', driver: 'Charles Leclerc' },
+    { sector: 3, bestTime: '29.979', driver: 'Lando Norris' },
+  ],
+  elevation: 'Flat',
+  type: 'permanent',
+  circuitSvg: "/circuits/Bahrain.svg"
+},
+
+{
+  id: 'jeddah',
+  name: 'Jeddah Corniche Circuit',
+  circuit: 'Jeddah',
+  location: 'Jeddah',
+  country: 'Saudi Arabia',
+  length: '6.174 km',
+  laps: 50,
+  lapRecord: '1:30.734',
+  lapRecordHolder: 'Lewis Hamilton',
+  firstGrandPrix: 2021,
+  turns: 27,
+  drsZones: 3,
+  description:
+    'A high-speed street circuit along the Red Sea coast with fast flowing corners and one of the longest straights in Formula 1.',
+  sectorTimes: [
+    { sector: 1, bestTime: '28.456', driver: 'Max Verstappen' },
+    { sector: 2, bestTime: '32.123', driver: 'Lewis Hamilton' },
+    { sector: 3, bestTime: '30.155', driver: 'Charles Leclerc' },
+  ],
+  elevation: 'Flat',
+  type: 'street',
+  circuitSvg: "/circuits/Saudi-Arabia.svg"
+},
 ];
 
 export const getTrackById = (id: string): Track | undefined => tracks.find(t => t.id === id);

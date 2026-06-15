@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
-import { MapPin, Ruler, CornerRightUp, Timer } from "lucide-react";
+import { MapPin, Ruler, CornerRightUp, Timer, Route } from "lucide-react";
 import { Track } from "../types";
 
 interface TrackCardProps {
@@ -25,15 +25,19 @@ export default function TrackCard({ track, index }: TrackCardProps) {
       className="h-full"
     >
       <Link to={`/track/${track.id}`} className="block h-full">
-        {/* ── DESKTOP: vertical card ── */}
-        <article className="hidden sm:flex group bg-f1-card hover:bg-f1-surface/30 active:bg-f1-surface/50 transition-colors flex-col h-full border border-f1-border overflow-hidden rounded-sm">
-          <div className="h-0.5 bg-f1-border group-hover:bg-f1-accent transition-colors" />
+        {/* ═══════════════════════════════════════════════════════
+            DESKTOP: Vertical Card (sm and up)
+            ═══════════════════════════════════════════════════════ */}
+        <article className="hidden sm:flex group bg-f1-card hover:bg-f1-surface/30 active:bg-f1-surface/50 transition-all duration-200 flex-col h-full border border-f1-border hover:border-f1-border/80 overflow-hidden rounded-sm">
+          {/* Top accent line */}
+          <div className="h-0.5 bg-f1-border group-hover:bg-f1-accent transition-colors duration-200" />
 
-          <header className="px-4 py-3 border-b border-f1-border flex items-center justify-between">
+          {/* Header: Type + First GP */}
+          <header className="px-4 py-2.5 border-b border-f1-border flex items-center justify-between gap-3">
             <span className="font-mono text-[10px] uppercase tracking-widest text-f1-muted">
               {trackType}
             </span>
-            <span className="font-mono text-[10px] uppercase tracking-widest text-f1-muted">
+            <span className="font-mono text-[10px] uppercase tracking-widest text-f1-muted truncate">
               Since {track.firstGrandPrix}
             </span>
           </header>
@@ -43,38 +47,39 @@ export default function TrackCard({ track, index }: TrackCardProps) {
             <div className="mb-3">
               <div className="flex items-center gap-1.5 mb-1">
                 <MapPin size={10} className="text-f1-muted shrink-0" />
-                <span className="font-mono text-[10px] uppercase tracking-widest text-f1-muted">
+                <span className="font-mono text-[10px] uppercase tracking-widest text-f1-muted truncate">
                   {track.country} · {track.location}
                 </span>
               </div>
-              <h3 className="font-display text-xl font-extrabold uppercase text-white leading-tight group-hover:text-f1-accent transition-colors">
+              <h3 className="font-display text-lg md:text-xl font-extrabold uppercase text-white leading-tight group-hover:text-f1-accent transition-colors duration-200">
                 {track.name}
               </h3>
             </div>
 
-            {/* Circuit layout — fills remaining space */}
-            <div
-              className="flex-1 min-h-[130px] flex items-center justify-center mb-3 border border-f1-border/40 overflow-hidden rounded-sm"
-              style={{ backgroundColor: "#ffffff10" }}
-            >
+            {/* Circuit layout */}
+            <div className="flex-1 min-h-[120px] md:min-h-[140px] flex items-center justify-center mb-3 border border-f1-border/30 overflow-hidden rounded-sm bg-f1-surface/20 group-hover:bg-f1-surface/30 transition-colors">
               {track.circuitSvg ? (
                 <img
                   src={track.circuitSvg}
                   alt={`${track.name} layout`}
-                  className="w-full h-full object-contain p-3 brightness-0 invert opacity-70 group-hover:opacity-100 transition-opacity"
+                  className="w-full h-full object-contain p-3 md:p-4 brightness-0 invert opacity-60 group-hover:opacity-80 transition-opacity duration-200"
                 />
               ) : (
-                <span className="font-mono text-[9px] uppercase tracking-[0.15em] text-f1-muted">
-                  No layout
-                </span>
+                <div className="flex flex-col items-center gap-2 text-f1-muted">
+                  <Route size={20} className="opacity-40" />
+                  <span className="font-mono text-[9px] uppercase tracking-[0.15em]">
+                    No layout
+                  </span>
+                </div>
               )}
             </div>
 
             {/* Stats */}
-            <div className="flex flex-col divide-y divide-f1-border/50">
+            <div className="flex flex-col divide-y divide-f1-border/40">
               <div className="flex items-center justify-between py-2">
                 <span className="flex items-center gap-1.5 text-[11px] text-f1-muted">
-                  <Ruler size={11} className="shrink-0" /> Length
+                  <Ruler size={11} className="shrink-0" />
+                  Length
                 </span>
                 <span className="font-mono text-[12px] text-white tabular-nums font-semibold">
                   {track.length}
@@ -82,7 +87,8 @@ export default function TrackCard({ track, index }: TrackCardProps) {
               </div>
               <div className="flex items-center justify-between py-2">
                 <span className="flex items-center gap-1.5 text-[11px] text-f1-muted">
-                  <CornerRightUp size={11} className="shrink-0" /> Turns
+                  <CornerRightUp size={11} className="shrink-0" />
+                  Turns
                 </span>
                 <span className="font-mono text-[12px] text-white tabular-nums font-semibold">
                   {track.turns}
@@ -90,7 +96,8 @@ export default function TrackCard({ track, index }: TrackCardProps) {
               </div>
               <div className="flex items-center justify-between py-2">
                 <span className="flex items-center gap-1.5 text-[11px] text-f1-muted">
-                  <Timer size={11} className="shrink-0" /> Lap record
+                  <Timer size={11} className="shrink-0" />
+                  Lap Record
                 </span>
                 <span className="font-mono text-[12px] text-white tabular-nums font-semibold">
                   {track.lapRecord}
@@ -100,75 +107,74 @@ export default function TrackCard({ track, index }: TrackCardProps) {
           </div>
         </article>
 
-        {/* ── MOBILE: horizontal card ── */}
-        <article className="sm:hidden group bg-f1-card active:bg-f1-surface/50 transition-colors border border-f1-border overflow-hidden rounded-sm relative">
-          <div className="absolute left-0 top-0 bottom-0 w-[3px] bg-f1-border group-hover:bg-f1-accent transition-colors" />
+        {/* ═══════════════════════════════════════════════════════
+            MOBILE: Horizontal Card (below sm)
+            ═══════════════════════════════════════════════════════ */}
+        <article className="sm:hidden group bg-f1-card active:bg-f1-surface/50 transition-all duration-200 border border-f1-border overflow-hidden rounded-sm relative">
+          {/* Left accent line */}
+          <div className="absolute left-0 top-0 bottom-0 w-[3px] bg-f1-border group-hover:bg-f1-accent transition-colors duration-200" />
 
-          <div className="flex pl-[3px] h-[100px]">
-            {/* Circuit layout — fixed width, flush */}
-            <div
-              className="w-[80px] shrink-0 h-full flex items-center justify-center overflow-hidden"
-              style={{ backgroundColor: "#ffffff10" }}
-            >
+          <div className="flex pl-[3px]">
+            {/* Circuit layout - left side */}
+            <div className="w-[72px] shrink-0 flex items-center justify-center overflow-hidden bg-f1-surface/10">
               {track.circuitSvg ? (
                 <img
                   src={track.circuitSvg}
                   alt={`${track.name} layout`}
-                  className="w-full h-full object-contain p-2 brightness-0 invert opacity-70"
+                  className="w-full h-full object-contain p-2 brightness-0 invert opacity-50"
                 />
               ) : (
-                <span className="font-mono text-[7px] uppercase tracking-[0.15em] text-f1-muted">
-                  No layout
-                </span>
+                <Route size={16} className="text-f1-muted/30" />
               )}
             </div>
 
             {/* Right content */}
-            <div className="flex flex-col flex-1 min-w-0 px-3 py-2 justify-between">
-              {/* Top row: type + first GP */}
-              <div className="flex items-center justify-between">
-                <span className="font-mono text-[11px] uppercase tracking-widest font-bold text-f1-muted">
+            <div className="flex flex-col flex-1 min-w-0 px-3 py-2.5 gap-2">
+              {/* Top row: Type + First GP */}
+              <div className="flex items-center justify-between gap-2">
+                <span className="font-mono text-[10px] uppercase tracking-widest font-bold text-f1-muted shrink-0">
                   {trackType}
                 </span>
-                <span className="font-mono text-[9px] uppercase tracking-wider truncate ml-2 max-w-[120px] text-f1-muted">
+                <span className="font-mono text-[9px] uppercase tracking-wider text-f1-muted truncate">
                   Since {track.firstGrandPrix}
                 </span>
               </div>
 
               {/* Name */}
-              <div className="leading-none">
+              <div>
                 <div className="flex items-center gap-1 mb-0.5">
-                  <MapPin size={10} className="text-f1-muted shrink-0" />
-                  <span className="font-mono text-[9px] uppercase tracking-widest text-f1-muted">
+                  <MapPin size={9} className="text-f1-muted shrink-0" />
+                  <span className="font-mono text-[9px] uppercase tracking-widest text-f1-muted truncate">
                     {track.country} · {track.location}
                   </span>
                 </div>
-                <h3 className="font-display text-[16px] font-extrabold uppercase leading-none group-hover:text-f1-accent transition-colors">
+                <h3 className="font-display text-[15px] font-extrabold uppercase leading-tight text-white group-hover:text-f1-accent transition-colors duration-200 truncate">
                   {track.name}
                 </h3>
               </div>
 
-              {/* Stats row — labels on top, values below, strictly aligned */}
-              <div className="flex items-end gap-4 pt-1.5 border-t border-f1-border/40">
-                {[
-                  { label: "Length", value: track.length },
-                  { label: "Turns", value: String(track.turns) },
-                  { label: "Record", value: track.lapRecord },
-                ].map((item, i, arr) => (
-                  <div key={item.label} className="flex items-end gap-4">
-                    <div className="flex flex-col gap-0.5">
-                      <span className="font-mono text-[8px] uppercase tracking-widest text-f1-muted leading-none whitespace-nowrap">
-                        {item.label}
-                      </span>
-                      <span className="font-mono text-[14px] font-bold tabular-nums leading-none">
-                        {item.value}
-                      </span>
-                    </div>
-                    {i < arr.length - 1 && (
-                      <div className="w-px h-6 bg-f1-border/50 mb-px" />
-                    )}
-                  </div>
-                ))}
+              {/* Stats row - compact horizontal */}
+              <div className="flex items-center gap-2 pt-1.5 border-t border-f1-border/30">
+                <div className="flex items-center gap-1 min-w-0">
+                  <Ruler size={9} className="text-f1-muted shrink-0" />
+                  <span className="font-mono text-[11px] text-white font-medium tabular-nums truncate">
+                    {track.length}
+                  </span>
+                </div>
+                <span className="text-f1-border/30">|</span>
+                <div className="flex items-center gap-1 min-w-0">
+                  <CornerRightUp size={9} className="text-f1-muted shrink-0" />
+                  <span className="font-mono text-[11px] text-white font-medium tabular-nums">
+                    {track.turns}
+                  </span>
+                </div>
+                <span className="text-f1-border/30">|</span>
+                <div className="flex items-center gap-1 min-w-0">
+                  <Timer size={9} className="text-f1-muted shrink-0" />
+                  <span className="font-mono text-[11px] text-white font-medium tabular-nums truncate">
+                    {track.lapRecord}
+                  </span>
+                </div>
               </div>
             </div>
           </div>
