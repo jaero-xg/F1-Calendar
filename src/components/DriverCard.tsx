@@ -72,7 +72,7 @@ export default function DriverCard({ driver, index, mode }: DriverCardProps) {
     >
       <Link to={`/driver/${driver.id}`} className="block h-full">
         {/* ── DESKTOP: vertical card ── */}
-        <article className="hidden sm:flex group bg-f1-card hover:bg-f1-surface/30 active:bg-f1-surface/50 transition-colors flex-col h-full border border-f1-border overflow-hidden rounded-sm">
+        <article className="hidden sm:flex group bg-f1-card hover:bg-f1-surface/30 active:bg-f1-surface/50 transition-colors flex-col h-full border border-f1-border overflow-hidden">
           <div className="h-0.5 bg-f1-border group-hover:bg-f1-accent transition-colors" />
 
           <header className="px-4 py-3 border-b border-f1-border flex items-center justify-between">
@@ -127,7 +127,7 @@ export default function DriverCard({ driver, index, mode }: DriverCardProps) {
 
             {/* IMAGE CONTAINER - anchored to bottom */}
             <div
-              className="flex-1 min-h-[130px] flex items-end justify-center mb-3 border border-f1-border/40 overflow-hidden rounded-sm"
+              className="flex-1 min-h-[130px] flex items-end justify-center mb-3 border border-f1-border/40 overflow-hidden "
               style={{ backgroundColor: driver.teamColor + "10" }}
             >
               <img
@@ -158,7 +158,7 @@ export default function DriverCard({ driver, index, mode }: DriverCardProps) {
         </article>
 
         {/* ── MOBILE: horizontal card ── */}
-        <article className="sm:hidden group bg-f1-card active:bg-f1-surface/50 transition-colors border border-f1-border overflow-hidden rounded-sm relative">
+        <article className="sm:hidden group bg-f1-card active:bg-f1-surface/50 transition-colors border border-f1-border overflow-hidden relative">
           <div
             className="absolute left-0 top-0 bottom-0 w-[3px]"
             style={{ backgroundColor: driver.teamColor + "99" }}

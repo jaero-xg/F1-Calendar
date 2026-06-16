@@ -63,7 +63,7 @@ export default function RaceCard({ race, index }: RaceCardProps) {
         {/* ═══════════════════════════════════════════════════════
             DESKTOP: Vertical Card (sm and up)
             ═══════════════════════════════════════════════════════ */}
-        <article className="hidden sm:flex group bg-f1-card hover:bg-f1-surface/30 active:bg-f1-surface/50 transition-all duration-200 flex-col h-full border border-f1-border hover:border-f1-border/80 overflow-hidden rounded-sm">
+        <article className="hidden sm:flex group bg-f1-card hover:bg-f1-surface/30 active:bg-f1-surface/50 transition-all duration-200 flex-col h-full border border-f1-border hover:border-f1-border/80 overflow-hidden">
           {/* Top accent line */}
           <div className="h-0.5 bg-f1-border group-hover:bg-f1-accent transition-colors duration-200" />
 
@@ -79,7 +79,7 @@ export default function RaceCard({ race, index }: RaceCardProps) {
               </span>
             </div>
             <span
-              className={`font-mono text-[9px] uppercase tracking-widest px-2 py-0.5 rounded-sm border ${statusStyles[race.status]} shrink-0`}
+              className={`font-mono text-[9px] uppercase tracking-widest px-2 py-0.5 border ${statusStyles[race.status]} shrink-0`}
             >
               {statusLabels[race.status]}
             </span>
@@ -97,7 +97,7 @@ export default function RaceCard({ race, index }: RaceCardProps) {
             </div>
 
             {/* Circuit image */}
-            <div className="flex-1 min-h-[120px] md:min-h-[140px] flex items-center justify-center border border-f1-border/30 overflow-hidden rounded-sm bg-f1-surface/20 group-hover:bg-f1-surface/30 transition-colors">
+            <div className="flex-1 min-h-[120px] md:min-h-[140px] flex items-center justify-center border border-f1-border/30 overflow-hidden bg-f1-surface/20 group-hover:bg-f1-surface/30 transition-colors">
               {race.circuitSvg ? (
                 <img
                   src={race.circuitSvg}
@@ -126,7 +126,7 @@ export default function RaceCard({ race, index }: RaceCardProps) {
 
             {/* Cancelled reason */}
             {isCancelled && race.cancellationReason && (
-              <div className="text-[11px] text-red-400 leading-relaxed bg-red-500/5 px-2.5 py-2 rounded-sm border border-red-500/10">
+              <div className="text-[11px] text-red-400 leading-relaxed bg-red-500/5 px-2.5 py-2 border border-red-500/10">
                 {race.cancellationReason}
               </div>
             )}
@@ -210,7 +210,7 @@ export default function RaceCard({ race, index }: RaceCardProps) {
         {/* ═══════════════════════════════════════════════════════
             MOBILE: Horizontal Card (below sm)
             ═══════════════════════════════════════════════════════ */}
-        <article className="sm:hidden group bg-f1-card active:bg-f1-surface/50 transition-all duration-200 border border-f1-border overflow-hidden rounded-sm relative">
+        <article className="sm:hidden group bg-f1-card active:bg-f1-surface/50 transition-all duration-200 border border-f1-border overflow-hidden relative">
           {/* Left accent line */}
           <div className="absolute left-0 top-0 bottom-0 w-[3px] bg-f1-border group-hover:bg-f1-accent transition-colors duration-200" />
 
@@ -242,7 +242,7 @@ export default function RaceCard({ race, index }: RaceCardProps) {
                   </span>
                 </div>
                 <span
-                  className={`font-mono text-[8px] uppercase tracking-wider px-1.5 py-0.5 rounded-sm border ${statusStyles[race.status]} shrink-0`}
+                  className={`font-mono text-[8px] uppercase tracking-wider px-1.5 py-0.5  border ${statusStyles[race.status]} shrink-0`}
                 >
                   {statusLabels[race.status]}
                 </span>
