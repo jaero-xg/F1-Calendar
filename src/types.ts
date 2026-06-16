@@ -103,6 +103,8 @@ export interface Track {
   circuit: string;
   location: string;
   country: string;
+  /** ISO country code for flag display (e.g., "bh", "sa", "au", "gb") */
+  countryCode: string;
   length: string;
   laps: number;
   lapRecord: string;

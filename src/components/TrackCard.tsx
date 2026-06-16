@@ -28,7 +28,7 @@ export default function TrackCard({ track, index }: TrackCardProps) {
         {/* ═══════════════════════════════════════════════════════
             DESKTOP: Vertical Card (sm and up)
             ═══════════════════════════════════════════════════════ */}
-        <article className="hidden sm:flex group bg-f1-card hover:bg-f1-surface/30 active:bg-f1-surface/50 transition-all duration-200 flex-col h-full border border-f1-border hover:border-f1-border/80 overflow-hidden">
+        <article className="hidden sm:flex group bg-f1-card hover:bg-f1-surface/30 active:bg-f1-surface/50 transition-all duration-200 flex-col h-full border border-f1-border hover:border-f1-border/80 overflow-hidden rounded-sm">
           {/* Top accent line */}
           <div className="h-0.5 bg-f1-border group-hover:bg-f1-accent transition-colors duration-200" />
 
@@ -43,9 +43,13 @@ export default function TrackCard({ track, index }: TrackCardProps) {
           </header>
 
           <div className="p-4 flex flex-col flex-1">
-            {/* Location + name */}
+            {/* Location + flag + name */}
             <div className="mb-3">
               <div className="flex items-center gap-1.5 mb-1">
+                {/* Country Flag */}
+                <span
+                  className={`fi fi-${track.countryCode.toLowerCase()} text-sm`}
+                />
                 <MapPin size={10} className="text-f1-muted shrink-0" />
                 <span className="font-mono text-[10px] uppercase tracking-widest text-f1-muted truncate">
                   {track.country} · {track.location}
@@ -57,7 +61,7 @@ export default function TrackCard({ track, index }: TrackCardProps) {
             </div>
 
             {/* Circuit layout */}
-            <div className="flex-1 min-h-[120px] md:min-h-[140px] flex items-center justify-center mb-3 border border-f1-border/30 overflow-hidden bg-f1-surface/20 group-hover:bg-f1-surface/30 transition-colors">
+            <div className="flex-1 min-h-[120px] md:min-h-[140px] flex items-center justify-center mb-3 border border-f1-border/30 overflow-hidden bg-f1-surface/20 group-hover:bg-f1-surface/30 transition-colors rounded-sm">
               {track.circuitSvg ? (
                 <img
                   src={track.circuitSvg}
@@ -110,7 +114,7 @@ export default function TrackCard({ track, index }: TrackCardProps) {
         {/* ═══════════════════════════════════════════════════════
             MOBILE: Horizontal Card (below sm)
             ═══════════════════════════════════════════════════════ */}
-        <article className="sm:hidden group bg-f1-card active:bg-f1-surface/50 transition-all duration-200 border border-f1-border overflow-hidden relative">
+        <article className="sm:hidden group bg-f1-card active:bg-f1-surface/50 transition-all duration-200 border border-f1-border overflow-hidden rounded-sm relative">
           {/* Left accent line */}
           <div className="absolute left-0 top-0 bottom-0 w-[3px] bg-f1-border group-hover:bg-f1-accent transition-colors duration-200" />
 
@@ -130,17 +134,22 @@ export default function TrackCard({ track, index }: TrackCardProps) {
 
             {/* Right content */}
             <div className="flex flex-col flex-1 min-w-0 px-3 py-2.5 gap-2">
-              {/* Top row: Type + First GP */}
+              {/* Top row: Flag + Type + First GP */}
               <div className="flex items-center justify-between gap-2">
-                <span className="font-mono text-[10px] uppercase tracking-widest font-bold text-f1-muted shrink-0">
-                  {trackType}
-                </span>
+                <div className="flex items-center gap-1.5">
+                  <span
+                    className={`fi fi-${track.countryCode.toLowerCase()} text-[10px]`}
+                  />
+                  <span className="font-mono text-[10px] uppercase tracking-widest font-bold text-f1-muted shrink-0">
+                    {trackType}
+                  </span>
+                </div>
                 <span className="font-mono text-[9px] uppercase tracking-wider text-f1-muted truncate">
                   Since {track.firstGrandPrix}
                 </span>
               </div>
 
-              {/* Name */}
+              {/* Name + location */}
               <div>
                 <div className="flex items-center gap-1 mb-0.5">
                   <MapPin size={9} className="text-f1-muted shrink-0" />

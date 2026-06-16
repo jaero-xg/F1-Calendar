@@ -80,10 +80,15 @@ export default function TrackDetails() {
                   </span>
                 </div>
 
-                {/* Title */}
-                <h1 className="font-display text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold uppercase tracking-tight text-white leading-tight mb-2 sm:mb-3">
-                  {track.name}
-                </h1>
+                {/* Title with flag */}
+                <div className="flex items-center gap-2 sm:gap-3 mb-2 sm:mb-3">
+                  <span
+                    className={`fi fi-${track.countryCode.toLowerCase()} text-2xl sm:text-3xl md:text-4xl`}
+                  />
+                  <h1 className="font-display text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold uppercase tracking-tight text-white leading-tight">
+                    {track.name}
+                  </h1>
+                </div>
 
                 {/* Location */}
                 <div className="flex flex-wrap items-center gap-x-4 sm:gap-x-6 gap-y-1 sm:gap-y-1.5 text-[11px] sm:text-xs md:text-sm text-f1-muted mb-3 sm:mb-4 md:mb-6">
