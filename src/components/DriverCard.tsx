@@ -1,7 +1,9 @@
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import { Driver, StatMode } from "../types";
+import { getTeamById } from "../data/teams";
 import { Trophy, Flag, Star, Zap, Timer } from "lucide-react";
+import { useState } from "react";
 
 interface DriverCardProps {
   driver: Driver;
@@ -11,6 +13,10 @@ interface DriverCardProps {
 
 export default function DriverCard({ driver, index, mode }: DriverCardProps) {
   const fullName = `${driver.firstName} ${driver.lastName}`;
+  const [logoError, setLogoError] = useState(false);
+
+  // Get team data for logo
+  const team = getTeamById(driver.teamId);
 
   // Build stats based on mode
   const stats2026 = [
@@ -76,12 +82,29 @@ export default function DriverCard({ driver, index, mode }: DriverCardProps) {
             >
               #{driver.number}
             </span>
-            <span
-              className="font-mono text-[10px] uppercase tracking-widest truncate"
-              style={{ color: driver.teamColor + "99" }}
-            >
-              {driver.team}
-            </span>
+            {/* Team Logo instead of text */}
+            {team && !logoError ? (
+              <Link
+                to={`/team/${team.id}`}
+                className="shrink-0"
+                onClick={(e) => e.stopPropagation()}
+              >
+                <img
+                  src={team.logo}
+                  alt={team.shortName}
+                  className="h-4 w-auto object-contain opacity-80 hover:opacity-100 transition-opacity"
+                  loading="lazy"
+                  onError={() => setLogoError(true)}
+                />
+              </Link>
+            ) : (
+              <span
+                className="font-mono text-[10px] uppercase tracking-widest truncate"
+                style={{ color: driver.teamColor + "99" }}
+              >
+                {driver.team}
+              </span>
+            )}
           </header>
 
           <div className="p-4 flex flex-col flex-1">
@@ -164,12 +187,29 @@ export default function DriverCard({ driver, index, mode }: DriverCardProps) {
                 >
                   #{driver.number}
                 </span>
-                <span
-                  className="font-mono text-[9px] uppercase tracking-wider truncate ml-2 max-w-[120px]"
-                  style={{ color: driver.teamColor + "90" }}
-                >
-                  {driver.team}
-                </span>
+                {/* Team Logo on mobile */}
+                {team && !logoError ? (
+                  <Link
+                    to={`/team/${team.id}`}
+                    className="shrink-0"
+                    onClick={(e) => e.stopPropagation()}
+                  >
+                    <img
+                      src={team.logo}
+                      alt={team.shortName}
+                      className="h-3.5 w-auto object-contain opacity-80"
+                      loading="lazy"
+                      onError={() => setLogoError(true)}
+                    />
+                  </Link>
+                ) : (
+                  <span
+                    className="font-mono text-[9px] uppercase tracking-wider truncate ml-2 max-w-[120px]"
+                    style={{ color: driver.teamColor + "90" }}
+                  >
+                    {driver.team}
+                  </span>
+                )}
               </div>
 
               <div className="leading-none">

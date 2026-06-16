@@ -29,7 +29,7 @@ export interface DriverAllTime {
   wins: number;
   podiums: number;
   poles: number;
-  fastestLaps: number;  // ← KEEP THIS
+  fastestLaps: number;
   championships: number;
   starts: number;
 }
@@ -79,6 +79,14 @@ export interface Team {
   fastestLaps: number;
   drivers: string[];
   description: string;
+  /** SVG logo URL (Wikimedia Commons or official source) */
+  logo: string;
+  /** ISO country code for flag display (e.g., "gb", "it", "de", "us", "ch") */
+  countryCode: string;
+  /** Country name for display */
+  country: string;
+  /** Livery/car image URL for the 2026 season */
+  livery: string;
 }
 
 // ─── Track ───────────────────────────────────────────────────────────────────
@@ -140,7 +148,7 @@ export interface Race {
   isSprint: boolean;
   isSaturday: boolean;
   trackId: string;
-  circuitSvg?: string;  // <-- ADDED: optional SVG path from tracks data
+  circuitSvg?: string;
   sessions: Session[];
   winner?: string;
   fastestLap?: string;

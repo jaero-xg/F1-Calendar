@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 export default function Tracks() {
   return (
-    <div className="min-h-screen pt-16 sm:pt-20 md:pt-24 pb-12 sm:pb-16 md:pb-20">
+    <div className="py-4 sm:py-6 md:py-8 lg:py-10 border-b border-f1-border">
       <div className="px-3 sm:px-4 md:px-6 lg:px-8 xl:px-12">
         {/* Page Header */}
         <motion.div

@@ -34,7 +34,7 @@ export default function Footer() {
                   className="w-8 h-8 md:w-10 md:h-10"
                 />
                 <span className="font-display font-black uppercase text-white tracking-wide text-sm md:text-base">
-                  Calendar
+                  Hub
                 </span>
               </Link>
               <p className="text-[11px] md:text-[12px] text-f1-muted leading-relaxed max-w-xs">
@@ -60,26 +60,6 @@ export default function Footer() {
                   </li>
                 ))}
               </ul>
-            </div>
-
-            {/* Connect */}
-            <div>
-              <p className="font-mono text-[10px] uppercase tracking-[0.15em] text-f1-muted mb-3 md:mb-4">
-                Connect
-              </p>
-              <div className="flex flex-col gap-2 md:gap-2.5">
-                {socialLinks.map(({ icon: Icon, href, label }) => (
-                  <a
-                    key={label}
-                    href={href}
-                    aria-label={label}
-                    className="flex items-center gap-2.5 text-[12px] md:text-[13px] text-f1-muted hover:text-white transition-colors"
-                  >
-                    <Icon size={14} />
-                    {label}
-                  </a>
-                ))}
-              </div>
             </div>
           </div>
 

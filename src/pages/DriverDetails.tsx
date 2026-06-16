@@ -3,6 +3,7 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 import { ArrowLeft, Star, Clock, Trophy, Flag, Zap, Timer } from "lucide-react";
 import { useF1Data } from "../hooks/useF1Data";
+import { getTeamById } from "../data/teams";
 
 /* ═══════════════════════════════════════════════════════════════
    MODE BUTTON
@@ -179,7 +180,7 @@ function CareerStatCard({ label, value }: { label: string; value: number }) {
 export default function DriverDetails() {
   const { id } = useParams<{ id: string }>();
   const { data, loading } = useF1Data();
-  const [mode, setMode] = useState<"2026" | "all-time">("2026");
+  const [logoError, setLogoError] = useState(false);
 
   if (loading) {
     return (
@@ -210,6 +211,11 @@ export default function DriverDetails() {
       </div>
     );
   }
+
+  // Get team data for logo
+  const team = getTeamById(driver.teamId);
+
+  const [mode, setMode] = useState<"2026" | "all-time">("2026");
 
   // Build stats grid based on mode
   const stats2026 = [
@@ -242,7 +248,7 @@ export default function DriverDetails() {
   );
 
   return (
-    <div className="min-h-screen pt-16 sm:pt-20 md:pt-24 pb-12 sm:pb-16 md:pb-20">
+    <div className="py-4 sm:py-6 md:py-8 lg:py-10 border-b border-f1-border">
       <div className="px-3 sm:px-4 md:px-6 lg:px-8 xl:px-12">
         <div className="max-w-7xl mx-auto">
           {/* Back link */}
@@ -287,15 +293,40 @@ export default function DriverDetails() {
                 {/* Right: Info */}
                 <div className="p-3 sm:p-4 md:p-6 lg:p-8 flex flex-col justify-center">
                   <div className="flex flex-wrap items-center gap-1.5 sm:gap-2 mb-2 sm:mb-3">
-                    <span
-                      className="font-mono text-[9px] sm:text-[10px] uppercase tracking-[0.15em] font-medium px-1.5 py-[2px] rounded-sm"
-                      style={{
-                        color: driver.teamColor,
-                        backgroundColor: driver.teamColor + "15",
-                      }}
-                    >
-                      {driver.team}
-                    </span>
+                    {/* Team Logo instead of team name text */}
+                    {team && !logoError ? (
+                      <Link
+                        to={`/team/${team.id}`}
+                        className="flex items-center gap-1.5 px-2 py-1 rounded-sm border border-f1-border/30 hover:border-f1-border/60 transition-colors"
+                        style={{
+                          backgroundColor: driver.teamColor + "10",
+                        }}
+                      >
+                        <img
+                          src={team.logo}
+                          alt={team.shortName}
+                          className="h-4 sm:h-5 w-auto object-contain"
+                          loading="lazy"
+                          onError={() => setLogoError(true)}
+                        />
+                        <span
+                          className="font-mono text-[9px] sm:text-[10px] uppercase tracking-[0.15em] font-medium"
+                          style={{ color: driver.teamColor }}
+                        >
+                          {team.shortName}
+                        </span>
+                      </Link>
+                    ) : (
+                      <span
+                        className="font-mono text-[9px] sm:text-[10px] uppercase tracking-[0.15em] font-medium px-1.5 py-[2px] rounded-sm"
+                        style={{
+                          color: driver.teamColor,
+                          backgroundColor: driver.teamColor + "15",
+                        }}
+                      >
+                        {driver.team}
+                      </span>
+                    )}
                     <span className="text-f1-border/40">·</span>
                     <div className="flex items-center gap-1 sm:gap-1.5">
                       <span

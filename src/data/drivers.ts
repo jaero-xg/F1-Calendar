@@ -464,7 +464,7 @@ export const driversMeta: DriverMeta[] = [
       teamColor: "#229971",
       country: "Canada",
       countryCode: "CA",
-      image: "/drivers/Lance-Stroll.png",
+      image: "/drivers/LanceStroll.png",
       bio: "Lance Stroll continues with Aston Martin in 2026, working alongside Fernando Alonso as the team develops its new generation car.",
     },
     careerBefore: {
@@ -488,7 +488,7 @@ export const driversMeta: DriverMeta[] = [
       teamColor: "#52E252",
       country: "Germany",
       countryCode: "DE",
-      image: "/drivers/Nico-Hulkenberg.png",
+      image: "/drivers/Nico-Hulkenberg-F1-2026.webp",
       bio: "Nico Hulkenberg leads Audi's first Formula 1 campaign with his experience and consistency.",
     },
     careerBefore: {
@@ -548,30 +548,7 @@ export const driversMeta: DriverMeta[] = [
       starts: 252
     },
   },
-  {
-    ergastId: "tsunoda",
-    base: {
-      id: "tsunoda",
-      number: 22,
-      firstName: "Yuki",
-      lastName: "Tsunoda",
-      team: "Red Bull Racing",
-      teamId: "red-bull",
-      teamColor: "#3671C6",
-      country: "Japan",
-      countryCode: "JP",
-      image: "/drivers/Yuki-Tsunoda.png",
-      bio: "Yuki Tsunoda continues his Formula 1 journey with Red Bull after years of development in the junior programme.",
-    },
-    careerBefore: {
-      wins: 0,
-      podiums: 0,
-      poles: 0,
-      fastestLaps: 1,
-      championships: 0,
-      starts: 114
-    },
-  },
+  
 ];
 
 export const getDriverById = (id: string): DriverMeta | undefined =>

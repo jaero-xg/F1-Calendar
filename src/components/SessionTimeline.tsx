@@ -11,9 +11,7 @@ export default function SessionTimeline({ sessions }: SessionTimelineProps) {
     if (status === "completed")
       return <CheckCircle size={18} className="text-green-400" />;
     if (status === "live")
-      return (
-        <div className="w-4 h-4 rounded-full bg-f1-accent animate-pulse" />
-      );
+      return <div className="w-4 h-4 bg-f1-accent animate-pulse" />;
     return <Circle size={18} className="text-f1-muted" />;
   };
 
@@ -37,7 +35,7 @@ export default function SessionTimeline({ sessions }: SessionTimelineProps) {
         >
           <div className="flex-shrink-0">{getSessionIcon(session.status)}</div>
 
-          <div className="flex-1 glass rounded-xl p-4 flex items-center justify-between">
+          <div className="flex-1 glass p-4 flex items-center justify-between">
             <div>
               <span
                 className={`text-sm font-semibold ${getSessionColor(session.type)}`}
@@ -53,7 +51,7 @@ export default function SessionTimeline({ sessions }: SessionTimelineProps) {
             </div>
 
             <div
-              className={`px-3 py-1 rounded-full text-xs font-medium ${
+              className={`px-3 py-1 text-xs font-medium ${
                 session.status === "completed"
                   ? "bg-green-500/20 text-green-400"
                   : session.status === "live"

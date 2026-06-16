@@ -406,6 +406,9 @@
     "isSprint": false,
     "isSaturday": false,
     "trackId": "barcelona",
+    "winner": "Lewis Hamilton",
+    "fastestLap": "Lewis Hamilton",
+    "polePosition": "George Russell",
     "sessions": [
       {
         "id": "bar-fp1",
@@ -413,7 +416,7 @@
         "day": "Fri",
         "time": "13:30",
         "duration": "60 min",
-        "status": "upcoming"
+        "status": "completed"
       },
       {
         "id": "bar-fp2",
@@ -421,7 +424,7 @@
         "day": "Fri",
         "time": "17:00",
         "duration": "60 min",
-        "status": "upcoming"
+        "status": "completed"
       },
       {
         "id": "bar-fp3",
@@ -429,7 +432,7 @@
         "day": "Sat",
         "time": "12:30",
         "duration": "60 min",
-        "status": "upcoming"
+        "status": "completed"
       },
       {
         "id": "bar-qu",
@@ -437,7 +440,7 @@
         "day": "Sat",
         "time": "16:00",
         "duration": "60 min",
-        "status": "upcoming"
+        "status": "completed"
       },
       {
         "id": "bar-race",
@@ -445,7 +448,7 @@
         "day": "Sun",
         "time": "15:00",
         "duration": "66 laps",
-        "status": "upcoming"
+        "status": "completed"
       }
     ],
     "circuitSvg": "/circuits/Barcelona.svg"

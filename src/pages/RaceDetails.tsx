@@ -58,7 +58,7 @@ export default function RaceDetails() {
   const isUpcoming = race.status === "upcoming";
 
   return (
-    <div className="min-h-screen pt-16 sm:pt-20 md:pt-24 pb-12 sm:pb-16 md:pb-20">
+    <div className="py-4 sm:py-6 md:py-8 lg:py-10 border-b border-f1-border">
       <div className="px-3 sm:px-4 md:px-6 lg:px-8 xl:px-12">
         <div className="max-w-7xl mx-auto">
           {/* Back link */}
@@ -79,7 +79,7 @@ export default function RaceDetails() {
             animate={{ opacity: 1, y: 0 }}
             className="mb-6 sm:mb-8 md:mb-10"
           >
-            <div className="border border-f1-border overflow-hidden rounded-sm">
+            <div className="border border-f1-border overflow-hidden">
               <div className="h-1 bg-f1-accent" />
               <div className="p-3 sm:p-5 md:p-6 lg:p-8">
                 {/* Meta row */}
@@ -88,12 +88,12 @@ export default function RaceDetails() {
                     Round {String(race.round).padStart(2, "0")}
                   </span>
                   {race.isSprint && (
-                    <span className="flex items-center gap-1 px-1.5 py-[2px] bg-orange-500/10 text-orange-400 text-[9px] sm:text-[10px] font-medium uppercase tracking-wider rounded-sm">
+                    <span className="flex items-center gap-1 px-1.5 py-[2px] bg-orange-500/10 text-orange-400 text-[9px] sm:text-[10px] font-medium uppercase tracking-wider">
                       <Zap size={9} className="sm:size-[10px]" /> Sprint
                     </span>
                   )}
                   <span
-                    className={`px-1.5 py-[2px] text-[9px] sm:text-[10px] font-medium uppercase tracking-wider rounded-sm ${
+                    className={`px-1.5 py-[2px] text-[9px] sm:text-[10px] font-medium uppercase tracking-wider ${
                       isCompleted
                         ? "bg-emerald-500/10 text-emerald-400"
                         : isUpcoming
@@ -124,7 +124,7 @@ export default function RaceDetails() {
 
                 {/* Results — completed races */}
                 {isCompleted && (
-                  <div className="grid grid-cols-1 sm:grid-cols-3 gap-px bg-f1-border rounded-sm overflow-hidden">
+                  <div className="grid grid-cols-1 sm:grid-cols-3 gap-px bg-f1-border overflow-hidden">
                     <div className="bg-f1-card p-2.5 sm:p-3 md:p-4">
                       <div className="flex items-center gap-1.5 sm:gap-2 mb-1 sm:mb-1.5">
                         <Trophy
@@ -205,7 +205,7 @@ export default function RaceDetails() {
                 </h2>
 
                 <Link to={`/track/${track.id}`}>
-                  <div className="border border-f1-border group hover:border-f1-accent/50 transition-colors overflow-hidden rounded-sm">
+                  <div className="border border-f1-border group hover:border-f1-accent/50 transition-colors overflow-hidden">
                     <div className="h-1 bg-f1-border group-hover:bg-f1-accent transition-colors" />
                     <div className="p-3 sm:p-4 md:p-5">
                       <h3 className="font-display text-sm sm:text-base md:text-lg font-extrabold uppercase text-white mb-0.5 sm:mb-1 group-hover:text-f1-accent transition-colors">

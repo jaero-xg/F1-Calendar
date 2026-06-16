@@ -88,9 +88,7 @@ function Section({
     <section
       className={`py-4 sm:py-6 md:py-8 lg:py-10 border-b border-f1-border ${className}`}
     >
-      <div className="wrap px-3 sm:px-4 md:px-6 lg:px-8 xl:px-12">
-        {children}
-      </div>
+      <div className="px-3 sm:px-4 md:px-6 lg:px-8 xl:px-12">{children}</div>
     </section>
   );
 }
