@@ -30,8 +30,7 @@
     "isSaturday": false,
     "trackId": "jeddah",
     "cancellationReason": "Cancelled due to the 2026 Iran–Middle East conflict",
-    "sessions": [],
-    "circuitSvg": "/circuits/Saudi-Arabia.svg"
+    "sessions": []
   },
   {
     "id": "australia",
@@ -90,8 +89,7 @@
         "duration": "58 laps",
         "status": "completed"
       }
-    ],
-    "circuitSvg": "/circuits/Australia.svg"
+    ]
   },
   {
     "id": "china",
@@ -150,8 +148,7 @@
         "duration": "56 laps",
         "status": "completed"
       }
-    ],
-    "circuitSvg": "/circuits/China.svg"
+    ]
   },
   {
     "id": "japan",
@@ -210,8 +207,7 @@
         "duration": "53 laps",
         "status": "completed"
       }
-    ],
-    "circuitSvg": "/circuits/Suzuka.svg"
+    ]
   },
   {
     "id": "miami",
@@ -330,8 +326,7 @@
         "duration": "68 laps",
         "status": "completed"
       }
-    ],
-    "circuitSvg": "/circuits/Canada.svg"
+    ]
   },
   {
     "id": "monaco",
@@ -450,8 +445,7 @@
         "duration": "66 laps",
         "status": "completed"
       }
-    ],
-    "circuitSvg": "/circuits/Barcelona.svg"
+    ]
   },
   {
     "id": "austria",
@@ -507,8 +501,7 @@
         "duration": "71 laps",
         "status": "upcoming"
       }
-    ],
-    "circuitSvg": "/circuits/Austria.svg"
+    ]
   },
   {
     "id": "britain",
@@ -564,8 +557,7 @@
         "duration": "52 laps",
         "status": "upcoming"
       }
-    ],
-    "circuitSvg": "/circuits/Britian.svg"
+    ]
   },
   {
     "id": "belgium",
@@ -621,8 +613,7 @@
         "duration": "44 laps",
         "status": "upcoming"
       }
-    ],
-    "circuitSvg": "/circuits/Belgium.svg"
+    ]
   },
   {
     "id": "hungary",
@@ -678,8 +669,7 @@
         "duration": "70 laps",
         "status": "upcoming"
       }
-    ],
-    "circuitSvg": "/circuits/Hungary.svg"
+    ]
   },
   {
     "id": "netherlands",
@@ -735,8 +725,7 @@
         "duration": "72 laps",
         "status": "upcoming"
       }
-    ],
-    "circuitSvg": "/circuits/Zandvoort.svg"
+    ]
   },
   {
     "id": "italy",
@@ -792,8 +781,7 @@
         "duration": "53 laps",
         "status": "upcoming"
       }
-    ],
-    "circuitSvg": "/circuits/Monza.svg"
+    ]
   },
   {
     "id": "spain",
@@ -849,8 +837,7 @@
         "duration": "62 laps",
         "status": "upcoming"
       }
-    ],
-    "circuitSvg": "/circuits/Madrid.svg"
+    ]
   },
   {
     "id": "azerbaijan",
@@ -906,8 +893,7 @@
         "duration": "51 laps",
         "status": "upcoming"
       }
-    ],
-    "circuitSvg": "/circuits/Azerbaijan.svg"
+    ]
   },
   {
     "id": "singapore",
@@ -1020,8 +1006,7 @@
         "duration": "56 laps",
         "status": "upcoming"
       }
-    ],
-    "circuitSvg": "/circuits/COTA.svg"
+    ]
   },
   {
     "id": "mexico",
@@ -1077,8 +1062,7 @@
         "duration": "71 laps",
         "status": "upcoming"
       }
-    ],
-    "circuitSvg": "/circuits/Mexico.svg"
+    ]
   },
   {
     "id": "brazil",
@@ -1134,8 +1118,7 @@
         "duration": "71 laps",
         "status": "upcoming"
       }
-    ],
-    "circuitSvg": "/circuits/Brazil.svg"
+    ]
   },
   {
     "id": "las-vegas",
@@ -1248,8 +1231,7 @@
         "duration": "57 laps",
         "status": "upcoming"
       }
-    ],
-    "circuitSvg": "/circuits/Qatar.svg"
+    ]
   },
   {
     "id": "abu-dhabi",
@@ -1305,7 +1287,6 @@
         "duration": "58 laps",
         "status": "upcoming"
       }
-    ],
-    "circuitSvg": "/circuits/Abu-Dhabi.svg"
+    ]
   }
 ]
