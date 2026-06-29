@@ -22,11 +22,11 @@
     },
     "allTime": {
       "wins": 10,
-      "podiums": 15,
+      "podiums": 16,
       "poles": 8,
-      "fastestLaps": 11,
+      "fastestLaps": 12,
       "championships": 0,
-      "starts": 37
+      "starts": 38
     },
     "seasonStats": [
       {
@@ -770,7 +770,7 @@
       "poles": 6,
       "fastestLaps": 9,
       "championships": 0,
-      "starts": 81
+      "starts": 82
     },
     "seasonStats": [
       {
@@ -1328,7 +1328,7 @@
       "poles": 0,
       "fastestLaps": 0,
       "championships": 0,
-      "starts": 35
+      "starts": 36
     },
     "seasonStats": [
       {
@@ -1514,7 +1514,7 @@
       "poles": 0,
       "fastestLaps": 0,
       "championships": 0,
-      "starts": 46
+      "starts": 47
     },
     "seasonStats": [
       {
@@ -1886,7 +1886,7 @@
       "poles": 0,
       "fastestLaps": 0,
       "championships": 0,
-      "starts": 34
+      "starts": 35
     },
     "seasonStats": [
       {
@@ -2072,7 +2072,7 @@
       "poles": 0,
       "fastestLaps": 0,
       "championships": 0,
-      "starts": 38
+      "starts": 39
     },
     "seasonStats": [
       {
@@ -3002,7 +3002,7 @@
       "poles": 0,
       "fastestLaps": 0,
       "championships": 0,
-      "starts": 34
+      "starts": 35
     },
     "seasonStats": [
       {
